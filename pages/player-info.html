@@ -1,0 +1,54 @@
+<!-- ! player個人資料頁 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/meta'); -%>
+    <title>Player Info</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container-xl px-0">
+      <div class="banner banner--player">
+        <img
+          class="banner-img"
+          src="../assets/images/players/player-kento-momota.jpeg"
+          alt="Kento MOMOTA"
+        />
+        <div class="banner-left">
+          <h3 class="mb-9">Kento MOMOTA</h3>
+          <div class="banner-country">
+            <img
+              class="me-8"
+              src="../assets/images/countries/JPN.png"
+              alt="白色長方形，正中間是紅色圓形。"
+            />
+            <p>Japan</p>
+          </div>
+        </div>
+        <div class="banner-right">
+          <h3>Position</h3>
+          <p>3</p>
+        </div>
+      </div>
+      <ul class="pagination">
+        <li>
+          <a class="pagination-item pagination-item--controller" href="#"
+            >pre</a
+          >
+        </li>
+        <li>
+          <a class="pagination-item pagination-item--active" href="#">1</a>
+        </li>
+        <li><a class="pagination-item" href="#">2</a></li>
+        <li><a class="pagination-item" href="#">3</a></li>
+        <li>
+          <a class="pagination-item pagination-item--controller" href="#"
+            >next</a
+          >
+        </li>
+      </ul>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

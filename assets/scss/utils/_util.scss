@@ -1,0 +1,151 @@
+// 通用設定
+$base-font-size:0.625rem;
+// display
+d-inline-block{
+  display: inline-block;
+}
+
+
+// width
+.width{
+  &-50{
+    width: 50%;
+  }
+  &-60{
+    width: 60%;
+  }
+  &-80{
+    width: 80%;
+  }
+  &-100{
+    width: 100%;
+  }
+  &-lg{
+    @include Desktop{
+      &-50{
+        width: 50%;
+      }
+      &-60{
+        width: 60%;
+      }
+      &-80{
+        width: 80%;
+      }
+      &-100{
+        width: 100%;
+      }
+    }
+  }
+}
+
+//font size for RWD(普通設定已經有了)
+.fs-lg{
+  @include Desktop{
+    &-1{
+      font-size: 40px !important ; 
+    }
+    &-2{
+      font-size: 32px !important; 
+    }
+    &-3{
+      font-size: 28px !important; 
+    }
+    &-4{
+      font-size: 24px !important; 
+    }
+    &-5{
+      font-size: 20px !important; 
+    }
+    &-6{
+      font-size: 16px !important; 
+    }
+  }
+}
+// position
+.position{
+  &-lg{
+    @include Desktop{
+      &-relative{
+        position: relative;
+      }
+    }
+  }
+}
+
+// transform:更換座標軸位置
+.transform{
+  &-center{
+    transform: translate(50%, 50%);
+  }
+  &-bottom-right{
+    transform: translate(0%, 0%);
+  }
+}
+
+// up
+.up{
+  &-100{
+    top: -100px;
+  }
+}
+
+
+// overflow
+.overflow{
+  &-y{
+    &-scroll{
+      overflow-y: scroll;
+    }
+  }
+}
+
+// outline
+.outline{
+  outline: 1px solid var(--bs-helper-primary);
+}
+
+
+// gap
+.gap{
+  &-x{
+    &-20{
+      column-gap: 20px;
+    }
+    &-40{
+      column-gap: 40px;
+    }
+    &-md{
+      @include Tablet{
+
+      }
+    }
+    &-lg{
+      @include Desktop{
+      }
+    }
+  }
+  &-y{
+    &-20{
+      row-gap: 20px;
+    }
+    &-40{
+      row-gap: 40px;
+    }
+    &-md{
+      @include Tablet{
+        &-20{
+          row-gap: 20px;
+        }
+        &-40{
+          row-gap: 40px;
+        }
+      }
+    }
+    &-lg{
+      @include Desktop{
+        
+      }
+    }
+  }
+  
+}

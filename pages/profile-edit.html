@@ -1,0 +1,106 @@
+<!--! 使用者頁面 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/meta'); -%>
+    <title>Edit Profile</title>
+  </head>
+  <body>
+    <%- include('./layout/header-logIn'); -%>
+    <!--! banner -->
+    <div class="container-xl px-0">
+      <div class="banner--pureColor w-100 bg-green-third"></div>
+    </div>
+    <div class="container-xl px-lg-0">
+      <div
+        class="row justify-content-center align-items-center position-lg-relative up-100"
+      >
+        <div class="col-12 col-lg-4 d-flex justify-content-center mb-5 mb-lg-0">
+          <div class="profile-bigHead position-relative mt-5 mt-lg-0">
+            <img
+              class="w-100 h-100 border rounded-circle"
+              src="../assets/images/profile-selfie.png"
+              alt="大頭照"
+            />
+            <a
+              class="position-absolute transform-bottom-right bottom-0 end-0 link-helper-secondary"
+              href=""
+            >
+              <span class="material-symbols-outlined"> edit_square </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 text-center text-lg-start">
+          <p class="fs-3 fs-lg-2">Andy Liu</p>
+          <p class="fs-3 fs-lg-2 text-helper-fourth">Taiwan</p>
+        </div>
+        <form action="" method="post" class="col-12 col-lg-8 mt-2 mt-lg-1">
+          <!--! profile-about me -->
+          <div
+            class="d-inline-block py-9 px-6 px-lg-5 py-lg-8 border border-helper-foutrh"
+          >
+            <span class="fs-lg-5">about me</span>
+          </div>
+          <div
+            class="row gx-0 align-items-center border border-helper-fourth py-7 px-6 py-lg-6 px-lg-4 mb-6 mb-lg-5"
+          >
+            <div class="col-3">
+              <label for="userName" class="me-6 me-lg-4 fs-5 fs-lg-4"
+                >Username</label
+              >
+            </div>
+            <div class="col-9">
+              <input
+                type="text"
+                id="userName"
+                class="ps-9 border border-helper-fourth rounded fs-lg-5"
+                placeholder="Andy liu"
+              />
+            </div>
+            <div class="col-3">
+              <label for="email" class="me-6 me-lg-4 fs-5 fs-lg-4">Email</label>
+            </div>
+            <div class="col-9">
+              <input
+                type="email"
+                id="email"
+                placeholder="abc@gmail.com"
+                class="ps-9 border border-helper-fourth rounded fs-lg-5"
+              />
+            </div>
+            <div class="col-3">
+              <label for="country" class="me-6 me-lg-5 fs-5 fs-lg-4"
+                >Country</label
+              >
+            </div>
+            <div class="col-9">
+              <input
+                type="text"
+                id="country"
+                class="ps-9 border border-helper-fourth rounded fs-lg-5"
+                placeholder="Taiwan"
+              />
+            </div>
+          </div>
+          <!--! edit button -->
+          <div
+            class="d-flex justify-content-end align-items-center mb-4 mb-lg-0"
+          >
+            <a
+              href="profile.html"
+              class="btn-sm btn--secondary me-9 me-lg-8 py-8 px-6"
+              >Cancel</a
+            >
+            <input
+              type="submit"
+              value="Done"
+              class="btn-sm btn--secondary py-8 px-6"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

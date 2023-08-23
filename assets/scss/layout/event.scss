@@ -1,0 +1,13 @@
+.event{
+  background-color: var(--bs-green-secondary);
+  &-left{
+    width: 90%;
+  }
+  &-img{
+    width: 20px;
+    object-fit:contain ; 
+    @include Desktop{
+      width: 32px;
+    }
+  }
+}

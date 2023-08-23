@@ -1,0 +1,89 @@
+<!-- ! 建立元件測試頁面 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/meta'); -%>
+    <title>Component</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%> <%- include('./layout/event'); -%>
+    <div class="container-xl px-md-0">
+      <ul
+        class="d-flex flex-column flex-md-row justify-content-center align-items-center"
+      >
+        <li>
+          <a class="card card--contest" href="#">
+            <img
+              class="card-img mb-6"
+              src="../assets/images/schedule-01.png"
+              alt="一個人手捏著羽毛球的球頭。"
+            />
+            <p class="card-title">YONEX US Open 2023</p>
+            <div class="d-flex">
+              <img
+                class="d-md-none"
+                src="../assets/images/icons/date-sm.svg"
+                alt="月曆"
+              />
+              <img
+                class="d-none d-md-block"
+                src="../assets/images/icons/date.svg"
+                alt="月曆"
+              />
+              <span class="card-date">11 - 16 July</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="card card--contest" href="#">
+            <img
+              class="card-img mb-6"
+              src="../assets/images/schedule-02.png"
+              alt="一個人手捏著羽毛球的球頭。"
+            />
+            <p class="card-title">YONEX US Open 2023</p>
+            <div class="d-flex">
+              <img
+                class="d-md-none"
+                src="../assets/images/icons/date-sm.svg"
+                alt="月曆"
+              />
+              <img
+                class="d-none d-md-block"
+                src="../assets/images/icons/date.svg"
+                alt="月曆"
+              />
+              <span class="card-date">11 - 16 July</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="card card--contest" href="#">
+            <img
+              class="card-img mb-6"
+              src="../assets/images/schedule-03.png"
+              alt="一個人手捏著羽毛球的球頭。"
+            />
+            <p class="card-title">YONEX US Open 2023</p>
+            <div class="d-flex">
+              <img
+                class="d-md-none"
+                src="../assets/images/icons/date-sm.svg"
+                alt="月曆"
+              />
+              <img
+                class="d-none d-md-block"
+                src="../assets/images/icons/date.svg"
+                alt="月曆"
+              />
+              <span class="card-date">11 - 16 July</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <%- include('./layout/footer'); -%> -->
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

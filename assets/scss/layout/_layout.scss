@@ -1,0 +1,379 @@
+// 各版面重複到的小區塊
+// button
+.btn{
+  display: inline-block;
+  &--primary{
+    padding: 20px 24px;
+    background-color: var(--bs-green-primary);
+    color: var(--bs-white);
+    transition: 0.3s;
+    @include Desktop{
+      padding: 24px 48px;
+    }
+    &:hover{
+      background-color: var(--bs-helper-primary);
+    }
+  }
+  &--secondary{
+    border: 1px solid var(--bs-green-primary);
+    padding: 12px 24px;
+    background-color: var(--bs-white);
+    color: var(--bs-green-primary);
+    transition: 0.3s;
+    @include Desktop{
+      padding: 24px 48px;
+    }
+    &:hover{
+      color: var(--bs-dark);
+      border: 1px solid var(--bs-helper-primary);
+    }
+  }
+  // 通用hover
+  &:hover{
+    color: var(--bs-white);
+    background-color: var(--bs-helper-primary);
+  }
+  @include Desktop{
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+// banner
+// 架構
+.banner{
+  color: var(--bs-white);
+  position: relative;
+  font-size: 36px;
+  &-img{
+    object-fit: cover;
+  }
+  &-title{
+    position: absolute;
+    // 將支點移到元素正中央
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-weight: 700;
+  }
+  &-content{
+    position: absolute;
+  }
+  @include Tablet{
+    &-title{
+      left: 25%;
+      font-size: 40px;
+    }
+  }
+}
+.banner--player{
+  .banner-left{
+    position: absolute;
+    // 將支點一到元素正中央
+    transform: translate(0%, -50%);
+    top: 50%;
+    left: 5%;
+    .banner-country{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      img{
+        border-radius: 50%;
+        object-fit: cover;
+        width: 10%;
+      }
+      p{
+        font-size: 16px;
+        color: var(--bs-helper-fourth);
+      }
+    }
+  }
+  .banner-right{
+    position: absolute;
+    // 將支點一到元素正中央
+    transform: translate(0%, -50%);
+    top: 50%;
+    right: 5%;
+    text-align: center;
+    p{
+      font-size: 24px;
+      @include Desktop{
+        font-size: 36px;
+      }
+    }
+  }
+  h3{
+    font-weight: 700;
+    font-size: 24px;
+    @include Desktop{
+      font-size: 36px;
+    }
+  }
+}
+.banner--pureColor{
+  height: 100px;
+  @include Desktop{
+    height: 200px;
+  }
+}
+
+
+// pagination
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-item{
+    border-radius: 4px;
+    padding: 12px 20px;
+    background-color: var(--bs-helper-fifth);
+    transition: background-color, 0.1s;
+    &--controller{
+      background-color: var(--bs-helper-fourth);
+    }
+    &--active{
+      background-color: var(--bs-green-third);
+    }
+    &:hover{
+      color: var(--bs-white);
+      background-color: var(--bs-helper-secondary);
+    }
+  }
+  li:not(:last-child){
+    margin-right: 8px;
+  }
+  // 桌機版就變成靠右
+  @include Desktop{
+    // justify-content: flex-end;
+  }
+}
+
+
+// card
+.card{
+  &-img{
+    object-fit: cover;
+  }
+}
+.card-group{
+  display: flex;
+  justify-content: space-evenly;
+}
+.card--contest{
+  background-color: var(--bs-white);
+  outline: 1px solid var(--bs-helper-secondary);
+  padding: 20px 40px;
+  transition: background-color 0.3s;
+  &:hover{
+    background-color: var(--bs-green-fourth);
+  }
+  .card-title{
+    color: var(--bs-green-primary);
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .card-date{
+    color: var(--bs-helper-secondary);
+  }
+  
+  @include Tablet{
+    .card-title{
+      font-size: 24px;
+      margin-bottom: 16px;
+      font-size: 20px;
+    }
+  }
+}
+//& Ranking card
+.card--ranking{
+  &--group{
+    position: relative;
+    padding: 40px 20px 20px ;
+    border: 1px solid var(--bs-helper-primary);
+    justify-content: center;
+  }
+  .card-title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    top: 0px;
+    left: 50%;
+    padding: 16px 0;
+    min-width: 280px;
+    background-color: var(--bs-green-fourth);
+    border: 1px solid var(--bs-dark);
+    
+    img{
+      margin-right: 4px;
+    }
+  }
+  .active{
+    background-color: var(--bs-green-primary);
+  }
+  .card-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    :hover{
+      background-color: var(--bs-helper-fourth);
+    }
+  }
+  .card-position{
+    width: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 9px;
+    color: var(--bs-white);
+  }
+  .card-info{
+    display: flex;
+    align-items: center;
+    padding: 12px 0 ;
+    width: 50%;
+  }
+  .card-country{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 60px; 
+    // border-right: 1px solid var(--bs-helper-secondary);
+    //! 上需修改，各列的線條沒對上
+    &::after{
+      content: "";
+      position: absolute;
+      right: 15px;
+      width: 1px;
+      height: 32px;
+      background-color: var(--bs-helper-secondary);
+    }
+    &-img{
+      width: 32px;
+      margin-right: 12px;
+    }
+    &-abbr{
+      color: var(--bs-helper-secondary);
+    }
+  }
+  .card-name{
+    color: var(--bs-dark);
+  }
+  &-sideImg{
+    width: 100%;
+    height: 100%;
+    background: url('../images/player-head-viktor-axelsen.png') no-repeat center;
+  }
+  //& Desktop
+  @include Desktop{
+    &--group{
+      width: 50%;
+    }
+    .card-title{
+      font-size: 32px;
+      padding: 24px 0 ;
+      min-width: 360px;
+      left: 40%;
+      img{
+        margin-right: 24px;
+      }
+    }
+    .card-position{
+      width: 56px;
+      font-size: 24px;
+      margin-right: 36px;
+      line-height: 56px;
+    }
+    .card-info{
+      width: 90%;
+      padding: 20px 0;
+    }
+    .card-country{
+      padding-right: 27px;
+      &-img{
+        width: 50px;
+        margin-right: 32px;
+      }
+      &-abbr{
+        font-size: 20px;
+      }
+    }
+    .card-name{
+      font-size: 20px;
+    }
+  }
+}
+
+// card -- centerPosition
+.card--centerPosition{
+  transform: translate(-50%, -50%);
+}
+
+// dropdown
+.dropdown{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1rem;
+  background-color: var(--bs-white);
+  &-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 8px;
+    border: 1px solid var(--bs-helper-primary);
+    border-radius: 6px;
+    cursor: pointer;
+    &:hover{
+      background-color: var(--bs-helper-fourth);
+    }
+    &:active{
+      background-color: var(--bs-helper-third);
+    }
+  }
+  &-content{
+    display: none;
+    position: relative;
+    ul{
+      position: absolute;
+      top: 8px;
+      border: 1px solid var(--bs-helper-primary);
+      max-height: 300px;
+      li{
+        padding: 12px 20px;
+        cursor: pointer;
+        background-color: var(--bs-white);
+        &:hover{
+          background-color: var(--bs-helper-third);
+        }
+      }
+      li+li{
+        border-top: 1px solid var(--bs-helper-primary);
+      }
+    }
+    .active{
+      background-color: var(--bs-helper-fourth);
+    }
+  }
+  @include Desktop{
+    font-size: 1.25rem;
+    &-item{
+      padding: 12px 20px;
+    }
+  }
+}
+
+// datePicker
+.datePicker{
+  cursor: pointer;
+  color: var(--bs-helper-third);
+  &:hover{
+    color: var(--bs-helper-secondary);
+  }
+}

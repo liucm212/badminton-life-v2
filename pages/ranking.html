@@ -1,0 +1,427 @@
+<!-- ! player個人資料頁 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/meta'); -%>
+    <title>Ranking</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container-xl px-0">
+      <!-- ranking-banner -->
+      <div class="banner mb-lg-4">
+        <img
+          class="banner-img"
+          src="../assets/images/players/player-chou-tien-chen.jpeg"
+          alt="周天成"
+        />
+        <h3 class="banner-title">Ranking</h3>
+      </div>
+    </div>
+    <div class="container-xl px-lg-0">
+      <!-- ranking-option -->
+      <ul
+        class="ranking-option row gx-0 justify-content-between mb-lg-4 d-none d-lg-flex"
+      >
+        <li class="col-lg-2">
+          <a class="list-item active" href="#">Man's single</a>
+        </li>
+        <li class="col-lg-2">
+          <a class="list-item" href="#">Woman's single</a>
+        </li>
+        <li class="col-lg-2">
+          <a class="list-item" href="#">Man's double</a>
+        </li>
+        <li class="col-lg-2">
+          <a class="list-item" href="#">Woman's double</a>
+        </li>
+        <li class="col-lg-2">
+          <a class="list-item" href="#">Mixed double</a>
+        </li>
+      </ul>
+      <div class="ranking-option-sm d-lg-none">
+        <a
+          class="ranking-option--dropdown d-lg-none d-flex justify-content-center align-items-center py-8 px-6 border rounded border-helper-secondary"
+          href="#"
+        >
+          <p class="me-9">Man's single</p>
+          <img src="../assets/images/icons/arrow-down.png" alt="黑色項下箭頭" />
+        </a>
+        <ul class="ranking-option--dropdown-content">
+          <li><a class="list-item active" href="#">Man's single</a></li>
+          <li><a class="list-item" href="#">Woman's single</a></li>
+          <li><a class="list-item" href="#">Man's double</a></li>
+          <li><a class="list-item" href="#">Woman's double</a></li>
+          <li><a class="list-item" href="#">Mixed double</a></li>
+        </ul>
+      </div>
+      <!-- ranking card -->
+      <div class="row gx-0 align-items-center">
+        <div class="col-12 col-lg-6">
+          <ul class="card card--ranking">
+            <!-- testing card--ranking -->
+            <!-- man's single ranking card -->
+            <li class="card--ranking--group bg-white d-lg-flex width-100">
+              <!-- card-item : 實際一筆一筆的資料 -->
+              <ul>
+                <!-- 1 -->
+                <li class="card-item">
+                  <p class="card-position active">1</p>
+                  <div class="card-info border-bottom border-helper-secondary">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/DEN.png"
+                        alt="丹麥"
+                      />
+                      <span class="card-country-abbr">DEN</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#"
+                      >Viktor AXELSEN</a
+                    >
+                  </div>
+                </li>
+                <!-- 2 -->
+                <li class="card-item">
+                  <p class="card-position active">2</p>
+                  <div class="card-info border-bottom border-helper-secondary">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/INA.png"
+                        alt="印度尼西亞"
+                      />
+                      <span class="card-country-abbr">INA</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#"
+                      >Anthony Sinisuka GINTING</a
+                    >
+                  </div>
+                </li>
+                <!-- 3 -->
+                <li class="card-item">
+                  <p class="card-position active">3</p>
+                  <div class="card-info border-bottom border-helper-secondary">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/THA.png"
+                        alt="泰國國旗"
+                      />
+                      <span class="card-country-abbr">THA</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#"
+                      >Kunlavut VITIDSRAN</a
+                    >
+                  </div>
+                </li>
+                <!-- 4 -->
+                <li class="card-item">
+                  <p class="card-position text-dark">4</p>
+                  <div class="card-info border-bottom border-helper-secondary">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/JPN.png"
+                        alt="日本國旗"
+                      />
+                      <span class="card-country-abbr">JPN</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#"
+                      >Kodai NARAOKA</a
+                    >
+                  </div>
+                </li>
+                <!-- 5 -->
+                <li class="card-item">
+                  <p class="card-position text-dark">5</p>
+                  <div class="card-info border-bottom border-helper-secondary">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/CHN.png"
+                        alt="中國國旗"
+                      />
+                      <span class="card-country-abbr">CHN</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#">LI Shi Feng</a>
+                  </div>
+                </li>
+                <!-- 6 -->
+                <li class="card-item">
+                  <p class="card-position text-dark">6</p>
+                  <div class="card-info border-bottom border-helper-secondary">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/CHN.png"
+                        alt="中國國旗"
+                      />
+                      <span class="card-country-abbr">CHN</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#">SHI Yu Qi</a>
+                  </div>
+                </li>
+                <!-- 7 -->
+                <li class="card-item">
+                  <p class="card-position text-dark">7</p>
+                  <div class="card-info border-bottom border-helper-secondary">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/TPE.png"
+                        alt="台灣國旗"
+                      />
+                      <span class="card-country-abbr">TPE</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#"
+                      >CHOU Tien Chen</a
+                    >
+                  </div>
+                </li>
+                <!-- 8 -->
+                <li class="card-item">
+                  <p class="card-position text-dark">8</p>
+                  <div class="card-info border-bottom border-helper-secondary">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/SGP.png"
+                        alt="新加坡國旗"
+                      />
+                      <span class="card-country-abbr">SGP</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#">LOH Kean Yew</a>
+                  </div>
+                </li>
+                <!-- 9 -->
+                <li class="card-item">
+                  <p class="card-position text-dark">9</p>
+                  <div class="card-info border-bottom border-helper-secondary">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/INA.png"
+                        alt="印度尼西亞國旗"
+                      />
+                      <span class="card-country-abbr">INA</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#"
+                      >Jonatan CHRISTIE</a
+                    >
+                  </div>
+                </li>
+                <!-- 最後一個沒有padding, border-bottom, active, 但text是dark -->
+                <!-- 4 -->
+                <li class="card-item">
+                  <p class="card-position text-dark">10</p>
+                  <div class="card-info">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/IND.png"
+                        alt="印度"
+                      />
+                      <span class="card-country-abbr">JPN</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#"
+                      >PRANNOY H. S.</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <!-- woman's single ranking card -->
+            <li class="card--ranking--group bg-white d-none">
+              <!-- card-item : 實際一筆一筆的資料 -->
+              <ul>
+                <!-- woman1 -->
+                <li class="card-item">
+                  <p class="card-position active">1</p>
+                  <div class="card-info border-bottom border-helper-secondary">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/KOR.png"
+                        alt="韓國國旗"
+                      />
+                      <span class="card-country-abbr">KOR</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#">AN Se Young</a>
+                  </div>
+                </li>
+                <!-- woman2 -->
+                <li class="card-item">
+                  <p class="card-position active">2</p>
+                  <div class="card-info border-bottom border-helper-secondary">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/JPN.png"
+                        alt="日本國旗"
+                      />
+                      <span class="card-country-abbr">JPN</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#"
+                      >Akane YAMAGUCHI</a
+                    >
+                  </div>
+                </li>
+                <!-- Woman 3 -->
+                <li class="card-item">
+                  <p class="card-position active">3</p>
+                  <div class="card-info border-bottom border-helper-secondary">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/CHN.png"
+                        alt="中國國旗"
+                      />
+                      <span class="card-country-abbr">CHN</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#">CHEN Yu Fei</a>
+                  </div>
+                </li>
+                <!-- Woman 4 -->
+                <li class="card-item">
+                  <p class="card-position text-dark">4</p>
+                  <div class="card-info border-bottom border-helper-secondary">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/TPE.png"
+                        alt="台灣國旗"
+                      />
+                      <span class="card-country-abbr">TPE</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#">TAI Tzu Ying</a>
+                  </div>
+                </li>
+                <!-- Woman 5 -->
+                <li class="card-item">
+                  <p class="card-position text-dark">5</p>
+                  <div class="card-info border-bottom border-helper-secondary">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/CHN.png"
+                        alt="中國國旗"
+                      />
+                      <span class="card-country-abbr">CHN</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#">HE Bing Jiao</a>
+                  </div>
+                </li>
+                <!-- Woman 6 -->
+                <li class="card-item">
+                  <p class="card-position text-dark">6</p>
+                  <div class="card-info border-bottom border-helper-secondary">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/ESP.png"
+                        alt="西班牙國旗"
+                      />
+                      <span class="card-country-abbr">ESP</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#"
+                      >Carolina MARIN</a
+                    >
+                  </div>
+                </li>
+                <!-- Woman 7 -->
+                <li class="card-item">
+                  <p class="card-position text-dark">7</p>
+                  <div class="card-info border-bottom border-helper-secondary">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/THA.png"
+                        alt="泰國國旗"
+                      />
+                      <span class="card-country-abbr">THA</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#"
+                      >Ratchanok INTANON</a
+                    >
+                  </div>
+                </li>
+                <!-- Woman 8 -->
+                <li class="card-item">
+                  <p class="card-position text-dark">8</p>
+                  <div class="card-info border-bottom border-helper-secondary">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/INA.png"
+                        alt="印度尼西亞國旗"
+                      />
+                      <span class="card-country-abbr">INA</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#"
+                      >Gregoria Mariska TUNJUNG</a
+                    >
+                  </div>
+                </li>
+                <!-- Woman 9 -->
+                <li class="card-item">
+                  <p class="card-position text-dark">9</p>
+                  <div class="card-info border-bottom border-helper-secondary">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/CHN.png"
+                        alt="中國國旗"
+                      />
+                      <span class="card-country-abbr">CHN</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#">HAN Yue</a>
+                  </div>
+                </li>
+                <!-- 最後一個沒有padding, border-bottom, active, 但text是dark -->
+                <!-- woman10 -->
+                <li class="card-item">
+                  <p class="card-position text-dark">10</p>
+                  <div class="card-info">
+                    <div class="card-country">
+                      <img
+                        class="card-country-img"
+                        src="../assets/images/countries/USA.png"
+                        alt="美國國旗"
+                      />
+                      <span class="card-country-abbr">USA</span>
+                    </div>
+                    <a class="card-name text-truncate" href="#">Beiwen ZHANG</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-6 d-none d-lg-block align-self-stretch">
+          <div class="card--ranking-sideImg"></div>
+        </div>
+      </div>
+      <ul class="pagination mt-6 mb-4 mb-lg-3">
+        <li>
+          <a class="pagination-item pagination-item--controller" href="#"
+            >pre</a
+          >
+        </li>
+        <li>
+          <a class="pagination-item pagination-item--active" href="#">1</a>
+        </li>
+        <li><a class="pagination-item" href="#">2</a></li>
+        <li><a class="pagination-item" href="#">3</a></li>
+        <li>
+          <a class="pagination-item pagination-item--controller" href="#"
+            >next</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

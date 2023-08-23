@@ -1,0 +1,30 @@
+.contest{
+  &-buttons{
+    section+section{
+      margin-left: 12px;
+    }
+  }
+  &-manager{
+    li+li{
+      margin-top: 20px;
+    }
+  }
+  @include Tablet{
+    &-manager{
+      flex-wrap: wrap;
+      &>li{
+        width: 50%;
+      }
+      li+li{
+        margin-top: 0px;
+      }
+    }
+  }
+  @include Desktop{
+    &-manager{
+      &>li{
+        width: 25%;
+      }
+    }
+  }
+}

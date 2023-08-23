@@ -1,0 +1,147 @@
+<!--! 使用者頁面 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/meta'); -%>
+    <title>Profile</title>
+  </head>
+  <body>
+    <%- include('./layout/header-logIn'); -%>
+    <!--! banner -->
+    <div class="container-xl px-0">
+      <div class="banner--pureColor w-100 bg-green-third"></div>
+    </div>
+    <div class="container-xl px-0">
+      <div
+        class="row gx-0 justify-content-center align-items-center position-lg-relative up-100"
+      >
+        <!--! 大頭照＋名字＋國家 -->
+        <div class="col-12 col-lg-4 d-flex justify-content-center mb-5 mb-lg-0">
+          <div class="profile-bigHead position-relative mt-5 mt-lg-0">
+            <img
+              class="w-100 h-100 border rounded-circle"
+              src="../assets/images/profile-selfie.png"
+              alt="大頭照"
+            />
+            <a
+              class="position-absolute transform-bottom-right bottom-0 end-0 link-helper-secondary"
+              href="#"
+            >
+              <span class="material-symbols-outlined"> edit_square </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 text-center text-lg-start">
+          <p class="fs-3 fs-lg-2">Andy Liu</p>
+          <p class="fs-3 fs-lg-2 text-helper-fourth">Taiwan</p>
+        </div>
+        <div class="col-12 col-lg-8 mt-2 mt-lg-1 px-8 px-md-0">
+          <!--! profile-about me -->
+          <div
+            class="d-inline-block py-9 px-6 py-lg-8 px-lg-5 border border-helper-foutrh"
+          >
+            <span class="fs-lg-5">about me</span>
+          </div>
+          <div
+            class="row gx-0 align-items-center border border-helper-fourth py-7 px-6 py-lg-6 px-lg-4 mb-6 mb-lg-5"
+          >
+            <div class="col-4 col-md-3">
+              <span class="me-6 me-lg-4 fs-5 fs-lg-4">Username</span>
+            </div>
+            <div class="col-8 col-md-9">
+              <span class="fs-lg-5">Andy Liu</span>
+            </div>
+            <div class="col-4 col-md-3">
+              <span class="me-6 me-lg-4 fs-5 fs-lg-4">Email</span>
+            </div>
+            <div class="col-8 col-md-9">
+              <span class="fs-lg-5">abc@gmail.com</span>
+            </div>
+            <div class="col-4 col-md-3">
+              <span class="me-6 me-lg-5 fs-5 fs-lg-4">Country</span>
+            </div>
+            <div class="col-8 col-md-9">
+              <span class="fs-lg-5">Taiwan</span>
+            </div>
+          </div>
+          <!--! edit button -->
+          <div class="d-flex justify-content-end align-items-center mb-4">
+            <a
+              href="profile-edit.html"
+              class="btn-sm btn--secondary me-9 me-lg-8 py-8 px-6 rounded"
+              >Edit</a
+            >
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#changePassword"
+              class="btn-sm btn--secondary py-8 px-6 rounded"
+              >Change password</a
+            >
+            <!--! password modal -->
+            <div class="modal modal-md-center fade" id="changePassword">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold">Change Password</h1>
+                  </div>
+                  <div class="modal-body">
+                    <!-- 表單內容 -->
+                    <form action="" method="post">
+                      <div class="d-flex flex-column mb-8 mb-md-6 ps-8">
+                        <label for="currentPassword" class="fs-lg-5 fw-light"
+                          >Current Password</label
+                        >
+                        <input
+                          id="currentPassword"
+                          type="password"
+                          class="rounded width-60 ps-8 py-9"
+                        />
+                      </div>
+                      <div class="d-flex flex-column mb-8 mb-md-6 ps-8">
+                        <label for="newPassword" class="fs-lg-5 fw-light"
+                          >New Password</label
+                        >
+                        <input
+                          id="NewPassword"
+                          type="password"
+                          class="rounded width-60 ps-8 py-9"
+                        />
+                      </div>
+                      <div class="d-flex flex-column mb-8 mb-md-6 ps-8">
+                        <label for="confirmPassword" class="fs-lg-5 fw-light"
+                          >Confirm Password</label
+                        >
+                        <input
+                          id="confirmPassword"
+                          type="password"
+                          class="rounded width-60 ps-8 py-9"
+                        />
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a
+                          type="button"
+                          class="btn-sm btn--secondary me-8 py-8 px-6 rounded"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </a>
+                        <input
+                          type="submit"
+                          class="btn-sm btn--secondary py-8 px-6 rounded"
+                          value="Change"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

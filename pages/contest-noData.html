@@ -1,0 +1,79 @@
+<!--! Contest首頁-找不到資料 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/meta'); -%>
+    <title>Contest</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container-xl px-0">
+      <section class="banner">
+        <img
+          class="banner-img"
+          src="../assets/images/players/player-chou-tien-chen.jpeg"
+          alt="周天成"
+        />
+        <h3 class="banner-title">Contest</h3>
+      </section>
+    </div>
+    <div class="container-xl px-lg-0">
+      <!-- filter buttons -->
+      <section class="contest-buttons">
+        <div class="d-flex justify-content-end align-items-center mt-4 mb-5">
+          <!-- 日期 -->
+          <section class="datePicker">
+            <span class="material-symbols-outlined"> event_note </span>
+          </section>
+          <section class="dropdown">
+            <div class="dropdown-item">
+              <p>country</p>
+              <img
+                src="../assets/images/icons/arrow-down.png"
+                width="20"
+                height="20"
+                alt="黑色項下箭頭"
+              />
+            </div>
+            <div class="dropdown-content">
+              <ul class="overflow-y-scroll">
+                <li class="active">Taiwan</li>
+                <li>Denmark</li>
+                <li>Japen</li>
+                <li>Indonesia</li>
+                <li>Korea</li>
+                <li>Australia</li>
+              </ul>
+            </div>
+          </section>
+          <section class="dropdown">
+            <div class="dropdown-item">
+              <p>per page</p>
+              <img
+                src="../assets/images/icons/arrow-down.png"
+                width="20"
+                height="20"
+                alt="黑色項下箭頭"
+              />
+            </div>
+            <div class="dropdown-content">
+              <ul class="text-center">
+                <li class="active">8</li>
+                <li>16</li>
+                <li>32</li>
+                <li>72</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- contest cards -->
+      <section class="my-1">
+        <p class="text-center fs-1">Not Found</p>
+      </section>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

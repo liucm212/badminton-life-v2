@@ -1,0 +1,12 @@
+// RWD breakpoint
+// 小於575px
+@mixin Tablet{ // 576-991px
+  @media (min-width:576px) {
+    @content;
+  }
+}
+@mixin Desktop{ // 大於992px
+  @media (min-width:992px) {
+    @content;
+  }
+}

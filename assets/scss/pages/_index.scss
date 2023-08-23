@@ -1,0 +1,63 @@
+// menu-title
+.menu-title{
+  font-size: 24px;
+  font-weight: 700;
+  padding: 40px 0;
+  border-top: 1px solid var(--bs-helper-secondary);
+  text-align: center;
+  &--ranking{
+    padding: 40px 0 68px;
+  }
+  @include Desktop{
+    font-size: 40px;
+    padding: 120px 0 80px;
+    &--ranking{
+      padding: 120px 0 128px;
+    }
+  }
+}
+
+// tryIt
+.menu-tryIt{
+  &-banner{
+    margin: 0 auto;
+    @include Desktop{
+      width: 50%;
+    }
+    
+  }
+  &--right{
+    padding: 40px 0;
+    text-align: center;
+    @include Desktop{
+      padding: 0 82.5px;
+      width: 50%;
+      text-align: start;
+    }
+  }
+  &-img{
+    margin-left:auto;
+    margin-right:auto;
+    @include Desktop{
+      margin-left:0;
+      margin-right:0;
+    }
+  }
+  &-content{
+    color: var(--bs-helper-secondary);
+    font-weight: 400;
+    @include Desktop{
+      font-size: 24px;
+    }
+  }
+  &-button{
+    color: var(--bs-white);
+    font-weight: 700; 
+    @include Desktop{
+      padding: 20px 48px;
+      font-size: 24px;
+    }
+  }
+}
+
+
