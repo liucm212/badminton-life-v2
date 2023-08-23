@@ -29,6 +29,7 @@
           </section>
           <section class="dropdown">
             <div class="dropdown-item">
+              <span class="dropdown-tag">country</span>
               <p>country</p>
               <img
                 src="../assets/images/icons/arrow-down.png"
@@ -50,6 +51,7 @@
           </section>
           <section class="dropdown">
             <div class="dropdown-item">
+              <span class="dropdown-tag">per page</span>
               <p>per page</p>
               <img
                 src="../assets/images/icons/arrow-down.png"
@@ -76,7 +78,7 @@
           class="contest-manager d-flex flex-column flex-sm-row align-items-center"
         >
           <li>
-            <a class="card card--contest" href="#">
+            <a class="card card--contest" href="contest-detail.html">
               <img
                 class="card-img mb-6"
                 src="../assets/images/schedule-01.png"
@@ -99,7 +101,7 @@
             </a>
           </li>
           <li>
-            <a class="card card--contest" href="#">
+            <a class="card card--contest" href="contest-detail.html">
               <img
                 class="card-img mb-6"
                 src="../assets/images/schedule-02.png"
@@ -122,7 +124,7 @@
             </a>
           </li>
           <li>
-            <a class="card card--contest" href="#">
+            <a class="card card--contest" href="contest-detail.html">
               <img
                 class="card-img mb-6"
                 src="../assets/images/schedule-03.png"
@@ -145,7 +147,7 @@
             </a>
           </li>
           <li>
-            <a class="card card--contest" href="#">
+            <a class="card card--contest" href="contest-detail.html">
               <img
                 class="card-img mb-6"
                 src="../assets/images/schedule-01.png"
@@ -168,7 +170,7 @@
             </a>
           </li>
           <li>
-            <a class="card card--contest" href="#">
+            <a class="card card--contest" href="contest-detail.html">
               <img
                 class="card-img mb-6"
                 src="../assets/images/schedule-02.png"
@@ -191,7 +193,7 @@
             </a>
           </li>
           <li>
-            <a class="card card--contest" href="#">
+            <a class="card card--contest" href="contest-detail.html">
               <img
                 class="card-img mb-6"
                 src="../assets/images/schedule-03.png"
@@ -214,7 +216,7 @@
             </a>
           </li>
           <li>
-            <a class="card card--contest" href="#">
+            <a class="card card--contest" href="contest-detail.html">
               <img
                 class="card-img mb-6"
                 src="../assets/images/schedule-01.png"
@@ -237,7 +239,7 @@
             </a>
           </li>
           <li>
-            <a class="card card--contest" href="#">
+            <a class="card card--contest" href="contest-detail.html">
               <img
                 class="card-img mb-6"
                 src="../assets/images/schedule-02.png"
@@ -260,7 +262,7 @@
             </a>
           </li>
           <li>
-            <a class="card card--contest" href="#">
+            <a class="card card--contest" href="contest-detail.html">
               <img
                 class="card-img mb-6"
                 src="../assets/images/schedule-03.png"
@@ -283,7 +285,7 @@
             </a>
           </li>
           <li>
-            <a class="card card--contest" href="#">
+            <a class="card card--contest" href="contest-detail.html">
               <img
                 class="card-img mb-6"
                 src="../assets/images/schedule-01.png"
@@ -306,7 +308,7 @@
             </a>
           </li>
           <li>
-            <a class="card card--contest" href="#">
+            <a class="card card--contest" href="contest-detail.html">
               <img
                 class="card-img mb-6"
                 src="../assets/images/schedule-02.png"
@@ -329,7 +331,7 @@
             </a>
           </li>
           <li>
-            <a class="card card--contest" href="#">
+            <a class="card card--contest" href="contest-detail.html">
               <img
                 class="card-img mb-6"
                 src="../assets/images/schedule-03.png"
@@ -355,25 +357,7 @@
       </section>
 
       <!-- pagination -->
-      <section>
-        <ul class="pagination mt-6 mb-4 mb-lg-3">
-          <li>
-            <a class="pagination-item pagination-item--controller" href="#"
-              >pre</a
-            >
-          </li>
-          <li>
-            <a class="pagination-item pagination-item--active" href="#">1</a>
-          </li>
-          <li><a class="pagination-item" href="#">2</a></li>
-          <li><a class="pagination-item" href="#">3</a></li>
-          <li>
-            <a class="pagination-item pagination-item--controller" href="#"
-              >next</a
-            >
-          </li>
-        </ul>
-      </section>
+      <%- include('./layout/pagination') -%>
     </div>
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>

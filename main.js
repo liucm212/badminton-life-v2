@@ -1,3 +1,10 @@
+// bootstrap modal
+import 'bootstrap/js/dist/modal';
+// all.scss
 import './assets/scss/all.scss';
 
-console.log("Hello world!");
+// js files for pages.
+import './js/navbar'
+import './js/event'
+import './js/calendar'
+import './js/dropdown'

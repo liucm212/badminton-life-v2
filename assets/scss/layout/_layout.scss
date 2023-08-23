@@ -164,9 +164,11 @@
   background-color: var(--bs-white);
   outline: 1px solid var(--bs-helper-secondary);
   padding: 20px 40px;
-  transition: background-color 0.3s;
+  transform-origin: center center;
+  transition: 0.3s;
   &:hover{
     background-color: var(--bs-green-fourth);
+    scale: 1.1;
   }
   .card-title{
     color: var(--bs-green-primary);
@@ -267,7 +269,9 @@
   &-sideImg{
     width: 100%;
     height: 100%;
-    background: url('../images/player-head-viktor-axelsen.png') no-repeat center;
+    // 預防沒有照片的時候
+    background-color: var(--bs-green-fourth);
+    background: url('../images/players/player-full-viktor-axelsen.png') no-repeat center;
   }
   //& Desktop
   @include Desktop{
@@ -314,6 +318,37 @@
   transform: translate(-50%, -50%);
 }
 
+// card -- leftImgrightName
+.card--leftImgRightName{
+  transition: 0.1s;
+  transform-origin: center center;
+  a{
+    min-width: 200px;
+    display: inline-block;
+    display: flex;
+    align-items:center;
+    border: 1px solid var(--bs-helper-primary);
+  }
+  .card-img{
+    width: 60px;
+    height: 60px;
+  }
+  .card-name{
+    margin: 0 auto;
+  }
+  &:hover{
+    background-color: var(--bs-green-fourth);
+    scale: 1.1;
+
+  }
+  @include Desktop{
+    .card-img{
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
 // dropdown
 .dropdown{
   display: flex;
@@ -322,6 +357,7 @@
   font-size: 1rem;
   background-color: var(--bs-white);
   &-item{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -335,6 +371,14 @@
     }
     &:active{
       background-color: var(--bs-helper-third);
+    }
+    .dropdown-tag{
+      position: absolute;
+      transform: translate(0, -100%);
+      top: 0;
+      left: 0;
+      font-size: 12px;
+      color: var(--bs-helper-third);
     }
   }
   &-content{
@@ -362,7 +406,6 @@
     }
   }
   @include Desktop{
-    font-size: 1.25rem;
     &-item{
       padding: 12px 20px;
     }
