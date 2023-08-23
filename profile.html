@@ -1,0 +1,267 @@
+<!--! 使用者頁面 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta data -->
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- font family : Noto Sans -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Noto+Sans:wght@400;700;900&display=swap"
+  rel="stylesheet"
+/>
+<!-- google icons -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+/>
+    <title>Profile</title>
+    <script type="module" crossorigin src="/badminton-life-v2/assets/main-2a23db0d.js"></script>
+    <link rel="stylesheet" href="/badminton-life-v2/assets/main-c72efd1b.css">
+  </head>
+  <body>
+    <div class="header container-xl px-0">
+  <div class="row g-0 align-items-lg-center">
+    <div class="col-12 col-lg-4">
+      <h1 class="header-logo">
+        <a href="index.html">
+          <img
+            class="d-lg-none"
+            src="/badminton-life-v2/assets/Logo-sm-abe70c10.png"
+            alt="Badminton Life字樣，左邊有一個毛球圖案"
+          />
+          <img
+            class="d-none d-lg-block"
+            src="/badminton-life-v2/assets/Logo-de22c530.png"
+            alt="Badminton Life字樣，左邊有一個毛球圖案"
+          />
+        </a>
+        <a id="openIcon" class="header-icon-menu d-lg-none" href="#"
+          ><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB4SURBVHgB7dfBDYAgEATAxVgLBJtRK1Wb0WAz6BvvB+Qw7Dw3PMh99g4gon8zUugmN0NBOMORZqP4MsYdOj4DG9C45j9IRNQ7gwzO2w0Fhete02xEngWVNV91uRPU2nqIiLoh38XeRih4u5hnZ3FyFxtTfUshol48RegQH0eIL6oAAAAASUVORK5CYII="
+            alt="三條左右延伸的黑色橫槓，其中中間的橫槓由右往左延伸，但沒有延伸到底。"
+        /></a>
+        <a id="closeIcon" class="header-icon-close d-none d-lg-none" href="#"
+          ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgB7ZexTsMwEEDPTUY2qLqx4ab5hgqxsjOwUQn+o+IH+IIOMCLE3B/oBzAFyC+kYmKCNCauVRQhHJ99181vSqw758VR7myASCQSiaCQmbzK8/wAiOg5xpPxNTZ+gAlq5eZCwP1G1UuKpM7dQL0EUAuZyzkmR7gCzNuqRWdolYj0vCiKT/DgV07BdDemFMzKt/KhL8+5golIHtvXWHWGpr4r+Z+cnjMdpM+uXOcKWh+AXEmbXAK4r4AStD7IIUmVM+Ee+EhyyJkUTzCSXHImLYA+SX3BJWdSA7FJbmdkkjPpBCySwCVnpiBilWSQ06BaXRAKWNjvJw5si114f5JdSwzoOKyCfXVOX4a2RRZBTBGm9G6SoE+H4JKkbRYcpYRDMny7haxzVEmnIEfjp0g6C3XTfF9Qe6uO3f7hf3bmtaovXbmJK2C9/ngZHh2KdvIzSvuqquprNBw9KdGctrfH7SHs9v21vAMu5ETecB07s+xkBpFIJBJB8QOnXEKFDI4wNgAAAABJRU5ErkJggg==" alt="叉叉記號"
+        /></a>
+      </h1>
+    </div>
+    <!--! navbar  -->
+    <div class="header-menu col-12 col-lg-8">
+      <nav class="header-nav d-lg-flex justify-content-end">
+        <ul id="mobileNavbar" class="list d-none d-lg-flex">
+          <li class="col-12 col-lg-2">
+            <a class="list-item" href="ranking.html">Ranking</a>
+          </li>
+          <li class="col-12 col-lg-2">
+            <a class="list-item" href="player.html">Player</a>
+          </li>
+          <li class="col-12 col-lg-2">
+            <a class="list-item" href="contest.html">Contest</a>
+          </li>
+          <li class="col-12 col-lg-2">
+            <a class="list-item" href="forum.html">Forum</a>
+          </li>
+          <li class="col-12 col-lg-2">
+            <a class="list-item" href="analysis.html">Analysis</a>
+          </li>
+          <li class="col-12 col-lg-2 align-self-stretch">
+            <div
+              class="list-item list-item--signIn d-none d-lg-block position-relative d-flex align-items-center justify-content-center"
+            >
+              <span
+                class="material-symbols-outlined vertical-align-center fs-3"
+              >
+                account_circle
+              </span>
+              <span class="material-symbols-outlined fs-4"> expand_more </span>
+              <div class="position-absolute top-100 end-0">
+                <ul>
+                  <li>
+                    <a class="item-content bg-helper-fourth" href="profile.html"
+                      >Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a class="item-content bg-helper-fourth" href="index.html"
+                      >Log out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="col-12 d-lg-none">
+            <a class="list-item bg-helper-fourth" href="profile.html"
+              >Profile</a
+            >
+          </li>
+          <li class="col-12 d-lg-none">
+            <a class="list-item bg-helper-fourth" href="index.html">Sign out</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+    <!--! banner -->
+    <div class="container-xl px-0">
+      <div class="banner--pureColor w-100 bg-green-third"></div>
+    </div>
+    <div class="container-xl px-0">
+      <div
+        class="row gx-0 justify-content-center align-items-center position-lg-relative up-100"
+      >
+        <!--! 大頭照＋名字＋國家 -->
+        <div class="col-12 col-lg-4 d-flex justify-content-center mb-5 mb-lg-0">
+          <div class="profile-bigHead position-relative mt-5 mt-lg-0">
+            <img
+              class="w-100 h-100 border rounded-circle"
+              src="/badminton-life-v2/assets/profile-selfie-c78e686d.png"
+              alt="大頭照"
+            />
+            <a
+              class="position-absolute transform-bottom-right bottom-0 end-0 link-helper-secondary"
+              href="#"
+            >
+              <span class="material-symbols-outlined"> edit_square </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 text-center text-lg-start">
+          <p class="fs-3 fs-lg-2">Andy Liu</p>
+          <p class="fs-3 fs-lg-2 text-helper-fourth">Taiwan</p>
+        </div>
+        <div class="col-12 col-lg-8 mt-2 mt-lg-1 px-8 px-md-0">
+          <!--! profile-about me -->
+          <div
+            class="d-inline-block py-9 px-6 py-lg-8 px-lg-5 border border-helper-foutrh"
+          >
+            <span class="fs-lg-5">about me</span>
+          </div>
+          <div
+            class="row gx-0 align-items-center border border-helper-fourth py-7 px-6 py-lg-6 px-lg-4 mb-6 mb-lg-5"
+          >
+            <div class="col-4 col-md-3">
+              <span class="me-6 me-lg-4 fs-5 fs-lg-4">Username</span>
+            </div>
+            <div class="col-8 col-md-9">
+              <span class="fs-lg-5">Andy Liu</span>
+            </div>
+            <div class="col-4 col-md-3">
+              <span class="me-6 me-lg-4 fs-5 fs-lg-4">Email</span>
+            </div>
+            <div class="col-8 col-md-9">
+              <span class="fs-lg-5">abc@gmail.com</span>
+            </div>
+            <div class="col-4 col-md-3">
+              <span class="me-6 me-lg-5 fs-5 fs-lg-4">Country</span>
+            </div>
+            <div class="col-8 col-md-9">
+              <span class="fs-lg-5">Taiwan</span>
+            </div>
+          </div>
+          <!--! edit button -->
+          <div class="d-flex justify-content-end align-items-center mb-4">
+            <a
+              href="profile-edit.html"
+              class="btn-sm btn--secondary me-9 me-lg-8 py-8 px-6 rounded"
+              >Edit</a
+            >
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#changePassword"
+              class="btn-sm btn--secondary py-8 px-6 rounded"
+              >Change password</a
+            >
+            <!--! password modal -->
+            <div class="modal modal-md-center fade" id="changePassword">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold">Change Password</h1>
+                  </div>
+                  <div class="modal-body">
+                    <!-- 表單內容 -->
+                    <form action="" method="post">
+                      <div class="d-flex flex-column mb-8 mb-md-6 ps-8">
+                        <label for="currentPassword" class="fs-lg-5 fw-light"
+                          >Current Password</label
+                        >
+                        <input
+                          id="currentPassword"
+                          type="password"
+                          class="rounded width-60 ps-8 py-9"
+                        />
+                      </div>
+                      <div class="d-flex flex-column mb-8 mb-md-6 ps-8">
+                        <label for="newPassword" class="fs-lg-5 fw-light"
+                          >New Password</label
+                        >
+                        <input
+                          id="NewPassword"
+                          type="password"
+                          class="rounded width-60 ps-8 py-9"
+                        />
+                      </div>
+                      <div class="d-flex flex-column mb-8 mb-md-6 ps-8">
+                        <label for="confirmPassword" class="fs-lg-5 fw-light"
+                          >Confirm Password</label
+                        >
+                        <input
+                          id="confirmPassword"
+                          type="password"
+                          class="rounded width-60 ps-8 py-9"
+                        />
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a
+                          type="button"
+                          class="btn-sm btn--secondary me-8 py-8 px-6 rounded"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </a>
+                        <input
+                          type="submit"
+                          class="btn-sm btn--secondary py-8 px-6 rounded"
+                          value="Change"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="border-top border-bottom border-helper-primary">
+  <div
+    class="container-xl d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center py-4 px-lg-0"
+  >
+    <a href="index.html" class="d-flex justify-content-center mb-6 mb-lg-0">
+      <img
+        class="d-lg-none"
+        src="/badminton-life-v2/assets/Logo-sm-abe70c10.png"
+        alt="Badminton Life字樣，左邊有一個毛球圖案"
+      />
+      <img
+        class="d-none d-lg-block"
+        src="/badminton-life-v2/assets/Logo-de22c530.png"
+        alt="Badminton Life字樣，左邊有一個毛球圖案"
+      />
+    </a>
+    <p class="footer-copyright text-center">
+      Copyright &copy; 2023 安迪劉. All rights reserved.
+    </p>
+  </div>
+</footer>
+    
+  </body>
+</html>

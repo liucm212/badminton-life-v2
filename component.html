@@ -1,0 +1,210 @@
+<!-- ! 建立元件測試頁面 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta data -->
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- font family : Noto Sans -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Noto+Sans:wght@400;700;900&display=swap"
+  rel="stylesheet"
+/>
+<!-- google icons -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+/>
+    <title>Component</title>
+    <script type="module" crossorigin src="/badminton-life-v2/assets/main-2a23db0d.js"></script>
+    <link rel="stylesheet" href="/badminton-life-v2/assets/main-c72efd1b.css">
+  </head>
+  <body>
+    <header class="header container-xl px-0">
+  <div class="row g-0 align-items-lg-center">
+    <div class="col-12 col-lg-4">
+      <h1 class="header-logo">
+        <a href="index.html">
+          <img
+            class="d-lg-none"
+            src="/badminton-life-v2/assets/Logo-sm-abe70c10.png"
+            alt="Badminton Life字樣，左邊有一個毛球圖案"
+          />
+          <img
+            class="d-none d-lg-block"
+            src="/badminton-life-v2/assets/Logo-de22c530.png"
+            alt="Badminton Life字樣，左邊有一個毛球圖案"
+          />
+        </a>
+        <div>
+          <a id="openIcon" class="header-icon-menu d-lg-none" href="#"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB4SURBVHgB7dfBDYAgEATAxVgLBJtRK1Wb0WAz6BvvB+Qw7Dw3PMh99g4gon8zUugmN0NBOMORZqP4MsYdOj4DG9C45j9IRNQ7gwzO2w0Fhete02xEngWVNV91uRPU2nqIiLoh38XeRih4u5hnZ3FyFxtTfUshol48RegQH0eIL6oAAAAASUVORK5CYII="
+              alt="三條左右延伸的黑色橫槓，其中中間的橫槓由右往左延伸，但沒有延伸到底。"
+          /></a>
+          <a id="closeIcon" class="header-icon-close d-none d-lg-none" href="#"
+            ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgB7ZexTsMwEEDPTUY2qLqx4ab5hgqxsjOwUQn+o+IH+IIOMCLE3B/oBzAFyC+kYmKCNCauVRQhHJ99181vSqw758VR7myASCQSiaCQmbzK8/wAiOg5xpPxNTZ+gAlq5eZCwP1G1UuKpM7dQL0EUAuZyzkmR7gCzNuqRWdolYj0vCiKT/DgV07BdDemFMzKt/KhL8+5golIHtvXWHWGpr4r+Z+cnjMdpM+uXOcKWh+AXEmbXAK4r4AStD7IIUmVM+Ee+EhyyJkUTzCSXHImLYA+SX3BJWdSA7FJbmdkkjPpBCySwCVnpiBilWSQ06BaXRAKWNjvJw5si114f5JdSwzoOKyCfXVOX4a2RRZBTBGm9G6SoE+H4JKkbRYcpYRDMny7haxzVEmnIEfjp0g6C3XTfF9Qe6uO3f7hf3bmtaovXbmJK2C9/ngZHh2KdvIzSvuqquprNBw9KdGctrfH7SHs9v21vAMu5ETecB07s+xkBpFIJBJB8QOnXEKFDI4wNgAAAABJRU5ErkJggg==" alt="叉叉記號"
+          /></a>
+        </div>
+      </h1>
+    </div>
+    <!-- mobile navbar -->
+    <div class="col-12 col-lg-8">
+      <nav class="header-nav d-lg-flex justify-content-end">
+        <ul id="mobileNavbar" class="list d-none d-lg-flex">
+          <li class="col-12 col-lg-2">
+            <a class="list-item" href="ranking.html">Ranking</a>
+          </li>
+          <li class="col-12 col-lg-2">
+            <a class="list-item" href="player.html">Player</a>
+          </li>
+          <li class="col-12 col-lg-2">
+            <a class="list-item" href="contest.html">Contest</a>
+          </li>
+          <li class="col-12 col-lg-2">
+            <a class="list-item" href="forum.html">Forum</a>
+          </li>
+          <li class="col-12 col-lg-2">
+            <a class="list-item" href="analysis.html">Analysis</a>
+          </li>
+          <li class="col-12 col-lg-2">
+            <a class="list-item list-item--signIn" href="logIn.html">Log In</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+ <div id="eventInfo" class="container-xl px-0">
+  <div class="event px-8 d-flex justify-content-between align-items-center">
+    <div class="event-left my-7 d-flex align-items-center">
+      <img
+        class="event-img me-9 d-lg-none"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHuSURBVHgB7ZRNTsJAFMffTEddmJgeodwAb1B2xvhRv/ZyA038SFfiwpDgwngC2ItYwYU78AbcALyAwcQYhXaeMwimLaUFARemv6SLvvl3/m/evD6AmJiYmD9i72I1GRQnMAV2s2s6MHIGSFROmVE6Kj3/GOdWk0iUK7Gmg8NTRfOh5v6WwQS4jHVA75qR0VW2uHSGCAe9tRYHovn3+FUFPMY+RAU0iu0EAL0TxqqMIefXzgfLWBmr5dePVYGwE7uxGauzDhfHw5ptK2nLLDeHaVmgCSWbhFDVHUfCtSjjPtah1TKyxrJlWs0orSeB3cv1ar+s6HfC8W5rFPOBBILudBJ2chuNoPjtSTkRnMCUETXTojQzTcB2aCJK402AQF1cfRKmxCh9QN0vxePyspxWyOFatGDkx2Hs5Dbz27n1/Sjd0Nbu/o4KrXqjWEMgWtjdykGk8E5K6PK9UN122luW+dgM0tNhG/VmtndyIXmSHUwcTIdV6OakUnBpkkyZb+yJihjZFW3kBLp+CPeBBmalEJWI1DgOTYmeOu/uBbhPYU4fKwHCeSFs3Z+IfPjby2t/XTZh8bSckX+D7KuS0A94hBkYV4YqZrocJt9jWZxGbghTJLQCcqYT0XgwQyIHUeddScMCHHZfPqEFMTH/jS/PcNS4CMzHdAAAAABJRU5ErkJggg=="
+        alt="綠色大聲公。"
+      />
+      <img
+        class="event-img me-9 d-none d-lg-block"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOsSURBVHgB7ZhPSBRRHMd/780slFp4CToUJAQVJBgUeeiwF8lIt9VdQU8VnYLEIt1VUlwwqFXBQ5eCDh4Chd3VXbV/ICQk1KGDh6ACQQ8ePHQw8x86+16/t2ls7uzO7My6LvI+h93Zmfd7M9/9zfv9fu8HIJFIJBKJRCKRSCQSHQjsM7cCzkOrRUWlId+bRbM2Db2uag7QozloVfRBdCnT2H0T6B5wl6qb7D4+QQv+LAUOKwzUcyP+kYV0Np7+mrOE0QE8rN4+9TzsG7ub6T55F5giLAktTsuiHdF5XRuNdeOfcA9/qskmnLLySOvE93T3UyFP/BO2xVpQXKkZG2fAqR4rPnKTb7F+gBQbDf0zGFfUjK/2ngu0Ikzg7XM7CY8/45ycT7lIyFR8U2seffT6q9E8eybQqjBBXd/188DZB757BRGYJYx0hHyxsNm5KOQYIcwbdAXULTaHD9QNkJ04wWgbeobAq6RTS4SQzpLV5fKQ37w4Qc48aMdjemga7VIV5kUvDnO+2TXie7tgZR5DgfXBaycUxeHhHCoJ54fSjcNA4MyFsB1ENG3qrzk51DrxE2yQVqBY5LgOHuJhNWd/x/E8ZxW74gS6Ar19riEU1wgHAH0Pcn68AKq4BJ7eG+34dcbE0B8RX+zp7pN5S/RWIcCu4qfTeCSfwo8UgTlPE4VGwXsQq5ZFjODzxsOIbslW8ALDbWNNYIMD/4rqCuRA3+PXBhwAdAWKcEtAK8MXux2TxTzsEw19tXcaAg0lYANTyc4TdF1EsZcJ4Y3o3iuwRyRveL29tTX4eON4uIj3DoTbYi/AAlllc0+wxk0IHTWYcRb/hNNggR2Bok+zUnT0E56qSLo8QyhrDrVOTEMWZBVk6PrhSVyhGdcm7gKqOKd1qHQGLPKruPg0T91mVXBGP4oy0v3EfQpMkpXAUCC0QoC+MxoX8UejYV/sglWhYj94ZG35HB52we5gx6FRVeLfvL2uHuFpo7myThNxYDGzY+0IHQxMbWDH7HEi2HEY/v8qEcI68TWeqw/WVmaaJ2uBzKFEIdHwMY8doaJfGvaPNWE1c0nP9uj674zzZS1wu9E6CRawIzTiH/sibAnw2yAiawLSJTydyc5SJYMb3wmwQbJQDOOfuci1BKYdyqZhcRHyjQ+WrC2XAaWtOMdLo/GWNn2ijUGJYw50atl0zdv9wpIHR/yJBpDlNJBPrBfbdHdkK0wsb5e0LRpRFJ7SddYc2gpIJBKJRCKRSHLAH7TubruaiZUIAAAAAElFTkSuQmCC"
+        alt="綠色大聲公。"
+      />
+      <p class="event-content text-truncate overflow-hidden">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed assumenda
+        veniam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
+        assumenda veniam!
+      </p>
+    </div>
+    <div id="eventCloseIcon" class="event-right">
+      <a class="event-img d-lg-none" href="#">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADgSURBVHgB7ZI/DoIwFMa/h4kHEHVmoRQuJaOb3kBv4Oyk3kCP4uS/xV00zCbypIlEg0CBMPJLmjR9X39p+wq0NI6U0pKemOlytmsv4qiVXjfSC0yvCTPmwrNXeTLhiZUBmgJdH6VO6Yq14wrOkiqZqqkMqpAlLSMjaKQMjJh4raLE8OMNm+Ph7NcS/ko/4UKZwoCGiMDfObMu3ykqqjdLrhmPfXxG3xz2rPvtsUNVshpQ1P3KstpSIcVc9zUSqeM6i3Tt7w0H/cEVFNHpcBnnCYPgvjX7Jhl4LoMgDNHSKG+NblpVT81/zgAAAABJRU5ErkJggg==" alt="黑色小叉叉" />
+      </a>
+      <a class="event-img d-none d-lg-block" href="#">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgB7ZexTsMwEEDPTUY2qLqx4ab5hgqxsjOwUQn+o+IH+IIOMCLE3B/oBzAFyC+kYmKCNCauVRQhHJ99181vSqw758VR7myASCQSiaCQmbzK8/wAiOg5xpPxNTZ+gAlq5eZCwP1G1UuKpM7dQL0EUAuZyzkmR7gCzNuqRWdolYj0vCiKT/DgV07BdDemFMzKt/KhL8+5golIHtvXWHWGpr4r+Z+cnjMdpM+uXOcKWh+AXEmbXAK4r4AStD7IIUmVM+Ee+EhyyJkUTzCSXHImLYA+SX3BJWdSA7FJbmdkkjPpBCySwCVnpiBilWSQ06BaXRAKWNjvJw5si114f5JdSwzoOKyCfXVOX4a2RRZBTBGm9G6SoE+H4JKkbRYcpYRDMny7haxzVEmnIEfjp0g6C3XTfF9Qe6uO3f7hf3bmtaovXbmJK2C9/ngZHh2KdvIzSvuqquprNBw9KdGctrfH7SHs9v21vAMu5ETecB07s+xkBpFIJBJB8QOnXEKFDI4wNgAAAABJRU5ErkJggg==" alt="黑色叉叉" />
+      </a>
+    </div>
+  </div>
+</div>
+    <div class="container-xl px-md-0">
+      <ul
+        class="d-flex flex-column flex-md-row justify-content-center align-items-center"
+      >
+        <li>
+          <a class="card card--contest" href="#">
+            <img
+              class="card-img mb-6"
+              src="/badminton-life-v2/assets/schedule-01-a98c52ac.png"
+              alt="一個人手捏著羽毛球的球頭。"
+            />
+            <p class="card-title">YONEX US Open 2023</p>
+            <div class="d-flex">
+              <img
+                class="d-md-none"
+                src="/badminton-life-v2/assets/date-sm-15ab24ae.svg"
+                alt="月曆"
+              />
+              <img
+                class="d-none d-md-block"
+                src="/badminton-life-v2/assets/date-2792dd35.svg"
+                alt="月曆"
+              />
+              <span class="card-date">11 - 16 July</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="card card--contest" href="#">
+            <img
+              class="card-img mb-6"
+              src="/badminton-life-v2/assets/schedule-02-4167c7ec.png"
+              alt="一個人手捏著羽毛球的球頭。"
+            />
+            <p class="card-title">YONEX US Open 2023</p>
+            <div class="d-flex">
+              <img
+                class="d-md-none"
+                src="/badminton-life-v2/assets/date-sm-15ab24ae.svg"
+                alt="月曆"
+              />
+              <img
+                class="d-none d-md-block"
+                src="/badminton-life-v2/assets/date-2792dd35.svg"
+                alt="月曆"
+              />
+              <span class="card-date">11 - 16 July</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="card card--contest" href="#">
+            <img
+              class="card-img mb-6"
+              src="/badminton-life-v2/assets/schedule-03-c7e4ea7c.png"
+              alt="一個人手捏著羽毛球的球頭。"
+            />
+            <p class="card-title">YONEX US Open 2023</p>
+            <div class="d-flex">
+              <img
+                class="d-md-none"
+                src="/badminton-life-v2/assets/date-sm-15ab24ae.svg"
+                alt="月曆"
+              />
+              <img
+                class="d-none d-md-block"
+                src="/badminton-life-v2/assets/date-2792dd35.svg"
+                alt="月曆"
+              />
+              <span class="card-date">11 - 16 July</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <footer class="border-top border-bottom border-helper-primary">
+  <div
+    class="container-xl d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center py-4 px-lg-0"
+  >
+    <a href="index.html" class="d-flex justify-content-center mb-6 mb-lg-0">
+      <img
+        class="d-lg-none"
+        src="../assets/images/Logo-sm.png"
+        alt="Badminton Life字樣，左邊有一個毛球圖案"
+      />
+      <img
+        class="d-none d-lg-block"
+        src="../assets/images/Logo.png"
+        alt="Badminton Life字樣，左邊有一個毛球圖案"
+      />
+    </a>
+    <p class="footer-copyright text-center">
+      Copyright &copy; 2023 安迪劉. All rights reserved.
+    </p>
+  </div>
+</footer>
+ -->
+    
+  </body>
+</html>

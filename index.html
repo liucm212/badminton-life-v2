@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta data -->
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- font family : Noto Sans -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Noto+Sans:wght@400;700;900&display=swap"
+  rel="stylesheet"
+/>
+<!-- google icons -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+/>
+    <title>Badminton Life</title>
+    <script type="module" crossorigin src="/badminton-life-v2/assets/main-2a23db0d.js"></script>
+    <link rel="stylesheet" href="/badminton-life-v2/assets/main-c72efd1b.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header container-xl px-0">
+  <div class="row g-0 align-items-lg-center">
+    <div class="col-12 col-lg-4">
+      <h1 class="header-logo">
+        <a href="index.html">
+          <img
+            class="d-lg-none"
+            src="/badminton-life-v2/assets/Logo-sm-abe70c10.png"
+            alt="Badminton Life字樣，左邊有一個毛球圖案"
+          />
+          <img
+            class="d-none d-lg-block"
+            src="/badminton-life-v2/assets/Logo-de22c530.png"
+            alt="Badminton Life字樣，左邊有一個毛球圖案"
+          />
+        </a>
+        <div>
+          <a id="openIcon" class="header-icon-menu d-lg-none" href="#"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB4SURBVHgB7dfBDYAgEATAxVgLBJtRK1Wb0WAz6BvvB+Qw7Dw3PMh99g4gon8zUugmN0NBOMORZqP4MsYdOj4DG9C45j9IRNQ7gwzO2w0Fhete02xEngWVNV91uRPU2nqIiLoh38XeRih4u5hnZ3FyFxtTfUshol48RegQH0eIL6oAAAAASUVORK5CYII="
+              alt="三條左右延伸的黑色橫槓，其中中間的橫槓由右往左延伸，但沒有延伸到底。"
+          /></a>
+          <a id="closeIcon" class="header-icon-close d-none d-lg-none" href="#"
+            ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgB7ZexTsMwEEDPTUY2qLqx4ab5hgqxsjOwUQn+o+IH+IIOMCLE3B/oBzAFyC+kYmKCNCauVRQhHJ99181vSqw758VR7myASCQSiaCQmbzK8/wAiOg5xpPxNTZ+gAlq5eZCwP1G1UuKpM7dQL0EUAuZyzkmR7gCzNuqRWdolYj0vCiKT/DgV07BdDemFMzKt/KhL8+5golIHtvXWHWGpr4r+Z+cnjMdpM+uXOcKWh+AXEmbXAK4r4AStD7IIUmVM+Ee+EhyyJkUTzCSXHImLYA+SX3BJWdSA7FJbmdkkjPpBCySwCVnpiBilWSQ06BaXRAKWNjvJw5si114f5JdSwzoOKyCfXVOX4a2RRZBTBGm9G6SoE+H4JKkbRYcpYRDMny7haxzVEmnIEfjp0g6C3XTfF9Qe6uO3f7hf3bmtaovXbmJK2C9/ngZHh2KdvIzSvuqquprNBw9KdGctrfH7SHs9v21vAMu5ETecB07s+xkBpFIJBJB8QOnXEKFDI4wNgAAAABJRU5ErkJggg==" alt="叉叉記號"
+          /></a>
+        </div>
+      </h1>
+    </div>
+    <!-- mobile navbar -->
+    <div class="col-12 col-lg-8">
+      <nav class="header-nav d-lg-flex justify-content-end">
+        <ul id="mobileNavbar" class="list d-none d-lg-flex">
+          <li class="col-12 col-lg-2">
+            <a class="list-item" href="ranking.html">Ranking</a>
+          </li>
+          <li class="col-12 col-lg-2">
+            <a class="list-item" href="player.html">Player</a>
+          </li>
+          <li class="col-12 col-lg-2">
+            <a class="list-item" href="contest.html">Contest</a>
+          </li>
+          <li class="col-12 col-lg-2">
+            <a class="list-item" href="forum.html">Forum</a>
+          </li>
+          <li class="col-12 col-lg-2">
+            <a class="list-item" href="analysis.html">Analysis</a>
+          </li>
+          <li class="col-12 col-lg-2">
+            <a class="list-item list-item--signIn" href="logIn.html">Log In</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+    <!-- event -->
+    <div id="eventInfo" class="container-xl px-0">
+  <div class="event px-8 d-flex justify-content-between align-items-center">
+    <div class="event-left my-7 d-flex align-items-center">
+      <img
+        class="event-img me-9 d-lg-none"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHuSURBVHgB7ZRNTsJAFMffTEddmJgeodwAb1B2xvhRv/ZyA038SFfiwpDgwngC2ItYwYU78AbcALyAwcQYhXaeMwimLaUFARemv6SLvvl3/m/evD6AmJiYmD9i72I1GRQnMAV2s2s6MHIGSFROmVE6Kj3/GOdWk0iUK7Gmg8NTRfOh5v6WwQS4jHVA75qR0VW2uHSGCAe9tRYHovn3+FUFPMY+RAU0iu0EAL0TxqqMIefXzgfLWBmr5dePVYGwE7uxGauzDhfHw5ptK2nLLDeHaVmgCSWbhFDVHUfCtSjjPtah1TKyxrJlWs0orSeB3cv1ar+s6HfC8W5rFPOBBILudBJ2chuNoPjtSTkRnMCUETXTojQzTcB2aCJK402AQF1cfRKmxCh9QN0vxePyspxWyOFatGDkx2Hs5Dbz27n1/Sjd0Nbu/o4KrXqjWEMgWtjdykGk8E5K6PK9UN122luW+dgM0tNhG/VmtndyIXmSHUwcTIdV6OakUnBpkkyZb+yJihjZFW3kBLp+CPeBBmalEJWI1DgOTYmeOu/uBbhPYU4fKwHCeSFs3Z+IfPjby2t/XTZh8bSckX+D7KuS0A94hBkYV4YqZrocJt9jWZxGbghTJLQCcqYT0XgwQyIHUeddScMCHHZfPqEFMTH/jS/PcNS4CMzHdAAAAABJRU5ErkJggg=="
+        alt="綠色大聲公。"
+      />
+      <img
+        class="event-img me-9 d-none d-lg-block"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOsSURBVHgB7ZhPSBRRHMd/780slFp4CToUJAQVJBgUeeiwF8lIt9VdQU8VnYLEIt1VUlwwqFXBQ5eCDh4Chd3VXbV/ICQk1KGDh6ACQQ8ePHQw8x86+16/t2ls7uzO7My6LvI+h93Zmfd7M9/9zfv9fu8HIJFIJBKJRCKRSCQSHQjsM7cCzkOrRUWlId+bRbM2Db2uag7QozloVfRBdCnT2H0T6B5wl6qb7D4+QQv+LAUOKwzUcyP+kYV0Np7+mrOE0QE8rN4+9TzsG7ub6T55F5giLAktTsuiHdF5XRuNdeOfcA9/qskmnLLySOvE93T3UyFP/BO2xVpQXKkZG2fAqR4rPnKTb7F+gBQbDf0zGFfUjK/2ngu0Ikzg7XM7CY8/45ycT7lIyFR8U2seffT6q9E8eybQqjBBXd/188DZB757BRGYJYx0hHyxsNm5KOQYIcwbdAXULTaHD9QNkJ04wWgbeobAq6RTS4SQzpLV5fKQ37w4Qc48aMdjemga7VIV5kUvDnO+2TXie7tgZR5DgfXBaycUxeHhHCoJ54fSjcNA4MyFsB1ENG3qrzk51DrxE2yQVqBY5LgOHuJhNWd/x/E8ZxW74gS6Ar19riEU1wgHAH0Pcn68AKq4BJ7eG+34dcbE0B8RX+zp7pN5S/RWIcCu4qfTeCSfwo8UgTlPE4VGwXsQq5ZFjODzxsOIbslW8ALDbWNNYIMD/4rqCuRA3+PXBhwAdAWKcEtAK8MXux2TxTzsEw19tXcaAg0lYANTyc4TdF1EsZcJ4Y3o3iuwRyRveL29tTX4eON4uIj3DoTbYi/AAlllc0+wxk0IHTWYcRb/hNNggR2Bok+zUnT0E56qSLo8QyhrDrVOTEMWZBVk6PrhSVyhGdcm7gKqOKd1qHQGLPKruPg0T91mVXBGP4oy0v3EfQpMkpXAUCC0QoC+MxoX8UejYV/sglWhYj94ZG35HB52we5gx6FRVeLfvL2uHuFpo7myThNxYDGzY+0IHQxMbWDH7HEi2HEY/v8qEcI68TWeqw/WVmaaJ2uBzKFEIdHwMY8doaJfGvaPNWE1c0nP9uj674zzZS1wu9E6CRawIzTiH/sibAnw2yAiawLSJTydyc5SJYMb3wmwQbJQDOOfuci1BKYdyqZhcRHyjQ+WrC2XAaWtOMdLo/GWNn2ijUGJYw50atl0zdv9wpIHR/yJBpDlNJBPrBfbdHdkK0wsb5e0LRpRFJ7SddYc2gpIJBKJRCKRSHLAH7TubruaiZUIAAAAAElFTkSuQmCC"
+        alt="綠色大聲公。"
+      />
+      <p class="event-content text-truncate overflow-hidden">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed assumenda
+        veniam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
+        assumenda veniam!
+      </p>
+    </div>
+    <div id="eventCloseIcon" class="event-right">
+      <a class="event-img d-lg-none" href="#">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADgSURBVHgB7ZI/DoIwFMa/h4kHEHVmoRQuJaOb3kBv4Oyk3kCP4uS/xV00zCbypIlEg0CBMPJLmjR9X39p+wq0NI6U0pKemOlytmsv4qiVXjfSC0yvCTPmwrNXeTLhiZUBmgJdH6VO6Yq14wrOkiqZqqkMqpAlLSMjaKQMjJh4raLE8OMNm+Ph7NcS/ko/4UKZwoCGiMDfObMu3ykqqjdLrhmPfXxG3xz2rPvtsUNVshpQ1P3KstpSIcVc9zUSqeM6i3Tt7w0H/cEVFNHpcBnnCYPgvjX7Jhl4LoMgDNHSKG+NblpVT81/zgAAAABJRU5ErkJggg==" alt="黑色小叉叉" />
+      </a>
+      <a class="event-img d-none d-lg-block" href="#">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgB7ZexTsMwEEDPTUY2qLqx4ab5hgqxsjOwUQn+o+IH+IIOMCLE3B/oBzAFyC+kYmKCNCauVRQhHJ99181vSqw758VR7myASCQSiaCQmbzK8/wAiOg5xpPxNTZ+gAlq5eZCwP1G1UuKpM7dQL0EUAuZyzkmR7gCzNuqRWdolYj0vCiKT/DgV07BdDemFMzKt/KhL8+5golIHtvXWHWGpr4r+Z+cnjMdpM+uXOcKWh+AXEmbXAK4r4AStD7IIUmVM+Ee+EhyyJkUTzCSXHImLYA+SX3BJWdSA7FJbmdkkjPpBCySwCVnpiBilWSQ06BaXRAKWNjvJw5si114f5JdSwzoOKyCfXVOX4a2RRZBTBGm9G6SoE+H4JKkbRYcpYRDMny7haxzVEmnIEfjp0g6C3XTfF9Qe6uO3f7hf3bmtaovXbmJK2C9/ngZHh2KdvIzSvuqquprNBw9KdGctrfH7SHs9v21vAMu5ETecB07s+xkBpFIJBJB8QOnXEKFDI4wNgAAAABJRU5ErkJggg==" alt="黑色叉叉" />
+      </a>
+    </div>
+  </div>
+</div>
+    <!-- menu-tryIt -->
+    <div class="bg-green-third">
+      <div
+        class="bg-white container-xl px-md-0 border-start border-end border-helper-secondary"
+      >
+        <div class="d-md-flex align-items-md-center">
+          <img
+            class="menu-tryIt-banner"
+            src="/badminton-life-v2/assets/menu-banner-9c5601b2.png"
+            alt="一個人拿著羽球拍的人，一手拿著球拍，另一手摸著拍頭，低頭看著拍子。"
+          />
+          <div class="menu-tryIt--right">
+            <img
+              class="menu-tryIt-img d-md-none mb-9 mb-md-7"
+              src="/badminton-life-v2/assets/Title-sm-b6b25934.png"
+              alt="badminton life字樣（小），畫上綠色粉蠟筆質感底線。"
+            />
+            <img
+              class="d-none d-md-block mb-9 mb-md-7"
+              src="/badminton-life-v2/assets/Title-00a142f6.png"
+              alt="badminton life字樣（大），畫上綠色粉蠟筆質感底線。"
+            />
+            <p class="menu-tryIt-content mb-5 mb-md-1">
+              Search anything you want about badminton.
+            </p>
+            <a class="btn btn--primary" href="#">TRY IT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- menu-schedule -->
+    <h2 class="menu-title">Schedule</h2>
+    <div class="bg-green-third py-6 py-md-0">
+      <div class="container-xl px-md-0">
+        <ul
+          class="d-flex flex-column flex-md-row justify-content-center align-items-center"
+        >
+          <li>
+            <a class="card card--contest" href="#">
+              <img
+                class="card-img mb-6"
+                src="/badminton-life-v2/assets/schedule-01-a98c52ac.png"
+                alt="一個人手捏著羽毛球的球頭。"
+              />
+              <p class="card-title">YONEX US Open 2023</p>
+              <div class="d-flex">
+                <img
+                  class="d-md-none"
+                  src="/badminton-life-v2/assets/date-sm-15ab24ae.svg"
+                  alt="月曆"
+                />
+                <img
+                  class="d-none d-md-block"
+                  src="/badminton-life-v2/assets/date-2792dd35.svg"
+                  alt="月曆"
+                />
+                <span class="card-date">11 - 16 July</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="card card--contest" href="#">
+              <img
+                class="card-img mb-6"
+                src="/badminton-life-v2/assets/schedule-02-4167c7ec.png"
+                alt="一個人手捏著羽毛球的球頭。"
+              />
+              <p class="card-title">YONEX US Open 2023</p>
+              <div class="d-flex">
+                <img
+                  class="d-md-none"
+                  src="/badminton-life-v2/assets/date-sm-15ab24ae.svg"
+                  alt="月曆"
+                />
+                <img
+                  class="d-none d-md-block"
+                  src="/badminton-life-v2/assets/date-2792dd35.svg"
+                  alt="月曆"
+                />
+                <span class="card-date">11 - 16 July</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="card card--contest" href="#">
+              <img
+                class="card-img mb-6"
+                src="/badminton-life-v2/assets/schedule-03-c7e4ea7c.png"
+                alt="一個人手捏著羽毛球的球頭。"
+              />
+              <p class="card-title">YONEX US Open 2023</p>
+              <div class="d-flex">
+                <img
+                  class="d-md-none"
+                  src="/badminton-life-v2/assets/date-sm-15ab24ae.svg"
+                  alt="月曆"
+                />
+                <img
+                  class="d-none d-md-block"
+                  src="/badminton-life-v2/assets/date-2792dd35.svg"
+                  alt="月曆"
+                />
+                <span class="card-date">11 - 16 July</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--button -> MORE -->
+    <div
+      class="bg-white text-center py-4 pt-md-3 pb-md-1 border-top border-helper-secondary"
+    >
+      <a class="btn btn--secondary" href="contest.html">MORE</a>
+    </div>
+    <!-- menu-ranking -->
+    <div class="bg-helper-fourth">
+      <!-- menu-ranking-title -->
+      <h2 class="menu-title menu-title--ranking">Ranking TOP 10</h2>
+      <!-- card--ranking component -->
+      <div class="container-xl px-lg-0">
+        <ul class="card card--ranking d-lg-flex">
+          <!-- testing card--ranking -->
+          <!-- man's single ranking card -->
+          <li class="card--ranking--group bg-white mb-48 mb-lg-0">
+            <!-- card-title -->
+            <div class="card-title">
+              <img
+                class="d-lg-none"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJfSURBVHgB3VS9ctpAEN69wx4yKcLvjEtlsISggTIlfgKbKi0p09mPkCcgfgKTMhXJE1h5A1JFBBdKl8wwCSVB6DZ7J5hIjBAkpb8ZkO777vY77e4dwKNCu213bdceJDnXda1dTqPZal6zZKXn2gPbtrtJTiQHa8I7gXiX5BSogeaclnO15c7d8x4ADSM8uU7OJZ4nTtLrCyk3En22sdI7ECOgKJj6sw9b7sF/8JxWoy8pmqQMIOoXQATp9Qksi8sFCTFutuz7LRdFUYkEDpNp0ulBkMMoOin95Zwxc2OlwsVeg2ASLCACDwB7lmWZxeHTMOCtlQAhkVtl8Z8VhqxBXCd+XBHByPeDIBlTwg7q9fIPQBzIU3lWqVbKci1dRNT5L1Zq1d/VWrXL+ksEOBMFMdVjRLrkTb0QoG7m858pA4QMNNvOL7Prf0Mw/fL1+S4psmaSglvjTvAGSV0AkReP1YUZm0n4ybwrvImH8C4rVqbBqrh6u1nU8blj+Ds/6/FyueauKQRGA/K0hpI6JpBajY42MMWOd93TPc/9/Uzzp08kv+t8xysbTkMXdgDGLF3cLTJroOGawOIejoAiejXzZyM49gs0NqnRPR2AUnGeuQ15T+bAIQc1Gv/2Bc81MAHjYluIMNFm3K5cC/WNOTaWntbY1MuLIfJF5RkjKS+5qgvOPxdUdNgsIEFDo0V0mxcD4QD4CqA8nXs/N0YBDmCT6//GQQPaub4zMMoTc2sQO8SneI+Yox1pwFfwth13ESCFB9MnD02Yz+eLeq3+EYHKFJfzOyp6jxC+3nd6Hxf+ABV2+D6KusdwAAAAAElFTkSuQmCC"
+                alt="黑色羽球樣貌線條。"
+              />
+              <img
+                class="d-none d-lg-block"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVASURBVHgB7VhfaFtVGP++e2+TrFSY659ls0J0zU0WdPZhDwP/RRjYhw4mU7YXYaLDgY75MJgPPvimRcTBBBEULXSw4R4UJ2zgQwYd7KEPBWebpClELdrSJgSpTZrdnM/v3OTe3tzeNrmRuZf+oNxzzved7/udc75zvq8B2MEOHi7Qa/BA4sCQJtTLLF1YL1fP5fP5ilsnFouNgCIuEuKN7Ez2Uy87sYOx8wD0KhKNpdNzN9zySCQSCu4KfoZAQ6IG57LZbNqto3kZ1kj9hMmNyHYgFJjkz/gmJQW+4fWFkSCpP63/lP2l2bhcJBBdkm1exBB/9rlNBLuDJ1jnLHEbVfiIP69sduMBRLCcGUj4K3jD0lmpqtVFt7C2VlthxyWTIEDey4BCtXnpw+WzmYvXICRBiy9GR4iUxUwmM+WlYh5Pd3AUBU6l0+m8l04ikQgTGS+Wy9VbHCYlL51oIjqsChjkELhpkXVC9ZrE6xV7+vsSiHSsr793pK+3v8D406kysH/gCMfWy4B0ZM+jvUvFYrFpF6PR6DDH6Du8e4NqQCsUlgu/u+X9e3sv8g4N8zH/VSgU73lR8YxBCYWUEqF4T7ZJIRlDx5xyBOzhjylXVVjgz3STXMNnLTnWxB23fezC83z2pxvebsFWPLYSpMPpSV5drk4GRiLDkd1OuQFGzmElsskAQtwWK11N8cVH38OX65TZIVjgMLoJfglCCgxBcKXR0wKVwJtO8fzAfB6smKENMjbIJm2Uy+WcUySEcYI/IXMdCkzANsDthPF4PMLHPAdmKNA9tvaBOUmgJkD0sPFLTGS33AVQ8N1mguYTEwF5kxFPu2Qfgow9aYuUJ7a6ZC0JSugH9R9ZaRQeDCYzs9nnt1NQoDW+hgcEIviqlU7LHZRvYmxJ/4NbYXMCwQXODPXHFegoNXaXH9rPidCKNY5JOlv3gNc5BGQ2krsREkAfN3RKnEb3eaVRJzRoBb4sEMcJZnZBdknBpcxMxgxszrWrPGISpBre5tt4vTFuXygUYtzKw/F4dFSupA76thW5xqJaw1CML+0OwYbzeqqqDyu0124jPW7roJa32gLxbduOUK5AG2iL4PzMPB8dphruk2YhwLiv0IJtCGHQJkXwmNW2npihQ0OD8j1tDE9tlULdaH3Etle+LFy5yGYXqV/ocf0Opzo7VXLAH+Wx9boqJKk+vMrV0Ps8DngfnrH88byWl2PDbbvgy6Iv6cs8YTf8N1TWg3w5pr2LBzfaOmITKbP0anvlW4F3+mq75CTaJ2hah2uO3hSSeIm/3zf6K2ZfiNcsBfn01HWs+JUOlXHwAV8EG4FtVS3DlZAx7XDek07nUkK130J+esTtSsW4y63DjaE8p7UU+IC/HZRO0U7uWqjSdVIBYVXcIV3X+3iHwrZxrmJCocBJSb4+ghPgE74JCk3IYzbqZPGtWg3tOlBVa2FwPDGImOfbfMruE/pOm6pPfSguFf/u7+99gZtP8t9+rmh0gHq5RagcYhpJbg7IRRCIpxr/fMmNmM6kM2PgE+2/gw7wrqw6uscdgudM6Ybt445Zbd9cJ3wf8f+NjnZQRe31tbU1X3O7u7sN6AAdEeT/Ry4HdwWSPuek+PMG+ERHBDmXcjxhxP8c/+goBpHUH8AnakDXoAN0RFBmA76rV9vVl7q52dxd6AAd32INtTNc2fzcWhNT1XLVd+xZ8P1QW1heXq729Dzynaqp/3BRIHNtyKVS4sJ1LJPOnimVSlXoEO3Xg9tA/pAUCAQOo4ox2ef8/Nvs7FwKPH4M2sEOXPgXMUznEzf8Qp4AAAAASUVORK5CYII="
+                alt="黑色羽球樣貌線條。"
+              />
+              <p>Man's single</p>
+            </div>
+            <!-- card-item : 實際一筆一筆的資料 -->
+            <ul>
+              <!-- 1 -->
+              <li class="card-item">
+                <p class="card-position active">1</p>
+                <div class="card-info border-bottom border-helper-secondary">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEKSURBVHgB7doxTgJBGMXxN2Z3Sz2AjTYujXAGO09hYiNnUE9ib2Gt9myggnAAChIIBIqtIGQgBALs0g3lkExeyPuV0/2LL9lvZs2+gAtwhQuhEDYKYaMQNtEy62AznMBHUn1AUqs4Z5vhFOtWFyHFd7eIxk8v8HX9UcdN5d45W/cHyF/fEZpmhI1C2CiEjULYKISNQtiY/OvH+xYlLr9+q6lztpsvsPrLEJqx1uo6iIlC2ET2+xe+4lqK5NEd9u2oWHWbYVfdkukh9R7246r7WXfOyn09f35DaJoRNgphoxA2CmGjEDYKYWNso70/56EnPl11Z8Wq+58hpPKhx+jPBzIKYaMQNgphcwAv/UTrtcKsLwAAAABJRU5ErkJggg=="
+                      alt="丹麥"
+                    />
+                    <span class="card-country-abbr">DEN</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >Viktor AXELSEN</a
+                  >
+                </div>
+              </li>
+              <!-- 2 -->
+              <li class="card-item">
+                <p class="card-position active">2</p>
+                <div class="card-info border-bottom border-helper-secondary">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB+SURBVHgB7dqxDYAwDAVRG8EUNHTsvwE1E1DSMEJoiASMcYnubXCVZenn+4sODNEJQ2gMoTGEZry3PZ7zipZNyxx5xOpBJDGExhAaQ2gMoTGExhAaQ2iylOI/QmIIjSE0htAYQmMIjSE0htBkrbX5zUBmRrp8gDGExhAaQ2g+YgAaqdCXUk4AAAAASUVORK5CYII="
+                      alt="印度尼西亞"
+                    />
+                    <span class="card-country-abbr">INA</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >Anthony Sinisuka GINTING</a
+                  >
+                </div>
+              </li>
+              <!-- 3 -->
+              <li class="card-item">
+                <p class="card-position active">3</p>
+                <div class="card-info border-bottom border-helper-secondary">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACMSURBVHgB7dixDcIwFEXR94kl1kiBxADUkaBiB1ZjGMaAjizh2vEMSfP8dU/j+hbPki0BALBffHW592PW0Ka1hKaPhtd0UhKEuCnn5aYMotbalAAbcUOIm3g834zdCSFuCHFDiBtC3BDihoeVG0Lc5Bn7f3mlGHv8dOXWckKIm9L6R0o/Z41tFQAAB2yhDBVPu4Lx7AAAAABJRU5ErkJggg=="
+                      alt="泰國國旗"
+                    />
+                    <span class="card-country-abbr">THA</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >Kunlavut VITIDSRAN</a
+                  >
+                </div>
+              </li>
+              <!-- 4 -->
+              <li class="card-item">
+                <p class="card-position text-dark">4</p>
+                <div class="card-info border-bottom border-helper-secondary">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHESURBVHgB7Zq/SwJhGMe/p2chJTlEPxx0y82GWoPaGrI1qNYmt4r+h4jamlqjaM2lraGhpYZsyq0GG2oo7Mj0uHof4RwkQXse8/V4PyAiwsHH7/v8ODzrW4EAEEJAMCK6YUR0w4johu15Hvp9lFiWBbtSqSAImBrRDSOiG8Fpv+gS7mMJX1c36v25/nkgM4XIdBp2MoFuIC7iHOfV61xJ3P76PQkN59YwtJ6FJJbjOCLT0Hsv43Vls6VAM9GlecT3tsUSEhFxn0p4WdxoHKN2sVMJjF+fIjQSAxeRYn/b2e9YgqA6ohQlYItQTXzmL/FX6CjSNbiwRT4OT8CFmgMXlgjVRrXwAC6UCh0zDiyRWqEIKdrtdq1giVTv+Gn49DQRnWCJ2KlJSEETnwNLZHBuFlJEMmlwYCaSUDIz4EISdC0O7BqRWP5iuVVwERBZZqUSzS6I/BgiXWv07ADhZOeFH1abb3x3CxKIiND2OnZxVF/N24VSnFCbL7c2fMTuR3xobyqr/avV1CcBOo7a3lg1Q5O6dl9sTH+/w0kl0EzXRP4bs6LohhHRjcCIWK7r9v0zA/RHj2WefNAMI6IbRkQ3jIhu/ACng5vZgq7e9wAAAABJRU5ErkJggg=="
+                      alt="日本國旗"
+                    />
+                    <span class="card-country-abbr">JPN</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >Kodai NARAOKA</a
+                  >
+                </div>
+              </li>
+              <!-- 5 -->
+              <li class="card-item">
+                <p class="card-position text-dark">5</p>
+                <div class="card-info border-bottom border-helper-secondary">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHSSURBVHgB7ZfNSgJRFMf/OqOmOKZYkqUg9AWtWhptamO0L3yA6AF6gYLW9QQ9QdALuGrrXrAPIgSlTQSlYvmV3TOkIDPOYgTnKue3ucO9l8P933Pu/zAAwzAMw9jH9YC1PTGkMNUoJdUF5R5TTw9uzAhjCYmcxCALtoXEr1KInSexdJ2CO6TAaVSrRU/Cp4/tStOw9lNswJ1TUM994rfahdO4HrHZG7VIt96pdvB+WRkZgLIRSGto5GsUTojqwAksS8u/oyF8vGC1BV6RNXor64VtKCHnvGOotOh2V25WB9+ehFf/Tt5uDPaUs89DAajEOuUWGr2ao2/FUFpzWwEsCzF9EX3alRbeTl/Ewb8NQWgvrTuJoRbohsvZp6E5esylw6KpCEIJWXrGRDAtavXfrfpuRCVDmTKD5qNncd2GfSP2TAJTIeGjqH77lIXX3YJeNv500DRAV7gUCSBBTZFNpzC134A4dCNfH5ozewfUZ6jHBDNhXURXZNCpnmLZR6xYvEhAy0R0FzNrmJPGtvGrmqpnKXgwDxmwnREyAE2U1NfdB2TAthDZ4P8R2WAhssFCZIOFyAYLkQ0WIhssRDZmRojag2tfjClMNyUwDMMwzBj8Ae2qhr9wskfLAAAAAElFTkSuQmCC"
+                      alt="中國國旗"
+                    />
+                    <span class="card-country-abbr">CHN</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >LI Shi Feng</a
+                  >
+                </div>
+              </li>
+              <!-- 6 -->
+              <li class="card-item">
+                <p class="card-position text-dark">6</p>
+                <div class="card-info border-bottom border-helper-secondary">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHSSURBVHgB7ZfNSgJRFMf/OqOmOKZYkqUg9AWtWhptamO0L3yA6AF6gYLW9QQ9QdALuGrrXrAPIgSlTQSlYvmV3TOkIDPOYgTnKue3ucO9l8P933Pu/zAAwzAMw9jH9YC1PTGkMNUoJdUF5R5TTw9uzAhjCYmcxCALtoXEr1KInSexdJ2CO6TAaVSrRU/Cp4/tStOw9lNswJ1TUM994rfahdO4HrHZG7VIt96pdvB+WRkZgLIRSGto5GsUTojqwAksS8u/oyF8vGC1BV6RNXor64VtKCHnvGOotOh2V25WB9+ehFf/Tt5uDPaUs89DAajEOuUWGr2ao2/FUFpzWwEsCzF9EX3alRbeTl/Ewb8NQWgvrTuJoRbohsvZp6E5esylw6KpCEIJWXrGRDAtavXfrfpuRCVDmTKD5qNncd2GfSP2TAJTIeGjqH77lIXX3YJeNv500DRAV7gUCSBBTZFNpzC134A4dCNfH5ozewfUZ6jHBDNhXURXZNCpnmLZR6xYvEhAy0R0FzNrmJPGtvGrmqpnKXgwDxmwnREyAE2U1NfdB2TAthDZ4P8R2WAhssFCZIOFyAYLkQ0WIhssRDZmRojag2tfjClMNyUwDMMwzBj8Ae2qhr9wskfLAAAAAElFTkSuQmCC"
+                      alt="中國國旗"
+                    />
+                    <span class="card-country-abbr">CHN</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >SHI Yu Qi</a
+                  >
+                </div>
+              </li>
+              <!-- 7 -->
+              <li class="card-item">
+                <p class="card-position text-dark">7</p>
+                <div class="card-info border-bottom border-helper-secondary">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIcSURBVHgB7Zg/SBtxFMe/Z65ZzqGlkCwdYoZGaLNYKLoUUwJdbDMWOhbs1IKd2kLp1KVQyKDgENRNcFNxEfwDLopgFKKgCEnA6c5BBU9Bh/jeDy4o6BmV837q+yy/+/3eI7nv/d733R9AEARBEK6P0Znt74QRSSAg2rY30b0yimCJVE0jYs4iQJbjz2GgCcFSC/wfbo2GhFjWo/rxp4/pc9fDpiEhyZYndQHZty1q5Dmv64KvEO+Klyu7yL1PoedrB2z7AN2fXykhpVXnTF6YmH7BZiuK3z/ewHZcFAaWyFIG9bkYKpUd5HsXSFAb0i/i+PtvDq57jDAxMu8KNb+EeMzCh65WdZzrStXXh0dKiFGMR4eE+tE/+R9Bc2FpWbQbORLQ861D7YDnDQ8WxaX1neKcF3Z5XVharnuEhcUtKqt9mhnkDZfMHa3Hudyo0DA1U1Z5YZeWr9n5ZLkzfSEvjE1swD04UusscpzmbHguvbBFML5m99prvneeulYrGb4INpRDu5TNJJHvm0f762dIJh6jXN1FmPjuSJm84ZmZT9be3idPtKtY+mVMxQuDxdBFMI3d2Zuj+PlnWpm7tGqjtObgF811uiGajSTxlfcoDBXVyP6xL2m7t8mVHxpPi9KJpqeHewiSoH/fw1hHqoZ7wMN6H7kLiBDdECG6IUJ0Q4TohgjRDRGiG/dGiEmfQTM0JnC3qUIQBEEQbsAJusyuFJ1MTAwAAAAASUVORK5CYII="
+                      alt="台灣國旗"
+                    />
+                    <span class="card-country-abbr">TPE</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >CHOU Tien Chen</a
+                  >
+                </div>
+              </li>
+              <!-- 8 -->
+              <li class="card-item">
+                <p class="card-position text-dark">8</p>
+                <div class="card-info border-bottom border-helper-secondary">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH3SURBVHgB7Zc9LCxRGIbf2RlxbwQb1725FCiETkOjkNApUBNaUVBKJDSroPDXKVYtQmtJdIRCgYbEz1ZLQUQk2EyW3TXjfGczE8yuCMWcle9JJuecOafYZ9/vO5sFGIZhGObraCeobRVDDfIaPWZo0DeR99gwPnPMqK6AVloM+z6O9PkVVCTw0WZRXxf+7y6j4ngdxYO90KsqoSo5EykZHUDp2ADSF5e4bu5G8jDq7pEQpfS0cwBVyCriSBA37f1vyikgSuzPQgh6daUQ7IF1F4cKeETogxb1dcq5uRhxJSiFZ5GOJfrkfiKMQLDElShoqEPqVWJ+4OmRwpZGUTaZXjAXV+VIEv82FlAWDsk1lVQikrnsysLjKF+ekzJ+4kmkoKHenVMCzpiIbLnr16QOz2RKfifiEaErNht3IzNZ38fnl6ACntJKim/YobCl6c0elRiVXq61n3hEqP4dGafp5UFxCVCPBKeG5Zyevyuz7tpv9CGUh96/TEdj8seQml7TMnL2U1KWXeooiuTekVw/X98isbYlz/uNdop6O9vG745WBKeHYYjyeZgMyytXZXKKEJQICf0Sjyaiedzel1Iq8qFIPhHAD0EzTZMTUQkWUQ0WUQ0WUQ0WUQ0WUQ0WUQ0WUQ3Dsqw227ZrkMeIv+ExMAzDMMw3eAGh3qx57sSkBwAAAABJRU5ErkJggg=="
+                      alt="新加坡國旗"
+                    />
+                    <span class="card-country-abbr">SGP</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >LOH Kean Yew</a
+                  >
+                </div>
+              </li>
+              <!-- 9 -->
+              <li class="card-item">
+                <p class="card-position text-dark">9</p>
+                <div class="card-info border-bottom border-helper-secondary">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB+SURBVHgB7dqxDYAwDAVRG8EUNHTsvwE1E1DSMEJoiASMcYnubXCVZenn+4sODNEJQ2gMoTGEZry3PZ7zipZNyxx5xOpBJDGExhAaQ2gMoTGExhAaQ2iylOI/QmIIjSE0htAYQmMIjSE0htBkrbX5zUBmRrp8gDGExhAaQ2g+YgAaqdCXUk4AAAAASUVORK5CYII="
+                      alt="印度尼西亞國旗"
+                    />
+                    <span class="card-country-abbr">INA</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >Jonatan CHRISTIE</a
+                  >
+                </div>
+              </li>
+              <!-- 最後一個沒有padding, border-bottom, active, 但text是dark -->
+              <!-- 4 -->
+              <li class="card-item">
+                <p class="card-position text-dark">10</p>
+                <div class="card-info">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHCSURBVHgB7djPK4NxHAfw98Mj2/x6hHLaOIkyyZm4OXBx5Z/gyJn/QC5udnBS4uCgFEoplinc7Bm11VaG/arNvj7fb+TO96tnT59XrW3PDnvefX581wDGGGPs9yyx5UzT8wAaW9KGZZ3AB5rgExzEaziI13AQr+EgXmNXoyvwA6tYLAoY8FqqIXaWwY1bgBNqRjTSgaXJfphipLVSuQpmN+I4vXvB1LBDIdpVqJHlC/WZCUYqIm94dWEQkd7A17cAnSEbt+47No+ecbQ2ji56r5P2isTO0ghTgNFwOxKpAg6ucljfe8T5fZ6uBxHuC2DnNA3dtAdJ0EzIWXgrVSlEFkFRw1BPC9ysbCmB+YleFVA37UHkkKteokeUqvLdtwlqK3XdyGoxEERup4PrrHod6Qvi8qmC1rZWzFElnDYbsfMMLYBu6KZ34ohsKzkDbq6MSbmxZFVkgYRQbSdbzMQaNrK1XLl+1+NUkYC6aUEtdUhDn8qWsbs8+rPNNDJ2IEry7JCzkS99YIzOkkUK5YS0N4Fi7V9tGwvyn+zjh134Af+M9xoO4jUcxGs4iNf4518U0YQZq24NoIGJukiCMcYY+4NP9m6YxzJJ2MIAAAAASUVORK5CYII="
+                      alt="印度"
+                    />
+                    <span class="card-country-abbr">JPN</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >PRANNOY H. S.</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- woman's single ranking card -->
+          <li class="card--ranking--group bg-white">
+            <!-- card-title -->
+            <div class="card-title">
+              <img
+                class="d-lg-none"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJfSURBVHgB3VS9ctpAEN69wx4yKcLvjEtlsISggTIlfgKbKi0p09mPkCcgfgKTMhXJE1h5A1JFBBdKl8wwCSVB6DZ7J5hIjBAkpb8ZkO777vY77e4dwKNCu213bdceJDnXda1dTqPZal6zZKXn2gPbtrtJTiQHa8I7gXiX5BSogeaclnO15c7d8x4ADSM8uU7OJZ4nTtLrCyk3En22sdI7ECOgKJj6sw9b7sF/8JxWoy8pmqQMIOoXQATp9Qksi8sFCTFutuz7LRdFUYkEDpNp0ulBkMMoOin95Zwxc2OlwsVeg2ASLCACDwB7lmWZxeHTMOCtlQAhkVtl8Z8VhqxBXCd+XBHByPeDIBlTwg7q9fIPQBzIU3lWqVbKci1dRNT5L1Zq1d/VWrXL+ksEOBMFMdVjRLrkTb0QoG7m858pA4QMNNvOL7Prf0Mw/fL1+S4psmaSglvjTvAGSV0AkReP1YUZm0n4ybwrvImH8C4rVqbBqrh6u1nU8blj+Ds/6/FyueauKQRGA/K0hpI6JpBajY42MMWOd93TPc/9/Uzzp08kv+t8xysbTkMXdgDGLF3cLTJroOGawOIejoAiejXzZyM49gs0NqnRPR2AUnGeuQ15T+bAIQc1Gv/2Bc81MAHjYluIMNFm3K5cC/WNOTaWntbY1MuLIfJF5RkjKS+5qgvOPxdUdNgsIEFDo0V0mxcD4QD4CqA8nXs/N0YBDmCT6//GQQPaub4zMMoTc2sQO8SneI+Yox1pwFfwth13ESCFB9MnD02Yz+eLeq3+EYHKFJfzOyp6jxC+3nd6Hxf+ABV2+D6KusdwAAAAAElFTkSuQmCC"
+                alt="黑色羽球樣貌線條。"
+              />
+              <img
+                class="d-none d-lg-block"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVASURBVHgB7VhfaFtVGP++e2+TrFSY659ls0J0zU0WdPZhDwP/RRjYhw4mU7YXYaLDgY75MJgPPvimRcTBBBEULXSw4R4UJ2zgQwYd7KEPBWebpClELdrSJgSpTZrdnM/v3OTe3tzeNrmRuZf+oNxzzved7/udc75zvq8B2MEOHi7Qa/BA4sCQJtTLLF1YL1fP5fP5ilsnFouNgCIuEuKN7Ez2Uy87sYOx8wD0KhKNpdNzN9zySCQSCu4KfoZAQ6IG57LZbNqto3kZ1kj9hMmNyHYgFJjkz/gmJQW+4fWFkSCpP63/lP2l2bhcJBBdkm1exBB/9rlNBLuDJ1jnLHEbVfiIP69sduMBRLCcGUj4K3jD0lmpqtVFt7C2VlthxyWTIEDey4BCtXnpw+WzmYvXICRBiy9GR4iUxUwmM+WlYh5Pd3AUBU6l0+m8l04ikQgTGS+Wy9VbHCYlL51oIjqsChjkELhpkXVC9ZrE6xV7+vsSiHSsr793pK+3v8D406kysH/gCMfWy4B0ZM+jvUvFYrFpF6PR6DDH6Du8e4NqQCsUlgu/u+X9e3sv8g4N8zH/VSgU73lR8YxBCYWUEqF4T7ZJIRlDx5xyBOzhjylXVVjgz3STXMNnLTnWxB23fezC83z2pxvebsFWPLYSpMPpSV5drk4GRiLDkd1OuQFGzmElsskAQtwWK11N8cVH38OX65TZIVjgMLoJfglCCgxBcKXR0wKVwJtO8fzAfB6smKENMjbIJm2Uy+WcUySEcYI/IXMdCkzANsDthPF4PMLHPAdmKNA9tvaBOUmgJkD0sPFLTGS33AVQ8N1mguYTEwF5kxFPu2Qfgow9aYuUJ7a6ZC0JSugH9R9ZaRQeDCYzs9nnt1NQoDW+hgcEIviqlU7LHZRvYmxJ/4NbYXMCwQXODPXHFegoNXaXH9rPidCKNY5JOlv3gNc5BGQ2krsREkAfN3RKnEb3eaVRJzRoBb4sEMcJZnZBdknBpcxMxgxszrWrPGISpBre5tt4vTFuXygUYtzKw/F4dFSupA76thW5xqJaw1CML+0OwYbzeqqqDyu0124jPW7roJa32gLxbduOUK5AG2iL4PzMPB8dphruk2YhwLiv0IJtCGHQJkXwmNW2npihQ0OD8j1tDE9tlULdaH3Etle+LFy5yGYXqV/ocf0Opzo7VXLAH+Wx9boqJKk+vMrV0Ps8DngfnrH88byWl2PDbbvgy6Iv6cs8YTf8N1TWg3w5pr2LBzfaOmITKbP0anvlW4F3+mq75CTaJ2hah2uO3hSSeIm/3zf6K2ZfiNcsBfn01HWs+JUOlXHwAV8EG4FtVS3DlZAx7XDek07nUkK130J+esTtSsW4y63DjaE8p7UU+IC/HZRO0U7uWqjSdVIBYVXcIV3X+3iHwrZxrmJCocBJSb4+ghPgE74JCk3IYzbqZPGtWg3tOlBVa2FwPDGImOfbfMruE/pOm6pPfSguFf/u7+99gZtP8t9+rmh0gHq5RagcYhpJbg7IRRCIpxr/fMmNmM6kM2PgE+2/gw7wrqw6uscdgudM6Ybt445Zbd9cJ3wf8f+NjnZQRe31tbU1X3O7u7sN6AAdEeT/Ry4HdwWSPuek+PMG+ERHBDmXcjxhxP8c/+goBpHUH8AnakDXoAN0RFBmA76rV9vVl7q52dxd6AAd32INtTNc2fzcWhNT1XLVd+xZ8P1QW1heXq729Dzynaqp/3BRIHNtyKVS4sJ1LJPOnimVSlXoEO3Xg9tA/pAUCAQOo4ox2ef8/Nvs7FwKPH4M2sEOXPgXMUznEzf8Qp4AAAAASUVORK5CYII="
+                alt="黑色羽球樣貌線條。"
+              />
+              <p>Woman's single</p>
+            </div>
+            <!-- card-item : 實際一筆一筆的資料 -->
+            <ul>
+              <!-- woman1 -->
+              <li class="card-item">
+                <p class="card-position active">1</p>
+                <div class="card-info border-bottom border-helper-secondary">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAYAAAA6oTAqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASrSURBVHgB7ZldTBRXFMf/u4Gyy9ZiW10StQXRttRlTQsJFGJtoMbYFFPfMCQ1KanyUtuUNJaH2rQaKg/WGIwPm6gvGtT4YmRNjA+g0cSPRBIVEvVBRCNE/GLRWT4k4vyv3nV2XeDe3SURMr9ksszs7DnzP+fce88dABsbGxsbGxslHOFw+LexsbEvMI1xOp233G73vw7DMLrM81xMczIzM3OdmEFoizGMMKaaRH1oi9m3rxnbtjVhqjh06Cjq6v5OSJCWmNbWs+IoKSlEbe0fuHChHamir++BsFlQkC+EHD58FLooi6EzOli9eiU6O6+Jax5PZsJRtMJMMzC0Rx9VVWvQ0nISXV23tewoi5GRmjt3jsgOHe7atUc8AI9k8HrnRER0dLwM1Nat9UKMTqCUxMjyorNg8CTKy5eJTNHRxo0/v3H/89AThBoCeFBVh94l34ujb9V69G/ajtHbPW/cv3btGhEQ2qYPCuM5x6dOuU0qJl55VVQsi0SSUY0VcXfeNxj4L4DB4CmMdveKY/jMJTzZ3YzezyvxqPafKFF88Pr6X1FcXCj80CaFyHKT2UpajDQUW14cqHRsFXLfjD5FTIZx4Jh574YoQQsXfixEcRKwlhv9qIpR7gAaG5u4yoqosRx27NgSlRWWEaOvQ1rOPGSfOwhn1ixxzrLlhEK7Pl8+Ll5sF35U0OoAWAas7XjlZRxo0RZCRrt7MNDwOpPMDMcgM8Hpn5OADtq9GaMXO3t1FFYj67paKcRjfs/pSHYIZzGWnQ4J9WaxQq529uHefUPpt+G0DDx0vSc+rRj7W6LOdYVI0pAkN7seY9iVZf51Z9x7+PBtOUVozSlEON0lrn366A7WdZzAh4MhjFy5gVSQdNdsGCM4P9834T2BL831aXFZRAi58cFHaChbh4fuLIyFBpAKUrIF4IMdX1QW97ugeZ3fx2PQzFhwUSlSRdJl5vV6xCcjf87MUEV3O9zPhjGYnoHL3sXjCpFczv4E6UtHkAqSFlNavAA7X/3NkjmSX67zc5GdjK+XIhVolxkXT7Y4Eo/nHfgLvEiUJbNG4VpeFDnn1B/rQxVlMeyR2KZzDWA7Y+X3X0pNUelIhB83rYo656JMHxTDTkMHpUaTPRk/KaKmplqs0BQn4bjZ8FMRdKmu8sPve51VaVf2fzKAqllSajRp2O/PFwtmW9tZVFauFBG0Ovm2Ig9//bk8MiFMxvqaIiHGCu1TCO3yYGtD36o72knFsN1n57p3b7PICmta7j9iy+2rkgVo3LICK8rz4pYdr/l92Wj6/zv8UPlZ1Hds+XnQtvTBwNGPtTufCKXejFFiN0th3HPIvQYHKgWO54ytDhfVp+aRl/s+sr3vxhXJ7G/e3CgyIRtZNpr0yWbT2tSOB3szpamZxuiAIuQLB2u5UWS8rbN1PEwE7crdKw/6Y6DY/utsyZVnM0bfWm6sY44jbg2SfQdAG3L3KrcZFKVrV2sLIMuNwrjzZCkkK8QKA8SscywGAtuVykvCMtPez8hXQszSVMCA0YfqoJckJOZtZUa+OO/H9KffJOQw/9E0e2hoaDamMS6Xq9/hcMyEpNjY2NjYvMW8AN1KTzDT2dv7AAAAAElFTkSuQmCC"
+                      alt="韓國國旗"
+                    />
+                    <span class="card-country-abbr">KOR</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >AN Se Young</a
+                  >
+                </div>
+              </li>
+              <!-- woman2 -->
+              <li class="card-item">
+                <p class="card-position active">2</p>
+                <div class="card-info border-bottom border-helper-secondary">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHESURBVHgB7Zq/SwJhGMe/p2chJTlEPxx0y82GWoPaGrI1qNYmt4r+h4jamlqjaM2lraGhpYZsyq0GG2oo7Mj0uHof4RwkQXse8/V4PyAiwsHH7/v8ODzrW4EAEEJAMCK6YUR0w4johu15Hvp9lFiWBbtSqSAImBrRDSOiG8Fpv+gS7mMJX1c36v25/nkgM4XIdBp2MoFuIC7iHOfV61xJ3P76PQkN59YwtJ6FJJbjOCLT0Hsv43Vls6VAM9GlecT3tsUSEhFxn0p4WdxoHKN2sVMJjF+fIjQSAxeRYn/b2e9YgqA6ohQlYItQTXzmL/FX6CjSNbiwRT4OT8CFmgMXlgjVRrXwAC6UCh0zDiyRWqEIKdrtdq1giVTv+Gn49DQRnWCJ2KlJSEETnwNLZHBuFlJEMmlwYCaSUDIz4EISdC0O7BqRWP5iuVVwERBZZqUSzS6I/BgiXWv07ADhZOeFH1abb3x3CxKIiND2OnZxVF/N24VSnFCbL7c2fMTuR3xobyqr/avV1CcBOo7a3lg1Q5O6dl9sTH+/w0kl0EzXRP4bs6LohhHRjcCIWK7r9v0zA/RHj2WefNAMI6IbRkQ3jIhu/ACng5vZgq7e9wAAAABJRU5ErkJggg=="
+                      alt="日本國旗"
+                    />
+                    <span class="card-country-abbr">JPN</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >Akane YAMAGUCHI</a
+                  >
+                </div>
+              </li>
+              <!-- Woman 3 -->
+              <li class="card-item">
+                <p class="card-position active">3</p>
+                <div class="card-info border-bottom border-helper-secondary">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHSSURBVHgB7ZfNSgJRFMf/OqOmOKZYkqUg9AWtWhptamO0L3yA6AF6gYLW9QQ9QdALuGrrXrAPIgSlTQSlYvmV3TOkIDPOYgTnKue3ucO9l8P933Pu/zAAwzAMw9jH9YC1PTGkMNUoJdUF5R5TTw9uzAhjCYmcxCALtoXEr1KInSexdJ2CO6TAaVSrRU/Cp4/tStOw9lNswJ1TUM994rfahdO4HrHZG7VIt96pdvB+WRkZgLIRSGto5GsUTojqwAksS8u/oyF8vGC1BV6RNXor64VtKCHnvGOotOh2V25WB9+ehFf/Tt5uDPaUs89DAajEOuUWGr2ao2/FUFpzWwEsCzF9EX3alRbeTl/Ewb8NQWgvrTuJoRbohsvZp6E5esylw6KpCEIJWXrGRDAtavXfrfpuRCVDmTKD5qNncd2GfSP2TAJTIeGjqH77lIXX3YJeNv500DRAV7gUCSBBTZFNpzC134A4dCNfH5ozewfUZ6jHBDNhXURXZNCpnmLZR6xYvEhAy0R0FzNrmJPGtvGrmqpnKXgwDxmwnREyAE2U1NfdB2TAthDZ4P8R2WAhssFCZIOFyAYLkQ0WIhssRDZmRojag2tfjClMNyUwDMMwzBj8Ae2qhr9wskfLAAAAAElFTkSuQmCC"
+                      alt="中國國旗"
+                    />
+                    <span class="card-country-abbr">CHN</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >CHEN Yu Fei</a
+                  >
+                </div>
+              </li>
+              <!-- Woman 4 -->
+              <li class="card-item">
+                <p class="card-position text-dark">4</p>
+                <div class="card-info border-bottom border-helper-secondary">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIcSURBVHgB7Zg/SBtxFMe/Z65ZzqGlkCwdYoZGaLNYKLoUUwJdbDMWOhbs1IKd2kLp1KVQyKDgENRNcFNxEfwDLopgFKKgCEnA6c5BBU9Bh/jeDy4o6BmV837q+yy/+/3eI7nv/d733R9AEARBEK6P0Znt74QRSSAg2rY30b0yimCJVE0jYs4iQJbjz2GgCcFSC/wfbo2GhFjWo/rxp4/pc9fDpiEhyZYndQHZty1q5Dmv64KvEO+Klyu7yL1PoedrB2z7AN2fXykhpVXnTF6YmH7BZiuK3z/ewHZcFAaWyFIG9bkYKpUd5HsXSFAb0i/i+PtvDq57jDAxMu8KNb+EeMzCh65WdZzrStXXh0dKiFGMR4eE+tE/+R9Bc2FpWbQbORLQ861D7YDnDQ8WxaX1neKcF3Z5XVharnuEhcUtKqt9mhnkDZfMHa3Hudyo0DA1U1Z5YZeWr9n5ZLkzfSEvjE1swD04UusscpzmbHguvbBFML5m99prvneeulYrGb4INpRDu5TNJJHvm0f762dIJh6jXN1FmPjuSJm84ZmZT9be3idPtKtY+mVMxQuDxdBFMI3d2Zuj+PlnWpm7tGqjtObgF811uiGajSTxlfcoDBXVyP6xL2m7t8mVHxpPi9KJpqeHewiSoH/fw1hHqoZ7wMN6H7kLiBDdECG6IUJ0Q4TohgjRDRGiG/dGiEmfQTM0JnC3qUIQBEEQbsAJusyuFJ1MTAwAAAAASUVORK5CYII="
+                      alt="台灣國旗"
+                    />
+                    <span class="card-country-abbr">TPE</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >TAI Tzu Ying</a
+                  >
+                </div>
+              </li>
+              <!-- Woman 5 -->
+              <li class="card-item">
+                <p class="card-position text-dark">5</p>
+                <div class="card-info border-bottom border-helper-secondary">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHSSURBVHgB7ZfNSgJRFMf/OqOmOKZYkqUg9AWtWhptamO0L3yA6AF6gYLW9QQ9QdALuGrrXrAPIgSlTQSlYvmV3TOkIDPOYgTnKue3ucO9l8P933Pu/zAAwzAMw9jH9YC1PTGkMNUoJdUF5R5TTw9uzAhjCYmcxCALtoXEr1KInSexdJ2CO6TAaVSrRU/Cp4/tStOw9lNswJ1TUM994rfahdO4HrHZG7VIt96pdvB+WRkZgLIRSGto5GsUTojqwAksS8u/oyF8vGC1BV6RNXor64VtKCHnvGOotOh2V25WB9+ehFf/Tt5uDPaUs89DAajEOuUWGr2ao2/FUFpzWwEsCzF9EX3alRbeTl/Ewb8NQWgvrTuJoRbohsvZp6E5esylw6KpCEIJWXrGRDAtavXfrfpuRCVDmTKD5qNncd2GfSP2TAJTIeGjqH77lIXX3YJeNv500DRAV7gUCSBBTZFNpzC134A4dCNfH5ozewfUZ6jHBDNhXURXZNCpnmLZR6xYvEhAy0R0FzNrmJPGtvGrmqpnKXgwDxmwnREyAE2U1NfdB2TAthDZ4P8R2WAhssFCZIOFyAYLkQ0WIhssRDZmRojag2tfjClMNyUwDMMwzBj8Ae2qhr9wskfLAAAAAElFTkSuQmCC"
+                      alt="中國國旗"
+                    />
+                    <span class="card-country-abbr">CHN</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >HE Bing Jiao</a
+                  >
+                </div>
+              </li>
+              <!-- Woman 6 -->
+              <li class="card-item">
+                <p class="card-position text-dark">6</p>
+                <div class="card-info border-bottom border-helper-secondary">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAYAAAA6oTAqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOzSURBVHgB7Znva1tVGMc/597bJmmXNKRdtiazNe1o5zaZ1I2hgmYiMlplKiiICBN8IQii/0Ff1Ne+scJA8YX6SkGGDgXBVVG3SVmHbZVSuyXprF2T2fRHmiX3lyc3g6JIZpXdJeV+IDn33nMOud/nec7z5J4LHh4eHh4eHv8KUfm68OjQW7ZFmAZGYJ0W55LHk0KoZ2l8xhS2EZ6YesUTU69oB1/VsFSVRqdSY7QdezVofC0O/ynMbG0n5Y4X0RcVp7WbdlIPaFsZXBGhR57BbD1MefITrHlo6rSx4m+glNM05T5AWBvcKbYkxvJ1Uc4VSI8Msz6dql788H3aDieIvzSIGtiPWhjnTnHLMDOKtvNxBpcyZEbPED00jxaA7qdVWuOCYEeGhfc+drzz9zluckvPXP7IdNq+lzWEkaXnWYuNmRKJJytXDWIPVcftSv6B0J3/rcy+a9Icgd4XtuT4/03NX7NLJl3H9OpxWSHzuc3ypLS4UU1/7SeG6Dgx6BzrqnTyypeoi5+RGNycI5rdK2U1xQifvOljp7ClwUX6dSnEoP/5Mpofli7KTGa2ghnB/9U8+n0dGLsGZPh9Iee8LQVnEQtv4iY1xVTifu3nlFz5GxjXLEx5vjoniByQ7ayCv1OKLOgyvCynNYuwNmtxYz2Foucc0ZW15RY1xVRuLv/tGLasr2rhZhKQT3H5Kfipu5/vZoI8t2+ZB/raMBNBzOVFsj/KVN065hggcNRGiwvcoqYYX0Rw12snpXfShMoXCYQM0mPNhPdafL3az1KzyelPx9lzTwmmkf05OpMKhbYkwb5W/C6HmTr8yr67ZYI++U+dG1dtfhm5IP2iE+rMEIwaZCcEsQctlMUSlqbweOA8Mc6h5KdZuZShfUDh2tkSuTM/sGP3Ck0h1zyTqumZlj2C/aeGnQTgS3+PsbDZd6glzZFQiuYQFLMK0fstVq9uerOSALS5Edykdt605DopLSGKWedUNP3Vyr6BJ8jPKbQfsLg+JWRtudkv56AX0Hy4Sk3PXP49zOqlUec4tLuNREwn8kgcrddPS/RegseHKJejZM6PO2uk++gMV7I+GW7vOIYIhkP09qzhFjXFTGc7uXK9ugMVlZbuiU3S/dgsRvBhfJUatPaNrPwqsSMqanHCGTf1W5cUVJ1zMLBEL+6JEfbEU0n5PONtNdUb2tSogepeXbutaOu/GsgdTbYD3lZTveKJqVcqYlJsE5ykPJFMhm8QbuiXTX7yeTw8PDw8PG4jfwLtIkh0teewXgAAAABJRU5ErkJggg=="
+                      alt="西班牙國旗"
+                    />
+                    <span class="card-country-abbr">ESP</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >Carolina MARIN</a
+                  >
+                </div>
+              </li>
+              <!-- Woman 7 -->
+              <li class="card-item">
+                <p class="card-position text-dark">7</p>
+                <div class="card-info border-bottom border-helper-secondary">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACMSURBVHgB7dixDcIwFEXR94kl1kiBxADUkaBiB1ZjGMaAjizh2vEMSfP8dU/j+hbPki0BALBffHW592PW0Ka1hKaPhtd0UhKEuCnn5aYMotbalAAbcUOIm3g834zdCSFuCHFDiBtC3BDihoeVG0Lc5Bn7f3mlGHv8dOXWckKIm9L6R0o/Z41tFQAAB2yhDBVPu4Lx7AAAAABJRU5ErkJggg=="
+                      alt="泰國國旗"
+                    />
+                    <span class="card-country-abbr">THA</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >Ratchanok INTANON</a
+                  >
+                </div>
+              </li>
+              <!-- Woman 8 -->
+              <li class="card-item">
+                <p class="card-position text-dark">8</p>
+                <div class="card-info border-bottom border-helper-secondary">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB+SURBVHgB7dqxDYAwDAVRG8EUNHTsvwE1E1DSMEJoiASMcYnubXCVZenn+4sODNEJQ2gMoTGEZry3PZ7zipZNyxx5xOpBJDGExhAaQ2gMoTGExhAaQ2iylOI/QmIIjSE0htAYQmMIjSE0htBkrbX5zUBmRrp8gDGExhAaQ2g+YgAaqdCXUk4AAAAASUVORK5CYII="
+                      alt="印度尼西亞國旗"
+                    />
+                    <span class="card-country-abbr">INA</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >Gregoria Mariska TUNJUNG</a
+                  >
+                </div>
+              </li>
+              <!-- Woman 9 -->
+              <li class="card-item">
+                <p class="card-position text-dark">9</p>
+                <div class="card-info border-bottom border-helper-secondary">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHSSURBVHgB7ZfNSgJRFMf/OqOmOKZYkqUg9AWtWhptamO0L3yA6AF6gYLW9QQ9QdALuGrrXrAPIgSlTQSlYvmV3TOkIDPOYgTnKue3ucO9l8P933Pu/zAAwzAMw9jH9YC1PTGkMNUoJdUF5R5TTw9uzAhjCYmcxCALtoXEr1KInSexdJ2CO6TAaVSrRU/Cp4/tStOw9lNswJ1TUM994rfahdO4HrHZG7VIt96pdvB+WRkZgLIRSGto5GsUTojqwAksS8u/oyF8vGC1BV6RNXor64VtKCHnvGOotOh2V25WB9+ehFf/Tt5uDPaUs89DAajEOuUWGr2ao2/FUFpzWwEsCzF9EX3alRbeTl/Ewb8NQWgvrTuJoRbohsvZp6E5esylw6KpCEIJWXrGRDAtavXfrfpuRCVDmTKD5qNncd2GfSP2TAJTIeGjqH77lIXX3YJeNv500DRAV7gUCSBBTZFNpzC134A4dCNfH5ozewfUZ6jHBDNhXURXZNCpnmLZR6xYvEhAy0R0FzNrmJPGtvGrmqpnKXgwDxmwnREyAE2U1NfdB2TAthDZ4P8R2WAhssFCZIOFyAYLkQ0WIhssRDZmRojag2tfjClMNyUwDMMwzBj8Ae2qhr9wskfLAAAAAElFTkSuQmCC"
+                      alt="中國國旗"
+                    />
+                    <span class="card-country-abbr">CHN</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >HAN Yue</a
+                  >
+                </div>
+              </li>
+              <!-- 最後一個沒有padding, border-bottom, active, 但text是dark -->
+              <!-- woman10 -->
+              <li class="card-item">
+                <p class="card-position text-dark">10</p>
+                <div class="card-info">
+                  <div class="card-country">
+                    <img
+                      class="card-country-img"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAzCAYAAADVY1sUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKgSURBVHgB7ZVNaBNBFMf/Cali1o/2YHIS0xxqpQahvdSLWCp4sI03vy8KvVkwXsQPPBSheKvoyYCCh0C8BXosCB5qUfSSCAoliSiUrGIEd6u21TjvrbtO08ZD2wzpMj/Yj8zOhJl5vzcP0Gg0Go1Gg8DAsQcl8YihCVyffow930wooBx0F2EYbVgL/xv3vW0rFBEL0T0aMXDmZALpR69g24v85eyphHhfQG7yHf82jC1IXepH5kkexVKV2xIHIhgciCP9cPVxxrlh7NzxCyrghaAGlMpVnkw81o5i+SvyhYrXKdETRf5NRbRXYYlJRncbsOYXuH+p5IxL9EREHxMzLz6K/6s5iz+fxC6xWBUE6Vb5ZGPqaZF3/fLoId5pmhRd9D5ysZcVymTzME0byeFu0dbHkaFxFNHUaD/ine3cRhuhGpHs6ZqslsuJoe5lalGfkQt9DdVabVzqZRZdXz5ABRwRUqsg1CFFSBt6klrehIVaFREJWS2KkKxWPNbBT1JL1lIVHBF6cU6fAMbHBjky+YJzbLJaIhLXbk15CU1aUf+JezP83C6UpHG37zwTi/+n1c2ueexXlOzrUive2YHk0L6Gao2PHeWNUEFDtUiRerUo+WW1iHq16HTb1GrduHoYE/efL1NLZbI3VS2VC/EKoquWWxBJLSPs6OMWRFktKohEfUGkfrblfFNe2akgWjTxvwVxpVq9rFZu8i23yWpVTMsriHRqueN4IQoru29OrRVquchqEfKpJeOq5SKr9fn0Fcz9rkIF3qnVDJSeWpns65qrykYSXvqB47PT2Lb4EyoI2LbdtIioJAifEJjde8QXEQktvZ+DHwiFRfX1AzrZWw2d7K2GTvZWQyd7q+GfZBfXXXEdxOYmB41Go9FoNMAfcif8gFuXDNoAAAAASUVORK5CYII="
+                      alt="美國國旗"
+                    />
+                    <span class="card-country-abbr">USA</span>
+                  </div>
+                  <a
+                    class="card-name width-100 width-lg-50 text-truncate"
+                    href="#"
+                    >Beiwen ZHANG</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--button -> MORE -->
+    <div class="bg-helper-fourth text-center py-4 pt-md-3 pb-md-1">
+      <a class="btn btn--secondary" href="ranking.html">MORE</a>
+    </div>
+    <!-- footer -->
+    <footer class="border-top border-bottom border-helper-primary">
+  <div
+    class="container-xl d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center py-4 px-lg-0"
+  >
+    <a href="index.html" class="d-flex justify-content-center mb-6 mb-lg-0">
+      <img
+        class="d-lg-none"
+        src="/badminton-life-v2/assets/Logo-sm-abe70c10.png"
+        alt="Badminton Life字樣，左邊有一個毛球圖案"
+      />
+      <img
+        class="d-none d-lg-block"
+        src="/badminton-life-v2/assets/Logo-de22c530.png"
+        alt="Badminton Life字樣，左邊有一個毛球圖案"
+      />
+    </a>
+    <p class="footer-copyright text-center">
+      Copyright &copy; 2023 安迪劉. All rights reserved.
+    </p>
+  </div>
+</footer>
+    
+  </body>
+</html>
