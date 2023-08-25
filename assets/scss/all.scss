@@ -32,6 +32,8 @@
 @import './layout/header';
 @import './layout/footer';
 @import './layout/event';
+@import './layout/banner';
+
 
 // pages
 @import './pages/index';
@@ -40,6 +42,7 @@
 @import './pages/contest';
 @import './pages/contest-detail';
 @import './pages/players';
+@import './pages/player-info';
 
 // util
 @import './utils/util';

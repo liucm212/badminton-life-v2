@@ -1,0 +1,20 @@
+.banner{
+  height: 300px;
+  &--profile{
+    background-color: var(--bs-green-fourth);
+  }
+}
+.banner--big{
+  &--ranking{
+    background: url('../images/players/player-chou-tien-chen.jpeg') no-repeat right top / cover;
+  }
+  &--players{
+    background: url('../images/players/player-chou-tien-chen.jpeg') no-repeat right top / cover;
+  }
+  &--contest{
+    background: url('../images/players/player-chou-tien-chen.jpeg') no-repeat right top / cover;
+  }
+  &--player-info{
+    background: url('../images/players/player-middle-chou-tien-chen.png') no-repeat center top / cover;
+  }
+}
