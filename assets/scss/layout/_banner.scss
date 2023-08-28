@@ -5,6 +5,7 @@
   }
 }
 .banner--big{
+  height: 500px;
   &--ranking{
     background: url('../images/players/player-chou-tien-chen.jpeg') no-repeat right top / cover;
   }
@@ -16,5 +17,8 @@
   }
   &--player-info{
     background: url('../images/players/player-middle-chou-tien-chen.png') no-repeat center top / cover;
+  }
+  &--analysis{
+    background: url('../images/players/player-chou-tien-chen.jpeg') no-repeat right top / cover;
   }
 }
