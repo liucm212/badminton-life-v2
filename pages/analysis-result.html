@@ -1,0 +1,289 @@
+<!-- ! 建立元件測試頁面 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/meta'); -%>
+    <title>Analysis Result</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%> <%- include('./layout/event'); -%>
+    <!-- banner -->
+    <section
+      class="banner banner--big banner--big--analysis position-relative; py-4 px-4 px-md-1 d-flex flex-column justify-content-center mb-1"
+    >
+      <div class="container px-0 z-3">
+        <h2
+          class="d-flex align-items-center justify-content-center text-white fs-1 fw-bolder"
+        >
+          Analysis
+        </h2>
+      </div>
+    </section>
+
+    <main>
+      <div class="container px-lg-0">
+        <!-- analysis inputs : use grid system -->
+        <section class="mb-4">
+          <form action="analysis-result.html">
+            <section class="my-md-1">
+              <div class="row align-items-center gy-8 gy-md-0 mb-4 mb-md-0">
+                <div class="col-12 col-md-5 d-flex justify-content-center">
+                  <!-- left input  -->
+                  <section class="align-self-stretch fs-lg-5 position-relative">
+                    <div>
+                      <label class="input-tag" for="player-name">name</label>
+                      <input
+                        id="player-name"
+                        class="input--players width-100"
+                        type="text"
+                      />
+                    </div>
+                  </section>
+                </div>
+                <div class="col-12 col-md-2 d-flex justify-content-center">
+                  <span class="fs-3">VS.</span>
+                </div>
+                <div class="col-12 col-md-5 d-flex justify-content-center">
+                  <!-- right input -->
+                  <section class="align-self-stretch fs-lg-5 position-relative">
+                    <div>
+                      <label class="input-tag" for="player-name">name</label>
+                      <input
+                        id="player-name"
+                        class="input--players width-100"
+                        type="text"
+                      />
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </section>
+            <!-- search button -->
+            <div class="text-center text-md-end mb-4 mb-md-1">
+              <input
+                type="submit"
+                value="Search"
+                class="btn-sm btn--secondary rounded py-8 px-6"
+              />
+            </div>
+          </form>
+        </section>
+        <section class="mb-4">
+          <ul class="row gy-9">
+            <li class="col-md-6">
+              <div
+                class="border rounded transition-1 hover-bg--green-fourth py-4 px-6 mt-8 mx-auto d-flex flex-column align-items-center text-center"
+              >
+                <a
+                  href="contest-detail.html"
+                  class="fs-2 fw-bolder transition-1 hover-orange mb-6"
+                  >YONEX TAIPEI OPEN 2023</a
+                >
+                <div class="row row-cols-3">
+                  <a
+                    href="player-info.html"
+                    class="col transition-1 hover-orange"
+                    >Chou Tien Chen</a
+                  >
+                  <div class="col d-flex flex-column">
+                    <div>
+                      <span>13</span>
+                      <span class="text-green-secondary">21</span>
+                    </div>
+                    <div>
+                      <span>19</span>
+                      <span class="text-green-secondary">21</span>
+                    </div>
+                  </div>
+                  <a href="#" class="col transition-1 hover-orange"
+                    >Lin Chun Yi</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="col-md-6">
+              <div
+                class="border rounded transition-1 hover-bg--green-fourth py-4 px-6 mt-8 mx-auto d-flex flex-column align-items-center text-center"
+              >
+                <a
+                  href="contest-detail.html"
+                  class="fs-2 fw-bolder transition-1 hover-orange mb-6"
+                  >YONEX TAIPEI OPEN 2023</a
+                >
+                <div class="row row-cols-3">
+                  <a
+                    href="player-info.html"
+                    class="col transition-1 hover-orange"
+                    >Chou Tien Chen</a
+                  >
+                  <div class="col d-flex flex-column">
+                    <div>
+                      <span>13</span>
+                      <span class="text-green-secondary">21</span>
+                    </div>
+                    <div>
+                      <span>19</span>
+                      <span class="text-green-secondary">21</span>
+                    </div>
+                  </div>
+                  <a href="#" class="col transition-1 hover-orange"
+                    >Lin Chun Yi</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="col-md-6">
+              <div
+                class="border rounded transition-1 hover-bg--green-fourth py-4 px-6 mt-8 mx-auto d-flex flex-column align-items-center text-center"
+              >
+                <a
+                  href="contest-detail.html"
+                  class="fs-2 fw-bolder transition-1 hover-orange mb-6"
+                  >YONEX TAIPEI OPEN 2023</a
+                >
+                <div class="row row-cols-3">
+                  <a
+                    href="player-info.html"
+                    class="col transition-1 hover-orange"
+                    >Chou Tien Chen</a
+                  >
+                  <div class="col d-flex flex-column">
+                    <div>
+                      <span>13</span>
+                      <span class="text-green-secondary">21</span>
+                    </div>
+                    <div>
+                      <span>19</span>
+                      <span class="text-green-secondary">21</span>
+                    </div>
+                  </div>
+                  <a href="#" class="col transition-1 hover-orange"
+                    >Lin Chun Yi</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="col-md-6">
+              <div
+                class="border rounded transition-1 hover-bg--green-fourth py-4 px-6 mt-8 mx-auto d-flex flex-column align-items-center text-center"
+              >
+                <a
+                  href="contest-detail.html"
+                  class="fs-2 fw-bolder transition-1 hover-orange mb-6"
+                  >YONEX TAIPEI OPEN 2023</a
+                >
+                <div class="row row-cols-3">
+                  <a
+                    href="player-info.html"
+                    class="col transition-1 hover-orange"
+                    >Chou Tien Chen</a
+                  >
+                  <div class="col d-flex flex-column">
+                    <div>
+                      <span>13</span>
+                      <span class="text-green-secondary">21</span>
+                    </div>
+                    <div>
+                      <span>19</span>
+                      <span class="text-green-secondary">21</span>
+                    </div>
+                  </div>
+                  <a href="#" class="col transition-1 hover-orange"
+                    >Lin Chun Yi</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="col-md-6">
+              <div
+                class="border rounded transition-1 hover-bg--green-fourth py-4 px-6 mt-8 mx-auto d-flex flex-column align-items-center text-center"
+              >
+                <a
+                  href="contest-detail.html"
+                  class="fs-2 fw-bolder transition-1 hover-orange mb-6"
+                  >YONEX TAIPEI OPEN 2023</a
+                >
+                <div class="row row-cols-3">
+                  <a
+                    href="player-info.html"
+                    class="col transition-1 hover-orange"
+                    >Chou Tien Chen</a
+                  >
+                  <div class="col d-flex flex-column">
+                    <div>
+                      <span>13</span>
+                      <span class="text-green-secondary">21</span>
+                    </div>
+                    <div>
+                      <span>19</span>
+                      <span class="text-green-secondary">21</span>
+                    </div>
+                  </div>
+                  <a href="#" class="col transition-1 hover-orange"
+                    >Lin Chun Yi</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="col-md-6">
+              <div
+                class="border rounded transition-1 hover-bg--green-fourth py-4 px-6 mt-8 mx-auto d-flex flex-column align-items-center text-center"
+              >
+                <a
+                  href="contest-detail.html"
+                  class="fs-2 fw-bolder transition-1 hover-orange mb-6"
+                  >YONEX TAIPEI OPEN 2023</a
+                >
+                <div class="row row-cols-3">
+                  <a
+                    href="player-info.html"
+                    class="col transition-1 hover-orange"
+                    >Chou Tien Chen</a
+                  >
+                  <div class="col d-flex flex-column">
+                    <div>
+                      <span>13</span>
+                      <span class="text-green-secondary">21</span>
+                    </div>
+                    <div>
+                      <span>19</span>
+                      <span class="text-green-secondary">21</span>
+                    </div>
+                  </div>
+                  <a href="#" class="col transition-1 hover-orange"
+                    >Lin Chun Yi</a
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- pagination -->
+          <section class="mt-6 mb-3 mb-lg-2">
+            <ul class="pagination">
+              <li>
+                <a class="pagination-item pagination-item--controller" href="#"
+                  >pre</a
+                >
+              </li>
+              <li>
+                <a class="pagination-item pagination-item--active" href="#"
+                  >1</a
+                >
+              </li>
+              <li><a class="pagination-item" href="#">2</a></li>
+              <li><a class="pagination-item" href="#">3</a></li>
+              <li>
+                <a class="pagination-item pagination-item--controller" href="#"
+                  >next</a
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

@@ -149,3 +149,28 @@ d-inline-block{
   }
   
 }
+
+// transition
+.transition{
+  &-1{
+    transition: 0.1s;
+  }
+}
+
+
+// hover
+.hover{
+  &-orange{
+    &:hover{
+      color: orange;
+    }
+  }
+  &-bg{
+    &--green-fourth{
+      &:hover{
+        background-color: var(--bs-green-fourth);
+      }
+    }
+  }
+  
+}
