@@ -8,6 +8,9 @@ d-inline-block{
 
 // width
 .width{
+  &-40{
+    width: 40%;
+  }
   &-50{
     width: 50%;
   }
@@ -163,6 +166,11 @@ d-inline-block{
   &-orange{
     &:hover{
       color: orange;
+    }
+  }
+  &-green-primary{
+    &:hover{
+      color: var(--bs-green-primary);
     }
   }
   &-bg{

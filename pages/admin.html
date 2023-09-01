@@ -1,0 +1,23 @@
+<!-- ! 建立元件測試頁面 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/meta'); -%>
+    <title>Component</title>
+  </head>
+  <body>
+    <div class="vh-100 d-flex flex-column justify-content-between">
+      <%- include('./layout/header-logIn'); -%>
+      <h1 class="fs-xl fw-bold text-center mt-1 mb-4">Data Management</h1>
+      <section class="d-flex justify-content-center">
+        <div class="text-center py-4 pt-md-3 pb-md-1">
+          <a class="btn btn--secondary py-6 px-4 fs-2" href="admin-events.html"
+            >Events</a
+          >
+        </div>
+      </section>
+      <%- include('./layout/footer'); -%>
+    </div>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

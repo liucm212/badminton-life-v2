@@ -8,28 +8,31 @@
   <body>
     <%- include('./layout/header'); -%>
     <!-- banner -->
-    <section
-      class="banner banner--big banner--big--contest position-relative; py-4 px-4 px-md-1 d-flex flex-column justify-content-center mb-4"
-    >
-      <div class="container px-0 z-3">
-        <h2
-          class="d-flex align-items-center justify-content-center text-white fs-1 fw-bolder"
-        >
-          Contest
-        </h2>
-      </div>
-    </section>
-    <div class="container px-xl-0">
+    <div class="container-fluid px-0 px-lg-8 px-xl-0">
+      <section
+        class="banner banner--big position-relative; py-4 px-4 px-md-1 d-flex flex-column justify-content-center mb-4"
+      >
+        <div class="z-3">
+          <h1
+            class="d-flex align-items-center justify-content-center text-white fs-xxl fw-bolder"
+          >
+            Contest
+          </h1>
+        </div>
+      </section>
+    </div>
+
+    <div class="container-xl">
       <!-- filter buttons -->
       <section class="contest-buttons">
         <div
           class="d-flex justify-content-center justify-content-md-end align-items-center mt-4 mb-5"
         >
           <!-- 日期 -->
-          <section class="datePicker">
+          <section class="datePicker me-6">
             <span class="material-symbols-outlined"> event_note </span>
           </section>
-          <section class="dropdown">
+          <section class="dropdown me-6">
             <div class="dropdown-item">
               <span class="dropdown-tag">country</span>
               <p>country</p>

@@ -1,0 +1,86 @@
+<!-- ! 建立元件測試頁面 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/meta'); -%>
+    <title>Component</title>
+  </head>
+  <body>
+    <%- include('./layout/header-logIn'); -%>
+    <div class="container-xl">
+      <h1 class="fs-xl fw-bold text-center mt-1 mb-2">Events</h1>
+      <section>
+        <ul class="list-event w-100 mb-2">
+          <li class="d-flex justify-content-center align-items-center">
+            <div class="event-content">
+              <p class="border py-6 px-4 fs-5">
+                The current data is updated to 2023/06/06
+              </p>
+            </div>
+            <div class="event-function align-self-stretch">
+              <a
+                href="#"
+                class="d-block border h-100 d-flex flex-column justify-content-center align-items-center hover-green-primary"
+                ><span class="material-symbols-outlined fw-bold fs-2"
+                  >remove</span
+                ></a
+              >
+            </div>
+          </li>
+          <li class="d-flex justify-content-center align-items-center">
+            <div class="event-content">
+              <p class="border py-6 px-4 fs-5">
+                The current data is updated to 2023/06/06
+              </p>
+            </div>
+            <div class="event-function align-self-stretch">
+              <a
+                href="#"
+                class="d-block border h-100 d-flex flex-column justify-content-center align-items-center hover-green-primary"
+                ><span class="material-symbols-outlined fw-bold fs-2"
+                  >remove</span
+                ></a
+              >
+            </div>
+          </li>
+          <li class="d-flex justify-content-center align-items-center">
+            <div class="event-content">
+              <p class="border py-6 px-4 fs-5">
+                The current data is updated to 2023/06/06
+              </p>
+            </div>
+            <div class="event-function align-self-stretch">
+              <a
+                href="#"
+                class="d-block border h-100 d-flex flex-column justify-content-center align-items-center hover-green-primary"
+                ><span class="material-symbols-outlined fw-bold fs-2"
+                  >remove</span
+                ></a
+              >
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <form action="admin-events.html" class="list-event w-100 mb-2">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="event-content">
+              <input type="text" class="border fs-5 py-6 px-4 w-100" />
+            </div>
+            <div class="event-function align-self-stretch">
+              <input
+                type="submit"
+                value="+"
+                class="border h-100 w-100 bg-white fs-1 p-0 fw-light hover-green-primary"
+              />
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

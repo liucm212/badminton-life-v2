@@ -8,20 +8,22 @@
   <body>
     <%- include('./layout/header'); -%> <%- include('./layout/event'); -%>
     <!-- banner -->
-    <section
-      class="banner banner--big banner--big--analysis position-relative; py-4 px-4 px-md-1 d-flex flex-column justify-content-center mb-1"
-    >
-      <div class="container px-0 z-3">
-        <h2
-          class="d-flex align-items-center justify-content-center text-white fs-1 fw-bolder"
-        >
-          Analysis
-        </h2>
-      </div>
-    </section>
+    <div class="container-fluid px-0 px-lg-8 px-xl-0">
+      <section
+        class="banner banner--big banner--big--analysis position-relative; py-4 px-4 px-md-1 d-flex flex-column justify-content-center mb-4"
+      >
+        <div class="z-3">
+          <h1
+            class="d-flex align-items-center justify-content-center text-white fs-xxl fw-bolder"
+          >
+            Analysis
+          </h1>
+        </div>
+      </section>
+    </div>
 
     <main>
-      <div class="container px-lg-0">
+      <div class="container-xl">
         <!-- analysis inputs : use grid system -->
         <section class="mb-4">
           <form action="analysis-result.html">
@@ -45,7 +47,9 @@
                 </div>
                 <div class="col-12 col-md-5 d-flex justify-content-center">
                   <!-- right input -->
-                  <section class="align-self-stretch fs-lg-5 position-relative">
+                  <section
+                    class="align-self-stretch fs-lg-5 position-relative mb-4 mb-md-0"
+                  >
                     <div>
                       <label class="input-tag" for="player-name">name</label>
                       <input

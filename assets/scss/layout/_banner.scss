@@ -6,19 +6,21 @@
 }
 .banner--big{
   height: 500px;
-  &--ranking{
-    background: url('../images/players/player-chou-tien-chen.jpeg') no-repeat right top / cover;
-  }
-  &--players{
-    background: url('../images/players/player-chou-tien-chen.jpeg') no-repeat right top / cover;
-  }
-  &--contest{
-    background: url('../images/players/player-chou-tien-chen.jpeg') no-repeat right top / cover;
-  }
+  background: url('../images/banner-shuttle.jpeg') no-repeat center center / cover;
+  // 各區域的圖片，目前先統一替換成同一張圖，之後有需要改再調整。
+  // &--ranking{
+  //   background: url('../images/players/player-chou-tien-chen.jpeg') no-repeat right top / cover;
+  // }
+  // &--players{
+  //   background: url('../images/players/player-chou-tien-chen.jpeg') no-repeat right top / cover;
+  // }
+  // &--contest{
+  //   background: url('../images/players/player-chou-tien-chen.jpeg') no-repeat right top / cover;
+  // }
+  // &--analysis{
+  //   background: url('../images/players/player-chou-tien-chen.jpeg') no-repeat right top / cover;
+  // }
   &--player-info{
     background: url('../images/players/player-middle-chou-tien-chen.png') no-repeat center top / cover;
-  }
-  &--analysis{
-    background: url('../images/players/player-chou-tien-chen.jpeg') no-repeat right top / cover;
   }
 }

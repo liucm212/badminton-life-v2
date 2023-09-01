@@ -1,0 +1,19 @@
+.list-event{
+  .event-content{
+    width: 400px;
+  }
+  .event-function{
+    width: 100px;
+    
+  }
+  @include Tablet{
+    .event-content{
+      width: 600px;
+    }
+  }
+  @include Desktop{
+    .event-content{
+      width: 800px;
+    }
+  }
+}

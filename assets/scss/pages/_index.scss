@@ -21,6 +21,9 @@
 .menu-tryIt{
   &-banner{
     margin: 0 auto;
+    @include Tablet{
+      width: 100%;
+    }
     @include Desktop{
       width: 50%;
     }

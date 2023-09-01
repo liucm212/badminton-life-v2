@@ -8,264 +8,242 @@
   <body>
     <%- include('./layout/header'); -%>
     <!-- banner -->
-    <section
-      class="banner banner--big banner--big--player-info position-relative; py-4 px-4 px-md-1 d-flex flex-column justify-content-end justify-content-md-center"
-    >
-      <div class="container px-0 z-3">
-        <ul
-          class="d-flex align-items-center justify-content-between text-white"
-        >
-          <li class="me-9">
-            <span class="fs-3 fs-lg-1">Chou Tien Chen</span>
-            <div class="d-flex align-items-center">
-              <img
-                width="20"
-                height="20"
-                class="me-9"
-                src="../assets/images/countries/TPE.png"
-                alt="台灣國旗"
-              />
-              <span class="fs-3 fw-light">Taiwan</span>
-            </div>
-          </li>
-          <li class="d-flex flex-column align-items-center">
-            <span class="fs-2">Position</span>
-            <span class="fs-1">10</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- main -->
-    <main class="container">
-      <div class="row justify-content-center justify-content-md-between py-6">
-        <!-- information -->
-        <section
-          class="col-10 col-md-5 mb-6 border border-green-primary rounded py-8 px-6 py-md-6 px-md-4"
-        >
-          <h2 class="text-green-primary fw-bold">Information</h2>
-          <ul>
-            <li class="mt-8 fs-lg-5">Name : <span>Chou Tien Chen</span></li>
-            <li class="mt-8 fs-lg-5">Country : <span>Taiwan</span></li>
-            <li class="mt-8 fs-lg-5">Age : <span>33</span></li>
-            <li class="mt-8 fs-lg-5">Height : <span>180</span>m</li>
-            <li class="mt-8 fs-lg-5">Handedness : <span>R</span></li>
-          </ul>
-        </section>
-        <!-- equipment -->
-        <section
-          class="col-10 col-md-5 mb-6 border border-green-primary rounded py-8 px-6 py-md-6 px-md-4"
-        >
-          <h2 class="text-green-primary fw-bold">Equipment</h2>
-          <ul>
-            <li class="mt-8 fs-lg-5">Racket : <span>DUORA Z-STRIKE</span></li>
-            <li class="mt-8 fs-lg-5">String : <span>BG80</span></li>
-            <li class="mt-8 fs-lg-5">
-              Shoes : <span>POWER CUSHION 65 Z WIDE UNISEX</span>
+    <div class="container-fluid px-0 px-lg-8 px-xl-0">
+      <section
+        class="banner banner--big banner--big--player-info position-relative py-4 px-4 px-md-1 d-flex flex-column justify-content-end justify-content-md-center mb-4"
+      >
+        <div class="z-3">
+          <ul
+            class="d-flex align-items-center justify-content-between text-white"
+          >
+            <li class="me-9">
+              <h1 class="fs-3 fs-lg-1 fw-bold">Chou Tien Chen</h1>
+              <div class="d-flex align-items-center">
+                <img
+                  width="20"
+                  height="20"
+                  class="me-9"
+                  src="../assets/images/countries/TPE.png"
+                  alt="台灣國旗"
+                />
+                <span class="fs-3 fw-light">Taiwan</span>
+              </div>
+            </li>
+            <li class="d-flex flex-column align-items-center">
+              <span class="fs-2">Position</span>
+              <span class="fs-1">10</span>
             </li>
           </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- main -->
+    <main class="container-xl">
+      <div class="row justify-content-center py-6">
+        <!-- information -->
+        <section class="col-md-6 mb-6 mb-md-4">
+          <div
+            class="border border-green-primary rounded py-8 px-6 py-md-6 px-md-4"
+          >
+            <h2 class="text-green-primary fs-1 fw-bold">Information</h2>
+            <ul>
+              <li class="mt-8 fs-lg-5">Name : <span>Chou Tien Chen</span></li>
+              <li class="mt-8 fs-lg-5">Country : <span>Taiwan</span></li>
+              <li class="mt-8 fs-lg-5">Age : <span>33</span></li>
+              <li class="mt-8 fs-lg-5">Height : <span>180</span>m</li>
+              <li class="mt-8 fs-lg-5">Handedness : <span>R</span></li>
+            </ul>
+          </div>
+        </section>
+        <!-- equipment -->
+        <section class="col-md-6 mb-6 mb-md-4 d-flex flex-column">
+          <div
+            class="border border-green-primary rounded py-8 px-6 pt-md-6 px-md-4 h-100"
+          >
+            <h2 class="text-green-primary fs-1 fw-bold">Equipment</h2>
+            <ul class="mb-auto">
+              <li class="mt-8 fs-lg-5">Racket : <span>DUORA Z-STRIKE</span></li>
+              <li class="mt-8 fs-lg-5">String : <span>BG80</span></li>
+              <li class="mt-8 fs-lg-5">
+                Shoes : <span>POWER CUSHION 65 Z WIDE UNISEX</span>
+              </li>
+            </ul>
+          </div>
         </section>
         <!-- recent game -->
-        <section
-          class="col-10 col-md-12 mb-4 border border-green-primary rounded py-8 px-6 py-md-6 px-md-4"
-        >
-          <h2 class="text-green-primary fw-bold">Recent Game</h2>
-          <!-- game -->
+        <section class="col-md-12 mb-6 mb-md-4">
           <div
-            class="border rounded transition-1 hover-bg--green-fourth py-4 px-6 mt-8 width-lg-50 mx-auto d-flex flex-column align-items-center text-center"
+            class="border border-green-primary rounded py-8 px-6 py-md-6 px-md-4"
           >
-            <a
-              href="contest-detail.html"
-              class="fs-2 fw-bolder transition-1 hover-orange mb-6"
-              >YONEX TAIPEI OPEN 2023</a
+            <h2 class="text-green-primary fs-1 fw-bold">Recent Game</h2>
+            <!-- game -->
+            <div
+              class="border rounded transition-1 hover-bg--green-fourth py-4 px-6 mt-8 width-lg-50 mx-auto d-flex flex-column align-items-center text-center"
             >
-            <div class="row row-cols-3">
-              <a href="#" class="col transition-1 hover-orange"
-                >Chou Tien Chen</a
+              <a
+                href="contest-detail.html"
+                class="fs-2 fw-bolder transition-1 hover-orange mb-6"
+                >YONEX TAIPEI OPEN 2023</a
               >
-              <div class="col d-flex flex-column">
-                <div>
-                  <span>13</span>
-                  <span class="text-green-secondary">21</span>
+              <div class="row row-cols-3">
+                <a href="#" class="col transition-1 hover-orange"
+                  >Chou Tien Chen</a
+                >
+                <div class="col d-flex flex-column">
+                  <div>
+                    <span>13</span>
+                    <span class="text-green-secondary">21</span>
+                  </div>
+                  <div>
+                    <span>19</span>
+                    <span class="text-green-secondary">21</span>
+                  </div>
                 </div>
-                <div>
-                  <span>19</span>
-                  <span class="text-green-secondary">21</span>
-                </div>
+                <a href="#" class="col transition-1 hover-orange"
+                  >Lin Chun Yi</a
+                >
               </div>
-              <a href="#" class="col transition-1 hover-orange">Lin Chun Yi</a>
             </div>
           </div>
         </section>
         <!-- results -->
-        <section
-          class="col-10 col-md-12 mb-2 border border-green-primary rounded py-8 px-6 py-md-6 px-md-4"
-        >
-          <h2 class="text-green-primary fw-bold mb-8">Results</h2>
-          <ul class="row gy-6">
-            <li class="col-12 col-md-6">
-              <a
-                href="contest-detail.html"
-                class="transition-1 hover-bg--green-fourth"
-              >
-                <div
-                  class="d-flex justify-content-center align-items-center border rounded py-6 px-4"
+        <section class="col-md-12 mb-2">
+          <div
+            class="border border-green-primary rounded py-8 px-6 py-md-6 px-md-4"
+          >
+            <h2 class="text-green-primary fs-1 fw-bold mb-8">Results</h2>
+            <ul class="row gy-6">
+              <li class="col-12 col-md-6">
+                <a
+                  href="contest-detail.html"
+                  class="transition-1 hover-bg--green-fourth"
                 >
-                  <div>
-                    <h3 class="fs-3 fs-lg-2 fw-bold me-8">
-                      YONEX TAIPEI OPEN 2023
-                    </h3>
-                    <span class="text-helper-third mt-8">Man's single</span>
+                  <div
+                    class="d-flex justify-content-center align-items-center border rounded py-6 px-4"
+                  >
+                    <div>
+                      <h3 class="fs-3 fs-lg-2 fw-bold me-8">
+                        YONEX TAIPEI OPEN 2023
+                      </h3>
+                      <span class="text-helper-third mt-8">Man's single</span>
+                    </div>
+                    <span class="fs-3 fs-lg-2 text-green-primary">16R</span>
                   </div>
-                  <span class="fs-3 fs-lg-2 text-green-primary">16R</span>
-                </div>
-              </a>
-            </li>
-            <li class="col-12 col-md-6">
-              <a
-                href="contest-detail.html"
-                class="transition-1 hover-bg--green-fourth"
-              >
-                <div
-                  class="d-flex justify-content-center align-items-center border rounded py-6 px-4"
+                </a>
+              </li>
+              <li class="col-12 col-md-6">
+                <a
+                  href="contest-detail.html"
+                  class="transition-1 hover-bg--green-fourth"
                 >
-                  <div>
-                    <h3 class="fs-3 fs-lg-2 fw-bold me-8">
-                      YONEX TAIPEI OPEN 2023
-                    </h3>
-                    <span class="text-helper-third mt-8">Man's single</span>
+                  <div
+                    class="d-flex justify-content-center align-items-center border rounded py-6 px-4"
+                  >
+                    <div>
+                      <h3 class="fs-3 fs-lg-2 fw-bold me-8">
+                        YONEX TAIPEI OPEN 2023
+                      </h3>
+                      <span class="text-helper-third mt-8">Man's single</span>
+                    </div>
+                    <span class="fs-3 fs-lg-2 text-green-primary">16R</span>
                   </div>
-                  <span class="fs-3 fs-lg-2 text-green-primary">16R</span>
-                </div>
-              </a>
-            </li>
-            <li class="col-12 col-md-6">
-              <a
-                href="contest-detail.html"
-                class="transition-1 hover-bg--green-fourth"
-              >
-                <div
-                  class="d-flex justify-content-center align-items-center border rounded py-6 px-4"
+                </a>
+              </li>
+              <li class="col-12 col-md-6">
+                <a
+                  href="contest-detail.html"
+                  class="transition-1 hover-bg--green-fourth"
                 >
-                  <div>
-                    <h3 class="fs-3 fs-lg-2 fw-bold me-8">
-                      YONEX TAIPEI OPEN 2023
-                    </h3>
-                    <span class="text-helper-third mt-8">Man's single</span>
+                  <div
+                    class="d-flex justify-content-center align-items-center border rounded py-6 px-4"
+                  >
+                    <div>
+                      <h3 class="fs-3 fs-lg-2 fw-bold me-8">
+                        YONEX TAIPEI OPEN 2023
+                      </h3>
+                      <span class="text-helper-third mt-8">Man's single</span>
+                    </div>
+                    <span class="fs-3 fs-lg-2 text-green-primary">16R</span>
                   </div>
-                  <span class="fs-3 fs-lg-2 text-green-primary">16R</span>
-                </div>
-              </a>
-            </li>
-            <li class="col-12 col-md-6">
-              <a
-                href="contest-detail.html"
-                class="transition-1 hover-bg--green-fourth"
-              >
-                <div
-                  class="d-flex justify-content-center align-items-center border rounded py-6 px-4"
+                </a>
+              </li>
+              <li class="col-12 col-md-6">
+                <a
+                  href="contest-detail.html"
+                  class="transition-1 hover-bg--green-fourth"
                 >
-                  <div>
-                    <h3 class="fs-3 fs-lg-2 fw-bold me-8">
-                      YONEX TAIPEI OPEN 2023
-                    </h3>
-                    <span class="text-helper-third mt-8">Man's single</span>
+                  <div
+                    class="d-flex justify-content-center align-items-center border rounded py-6 px-4"
+                  >
+                    <div>
+                      <h3 class="fs-3 fs-lg-2 fw-bold me-8">
+                        YONEX TAIPEI OPEN 2023
+                      </h3>
+                      <span class="text-helper-third mt-8">Man's single</span>
+                    </div>
+                    <span class="fs-3 fs-lg-2 text-green-primary">16R</span>
                   </div>
-                  <span class="fs-3 fs-lg-2 text-green-primary">16R</span>
-                </div>
-              </a>
-            </li>
-            <li class="col-12 col-md-6">
-              <a
-                href="contest-detail.html"
-                class="transition-1 hover-bg--green-fourth"
-              >
-                <div
-                  class="d-flex justify-content-center align-items-center border rounded py-6 px-4"
+                </a>
+              </li>
+              <li class="col-12 col-md-6">
+                <a
+                  href="contest-detail.html"
+                  class="transition-1 hover-bg--green-fourth"
                 >
-                  <div>
-                    <h3 class="fs-3 fs-lg-2 fw-bold me-8">
-                      YONEX TAIPEI OPEN 2023
-                    </h3>
-                    <span class="text-helper-third mt-8">Man's single</span>
+                  <div
+                    class="d-flex justify-content-center align-items-center border rounded py-6 px-4"
+                  >
+                    <div>
+                      <h3 class="fs-3 fs-lg-2 fw-bold me-8">
+                        YONEX TAIPEI OPEN 2023
+                      </h3>
+                      <span class="text-helper-third mt-8">Man's single</span>
+                    </div>
+                    <span class="fs-3 fs-lg-2 text-green-primary">16R</span>
                   </div>
-                  <span class="fs-3 fs-lg-2 text-green-primary">16R</span>
-                </div>
-              </a>
-            </li>
-            <li class="col-12 col-md-6">
-              <a
-                href="contest-detail.html"
-                class="transition-1 hover-bg--green-fourth"
-              >
-                <div
-                  class="d-flex justify-content-center align-items-center border rounded py-6 px-4"
+                </a>
+              </li>
+              <li class="col-12 col-md-6">
+                <a
+                  href="contest-detail.html"
+                  class="transition-1 hover-bg--green-fourth"
                 >
-                  <div>
-                    <h3 class="fs-3 fs-lg-2 fw-bold me-8">
-                      YONEX TAIPEI OPEN 2023
-                    </h3>
-                    <span class="text-helper-third mt-8">Man's single</span>
+                  <div
+                    class="d-flex justify-content-center align-items-center border rounded py-6 px-4"
+                  >
+                    <div>
+                      <h3 class="fs-3 fs-lg-2 fw-bold me-8">
+                        YONEX TAIPEI OPEN 2023
+                      </h3>
+                      <span class="text-helper-third mt-8">Man's single</span>
+                    </div>
+                    <span class="fs-3 fs-lg-2 text-green-primary">16R</span>
                   </div>
-                  <span class="fs-3 fs-lg-2 text-green-primary">16R</span>
-                </div>
-              </a>
-            </li>
-            <li class="col-12 col-md-6">
-              <a
-                href="contest-detail.html"
-                class="transition-1 hover-bg--green-fourth"
-              >
-                <div
-                  class="d-flex justify-content-center align-items-center border rounded py-6 px-4"
+                </a>
+              </li>
+            </ul>
+            <!-- pagination -->
+            <ul class="pagination mt-6 mb-4">
+              <li>
+                <a class="pagination-item pagination-item--controller" href="#"
+                  >pre</a
                 >
-                  <div>
-                    <h3 class="fs-3 fs-lg-2 fw-bold me-8">
-                      YONEX TAIPEI OPEN 2023
-                    </h3>
-                    <span class="text-helper-third mt-8">Man's single</span>
-                  </div>
-                  <span class="fs-3 fs-lg-2 text-green-primary">16R</span>
-                </div>
-              </a>
-            </li>
-            <li class="col-12 col-md-6">
-              <a
-                href="contest-detail.html"
-                class="transition-1 hover-bg--green-fourth"
-              >
-                <div
-                  class="d-flex justify-content-center align-items-center border rounded py-6 px-4"
+              </li>
+              <li>
+                <a class="pagination-item pagination-item--active" href="#"
+                  >1</a
                 >
-                  <div>
-                    <h3 class="fs-3 fs-lg-2 fw-bold me-8">
-                      YONEX TAIPEI OPEN 2023
-                    </h3>
-                    <span class="text-helper-third mt-8">Man's single</span>
-                  </div>
-                  <span class="fs-3 fs-lg-2 text-green-primary">16R</span>
-                </div>
-              </a>
-            </li>
-          </ul>
-          <!-- pagination -->
-          <ul class="pagination mt-6 mb-4">
-            <li>
-              <a class="pagination-item pagination-item--controller" href="#"
-                >pre</a
-              >
-            </li>
-            <li>
-              <a class="pagination-item pagination-item--active" href="#">1</a>
-            </li>
-            <li><a class="pagination-item" href="#">2</a></li>
-            <li><a class="pagination-item" href="#">3</a></li>
-            <li>
-              <a class="pagination-item pagination-item--controller" href="#"
-                >next</a
-              >
-            </li>
-          </ul>
+              </li>
+              <li><a class="pagination-item" href="#">2</a></li>
+              <li><a class="pagination-item" href="#">3</a></li>
+              <li>
+                <a class="pagination-item pagination-item--controller" href="#"
+                  >next</a
+                >
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
     </main>
