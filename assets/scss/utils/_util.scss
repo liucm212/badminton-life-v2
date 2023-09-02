@@ -7,6 +7,46 @@ d-inline-block{
 
 
 // width
+.w{
+  &-px{
+    &-50{
+      width: 50px;
+    }
+    &-100{
+      width: 100px;
+    }
+    &-280{
+      width: 280px;
+    }
+    &-360{
+      width: 360px;
+    }
+    &-500{
+      width: 500px;
+    }
+  }
+  &-lg{
+    @include Desktop{
+      &-px{
+        &-50{
+          width: 50px;
+        }
+        &-100{
+          width: 100px;
+        }
+        &-280{
+          width: 280px;
+        }
+        &-360{
+          width: 360px;
+        }
+        &-500{
+          width: 500px;
+        }
+      }
+    }
+  }
+}
 .width{
   &-40{
     width: 40%;
@@ -25,6 +65,9 @@ d-inline-block{
   }
   &-lg{
     @include Desktop{
+      &-auto{
+        width: auto;
+      }
       &-50{
         width: 50%;
       }
@@ -38,6 +81,13 @@ d-inline-block{
         width: 100%;
       }
     }
+  }
+}
+
+// min-widht
+.mw{
+  &-500{
+    min-width: 500px;
   }
 }
 
@@ -78,7 +128,7 @@ d-inline-block{
 // transform:更換座標軸位置
 .transform{
   &-center{
-    transform: translate(50%, 50%);
+    transform: translate(-50%, -50%);
   }
   &-bottom-right{
     transform: translate(0%, 0%);
@@ -87,10 +137,62 @@ d-inline-block{
 
 // up
 .up{
+  &-12{
+    top: -12px;
+  }
+  &-20{
+    top: -20px;
+  }
+  &-30{
+    top: -30px;
+  }
+  &-60{
+    top: -60px;
+  }
   &-100{
     top: -100px;
   }
 }
+//center
+.x{
+  &-auto{
+    left: auto;
+  }
+  &-center{
+    left: 50%;
+  }
+  &-220{
+    left: 220px;
+  }
+  &-lg{
+    @include Desktop{
+      &-auto{
+        left: auto;
+      }
+      &-center{
+        left: 50%;
+      }
+      &-220{
+        left: 220px;
+      }
+    }
+  }
+  &-xl{
+    @include xl-device{
+      &-auto{
+        left: auto;
+      }
+      &-center{
+        left: 50%;
+      }
+      &-220{
+        left: 220px;
+      }
+    }
+  }
+}
+
+
 
 
 // overflow
@@ -158,6 +260,9 @@ d-inline-block{
   &-1{
     transition: 0.1s;
   }
+  &-3{
+    transition: 0.3s;
+  }
 }
 
 
@@ -166,6 +271,11 @@ d-inline-block{
   &-orange{
     &:hover{
       color: orange;
+    }
+  }
+  &-white{
+    &:hover{
+      color: var(--bs-white);
     }
   }
   &-green-primary{
@@ -179,6 +289,32 @@ d-inline-block{
         background-color: var(--bs-green-fourth);
       }
     }
+    &--helper-third{
+      &:hover{
+        background-color: var(--bs-helper-third);
+      }
+    }
+    &--helper-fourth{
+      &:hover{
+        background-color: var(--bs-helper-fourth);
+      }
+    }
+    &--helper-fifth{
+      &:hover{
+        background-color: var(--bs-helper-fifth);
+      }
+    }
   }
-  
+  &-border{
+    &--helper-primary{
+      border: 1px solid var(--bs-helper-primary);
+    }
+  }
+}
+
+// line height
+.lh{
+  &-48{
+    line-height: 48px;
+  }
 }

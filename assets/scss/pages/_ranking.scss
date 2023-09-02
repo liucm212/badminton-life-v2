@@ -1,52 +1,37 @@
+// 切換項目按鈕
 .ranking{
   &-option{
-    .list-item{
-      text-align: center;
-      padding: 20px 0;
-      border: 1px solid var(--bs-dark);
-      transition: 0.3s;
-      font-size: 20px;
-      &:hover{
-        color: var(--bs-white);
-        background-color: var(--bs-helper-third);
-      }
-    }
     .active{
       color: var(--bs-white);
       background-color: var(--bs-green-primary);
     }
     &-sm{
       position: relative;
-      // 點下去就出現選項的效果
-      // &:hover .ranking-option--dropdown-content{
-      //   display: block;
-      // }
-    }
-    &--dropdown{
-      width: 60%;
-      margin: 40px auto 60px;
-      &:hover{
-        // color: var(--bs-white);
-        background-color: var(--bs-helper-third);
-        border: 1px solid var(--bs-helper-primary);
+      // 點下去就出現選項的效果，目前只用hover
+      &:hover .ranking-option--dropdown-content{
+        display: block;
+        z-index: 1000;
       }
     }
     &--dropdown-content{
       display: none;
       position: absolute;
-      width: 50%;
-      transform: translate(-50%, 0);
+      transform: translate(-50%, -50%);
       left: 50%;
-      top: 60px;
+      top: 200px;
       .list-item{
         background-color: var(--bs-white);
-        font-size: 16px;
-        padding: 12px 20px;
-        border: 1px solid var(--bs-dark);
       }
       .active{
         background-color: var(--bs-helper-third);
       }
     }
+  }
+}
+
+// ranking大圖片
+.ranking{
+  &-playerPic{
+    background: url('../images/players/player-full-viktor-axelsen.png') no-repeat center center / cover;
   }
 }

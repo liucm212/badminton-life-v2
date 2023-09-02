@@ -10,3 +10,9 @@
     @content;
   }
 }
+
+@mixin xl-device{ // 1320px
+  @media (min-width:1320px) {
+    @content;
+  }
+}
