@@ -19,15 +19,15 @@
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
 />
     <title>Component</title>
-    <script type="module" crossorigin src="/badminton-life-v2/assets/dropdown-ce92efa3.js"></script>
-    <link rel="stylesheet" href="/badminton-life-v2/assets/dropdown-a325b568.css">
+    <script type="module" crossorigin src="/badminton-life-v2/assets/dropdown-259bb917.js"></script>
+    <link rel="stylesheet" href="/badminton-life-v2/assets/dropdown-8cd1a4b5.css">
   </head>
   <body>
-    <!-- xl-device-width時才開使套用container設定 -->
-<header class="header container-xl px-0">
-  <div class="row g-0 align-items-lg-center">
+    <!-- xl-device-width時開始不是滿版的 -->
+<header class="header container-xl px-0 px-lg-8">
+  <div class="row g-0 align-items-lg-center border border-dark">
     <div class="col-12 col-lg-4">
-      <h1 class="header-logo">
+      <div class="header-logo">
         <a href="index.html">
           <img
             class="d-lg-none"
@@ -50,28 +50,28 @@
             ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF8SURBVHgB7ZexTsMwEEDPTUY2qLqx4ab5hgqxsjOwUQn+o+IH+IIOMCLE3B/oBzAFyC+kYmKCNCauVRQhHJ99181vSqw758VR7myASCQSiaCQmbzK8/wAiOg5xpPxNTZ+gAlq5eZCwP1G1UuKpM7dQL0EUAuZyzkmR7gCzNuqRWdolYj0vCiKT/DgV07BdDemFMzKt/KhL8+5golIHtvXWHWGpr4r+Z+cnjMdpM+uXOcKWh+AXEmbXAK4r4AStD7IIUmVM+Ee+EhyyJkUTzCSXHImLYA+SX3BJWdSA7FJbmdkkjPpBCySwCVnpiBilWSQ06BaXRAKWNjvJw5si114f5JdSwzoOKyCfXVOX4a2RRZBTBGm9G6SoE+H4JKkbRYcpYRDMny7haxzVEmnIEfjp0g6C3XTfF9Qe6uO3f7hf3bmtaovXbmJK2C9/ngZHh2KdvIzSvuqquprNBw9KdGctrfH7SHs9v21vAMu5ETecB07s+xkBpFIJBJB8QOnXEKFDI4wNgAAAABJRU5ErkJggg==" alt="叉叉記號"
           /></a>
         </div>
-      </h1>
+      </div>
     </div>
     <!-- mobile navbar -->
     <div class="col-12 col-lg-8">
       <nav class="header-nav d-lg-flex justify-content-end">
         <ul id="mobileNavbar" class="list d-none d-lg-flex">
-          <li class="col-12 col-lg-2">
+          <li class="col-12 col-lg">
             <a class="list-item" href="ranking.html">Ranking</a>
           </li>
-          <li class="col-12 col-lg-2">
+          <li class="col-12 col-lg">
             <a class="list-item" href="players.html">Players</a>
           </li>
-          <li class="col-12 col-lg-2">
+          <li class="col-12 col-lg">
             <a class="list-item" href="contest.html">Contest</a>
           </li>
-          <li class="col-12 col-lg-2">
+          <li class="col-12 col-lg">
             <a class="list-item" href="forum.html">Forum</a>
           </li>
-          <li class="col-12 col-lg-2">
+          <li class="col-12 col-lg">
             <a class="list-item" href="analysis.html">Analysis</a>
           </li>
-          <li class="col-12 col-lg-2">
+          <li class="col-12 col-lg">
             <a class="list-item list-item--signIn" href="logIn.html">Log In</a>
           </li>
         </ul>
@@ -79,7 +79,7 @@
     </div>
   </div>
 </header>
- <div id="eventInfo" class="container-xl px-0">
+ <div id="eventInfo" class="container-xl px-0 px-lg-8">
   <div class="event px-8 d-flex justify-content-between align-items-center">
     <div class="event-left my-7 d-flex align-items-center">
       <img
@@ -108,11 +108,859 @@
     </div>
   </div>
 </div>
-    <div class="container-xl px-md-0"></div>
+    <div class="container-xl">
+      <!-- 借用墊高一下 -->
+      <div style="height: 200px"></div>
+
+      <ul class="d-xl-flex">
+        <li
+          class="bg-white position-relative border border-helper-primary py-3 px-4 flex-grow-1 mb-1 mb-xl-0"
+        >
+          <!-- title -->
+          <div
+            class="position-absolute transform-center d-flex justify-content-center align-items-center py-5 w-px-280 w-lg-px-360 bg-green-fourth up-12 x-center x-lg-220 border border-helper-primary"
+          >
+            <div class="me-8">
+              <img
+                class="d-lg-none"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJfSURBVHgB3VS9ctpAEN69wx4yKcLvjEtlsISggTIlfgKbKi0p09mPkCcgfgKTMhXJE1h5A1JFBBdKl8wwCSVB6DZ7J5hIjBAkpb8ZkO777vY77e4dwKNCu213bdceJDnXda1dTqPZal6zZKXn2gPbtrtJTiQHa8I7gXiX5BSogeaclnO15c7d8x4ADSM8uU7OJZ4nTtLrCyk3En22sdI7ECOgKJj6sw9b7sF/8JxWoy8pmqQMIOoXQATp9Qksi8sFCTFutuz7LRdFUYkEDpNp0ulBkMMoOin95Zwxc2OlwsVeg2ASLCACDwB7lmWZxeHTMOCtlQAhkVtl8Z8VhqxBXCd+XBHByPeDIBlTwg7q9fIPQBzIU3lWqVbKci1dRNT5L1Zq1d/VWrXL+ksEOBMFMdVjRLrkTb0QoG7m858pA4QMNNvOL7Prf0Mw/fL1+S4psmaSglvjTvAGSV0AkReP1YUZm0n4ybwrvImH8C4rVqbBqrh6u1nU8blj+Ds/6/FyueauKQRGA/K0hpI6JpBajY42MMWOd93TPc/9/Uzzp08kv+t8xysbTkMXdgDGLF3cLTJroOGawOIejoAiejXzZyM49gs0NqnRPR2AUnGeuQ15T+bAIQc1Gv/2Bc81MAHjYluIMNFm3K5cC/WNOTaWntbY1MuLIfJF5RkjKS+5qgvOPxdUdNgsIEFDo0V0mxcD4QD4CqA8nXs/N0YBDmCT6//GQQPaub4zMMoTc2sQO8SneI+Yox1pwFfwth13ESCFB9MnD02Yz+eLeq3+EYHKFJfzOyp6jxC+3nd6Hxf+ABV2+D6KusdwAAAAAElFTkSuQmCC"
+                alt="黑色羽球樣貌線條。"
+              />
+              <img
+                class="d-none d-lg-block"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVASURBVHgB7VhfaFtVGP++e2+TrFSY659ls0J0zU0WdPZhDwP/RRjYhw4mU7YXYaLDgY75MJgPPvimRcTBBBEULXSw4R4UJ2zgQwYd7KEPBWebpClELdrSJgSpTZrdnM/v3OTe3tzeNrmRuZf+oNxzzved7/udc75zvq8B2MEOHi7Qa/BA4sCQJtTLLF1YL1fP5fP5ilsnFouNgCIuEuKN7Ez2Uy87sYOx8wD0KhKNpdNzN9zySCQSCu4KfoZAQ6IG57LZbNqto3kZ1kj9hMmNyHYgFJjkz/gmJQW+4fWFkSCpP63/lP2l2bhcJBBdkm1exBB/9rlNBLuDJ1jnLHEbVfiIP69sduMBRLCcGUj4K3jD0lmpqtVFt7C2VlthxyWTIEDey4BCtXnpw+WzmYvXICRBiy9GR4iUxUwmM+WlYh5Pd3AUBU6l0+m8l04ikQgTGS+Wy9VbHCYlL51oIjqsChjkELhpkXVC9ZrE6xV7+vsSiHSsr793pK+3v8D406kysH/gCMfWy4B0ZM+jvUvFYrFpF6PR6DDH6Du8e4NqQCsUlgu/u+X9e3sv8g4N8zH/VSgU73lR8YxBCYWUEqF4T7ZJIRlDx5xyBOzhjylXVVjgz3STXMNnLTnWxB23fezC83z2pxvebsFWPLYSpMPpSV5drk4GRiLDkd1OuQFGzmElsskAQtwWK11N8cVH38OX65TZIVjgMLoJfglCCgxBcKXR0wKVwJtO8fzAfB6smKENMjbIJm2Uy+WcUySEcYI/IXMdCkzANsDthPF4PMLHPAdmKNA9tvaBOUmgJkD0sPFLTGS33AVQ8N1mguYTEwF5kxFPu2Qfgow9aYuUJ7a6ZC0JSugH9R9ZaRQeDCYzs9nnt1NQoDW+hgcEIviqlU7LHZRvYmxJ/4NbYXMCwQXODPXHFegoNXaXH9rPidCKNY5JOlv3gNc5BGQ2krsREkAfN3RKnEb3eaVRJzRoBb4sEMcJZnZBdknBpcxMxgxszrWrPGISpBre5tt4vTFuXygUYtzKw/F4dFSupA76thW5xqJaw1CML+0OwYbzeqqqDyu0124jPW7roJa32gLxbduOUK5AG2iL4PzMPB8dphruk2YhwLiv0IJtCGHQJkXwmNW2npihQ0OD8j1tDE9tlULdaH3Etle+LFy5yGYXqV/ocf0Opzo7VXLAH+Wx9boqJKk+vMrV0Ps8DngfnrH88byWl2PDbbvgy6Iv6cs8YTf8N1TWg3w5pr2LBzfaOmITKbP0anvlW4F3+mq75CTaJ2hah2uO3hSSeIm/3zf6K2ZfiNcsBfn01HWs+JUOlXHwAV8EG4FtVS3DlZAx7XDek07nUkK130J+esTtSsW4y63DjaE8p7UU+IC/HZRO0U7uWqjSdVIBYVXcIV3X+3iHwrZxrmJCocBJSb4+ghPgE74JCk3IYzbqZPGtWg3tOlBVa2FwPDGImOfbfMruE/pOm6pPfSguFf/u7+99gZtP8t9+rmh0gHq5RagcYhpJbg7IRRCIpxr/fMmNmM6kM2PgE+2/gw7wrqw6uscdgudM6Ybt445Zbd9cJ3wf8f+NjnZQRe31tbU1X3O7u7sN6AAdEeT/Ry4HdwWSPuek+PMG+ERHBDmXcjxhxP8c/+goBpHUH8AnakDXoAN0RFBmA76rV9vVl7q52dxd6AAd32INtTNc2fzcWhNT1XLVd+xZ8P1QW1heXq729Dzynaqp/3BRIHNtyKVS4sJ1LJPOnimVSlXoEO3Xg9tA/pAUCAQOo4ox2ef8/Nvs7FwKPH4M2sEOXPgXMUznEzf8Qp4AAAAASUVORK5CYII="
+                alt="黑色羽球樣貌線條。"
+              />
+            </div>
+            <span class="fs-2">Man's single</span>
+          </div>
+          <ul class="overflow-x-scroll">
+            <!-- position1 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">1</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEKSURBVHgB7doxTgJBGMXxN2Z3Sz2AjTYujXAGO09hYiNnUE9ib2Gt9myggnAAChIIBIqtIGQgBALs0g3lkExeyPuV0/2LL9lvZs2+gAtwhQuhEDYKYaMQNtEy62AznMBHUn1AUqs4Z5vhFOtWFyHFd7eIxk8v8HX9UcdN5d45W/cHyF/fEZpmhI1C2CiEjULYKISNQtiY/OvH+xYlLr9+q6lztpsvsPrLEJqx1uo6iIlC2ET2+xe+4lqK5NEd9u2oWHWbYVfdkukh9R7246r7WXfOyn09f35DaJoRNgphoxA2CmGjEDYKYWNso70/56EnPl11Z8Wq+58hpPKhx+jPBzIKYaMQNgphcwAv/UTrtcKsLwAAAABJRU5ErkJggg=="
+                      alt="丹麥國旗，紅色背景白十字。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      DEN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Vikotor AXELSEN
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position2 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">2</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB+SURBVHgB7dqxDYAwDAVRG8EUNHTsvwE1E1DSMEJoiASMcYnubXCVZenn+4sODNEJQ2gMoTGEZry3PZ7zipZNyxx5xOpBJDGExhAaQ2gMoTGExhAaQ2iylOI/QmIIjSE0htAYQmMIjSE0htBkrbX5zUBmRrp8gDGExhAaQ2g+YgAaqdCXUk4AAAAASUVORK5CYII="
+                      alt="印尼國旗，上紅下白。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      INA
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Anthony Sinisuka GINTING
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position3 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">3</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHESURBVHgB7Zq/SwJhGMe/p2chJTlEPxx0y82GWoPaGrI1qNYmt4r+h4jamlqjaM2lraGhpYZsyq0GG2oo7Mj0uHof4RwkQXse8/V4PyAiwsHH7/v8ODzrW4EAEEJAMCK6YUR0w4johu15Hvp9lFiWBbtSqSAImBrRDSOiG8Fpv+gS7mMJX1c36v25/nkgM4XIdBp2MoFuIC7iHOfV61xJ3P76PQkN59YwtJ6FJJbjOCLT0Hsv43Vls6VAM9GlecT3tsUSEhFxn0p4WdxoHKN2sVMJjF+fIjQSAxeRYn/b2e9YgqA6ohQlYItQTXzmL/FX6CjSNbiwRT4OT8CFmgMXlgjVRrXwAC6UCh0zDiyRWqEIKdrtdq1giVTv+Gn49DQRnWCJ2KlJSEETnwNLZHBuFlJEMmlwYCaSUDIz4EISdC0O7BqRWP5iuVVwERBZZqUSzS6I/BgiXWv07ADhZOeFH1abb3x3CxKIiND2OnZxVF/N24VSnFCbL7c2fMTuR3xobyqr/avV1CcBOo7a3lg1Q5O6dl9sTH+/w0kl0EzXRP4bs6LohhHRjcCIWK7r9v0zA/RHj2WefNAMI6IbRkQ3jIhu/ACng5vZgq7e9wAAAABJRU5ErkJggg=="
+                      alt="日本國旗，白底中間紅色圓形。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      JPN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Kodai NARAOKA
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position4 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">4</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACMSURBVHgB7dixDcIwFEXR94kl1kiBxADUkaBiB1ZjGMaAjizh2vEMSfP8dU/j+hbPki0BALBffHW592PW0Ka1hKaPhtd0UhKEuCnn5aYMotbalAAbcUOIm3g834zdCSFuCHFDiBtC3BDihoeVG0Lc5Bn7f3mlGHv8dOXWckKIm9L6R0o/Z41tFQAAB2yhDBVPu4Lx7AAAAABJRU5ErkJggg=="
+                      alt="泰國國旗，紅白藍由外而內"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      THA
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Kunlavut VITIDSARN
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position5 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">5</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHSSURBVHgB7ZfNSgJRFMf/OqOmOKZYkqUg9AWtWhptamO0L3yA6AF6gYLW9QQ9QdALuGrrXrAPIgSlTQSlYvmV3TOkIDPOYgTnKue3ucO9l8P933Pu/zAAwzAMw9jH9YC1PTGkMNUoJdUF5R5TTw9uzAhjCYmcxCALtoXEr1KInSexdJ2CO6TAaVSrRU/Cp4/tStOw9lNswJ1TUM994rfahdO4HrHZG7VIt96pdvB+WRkZgLIRSGto5GsUTojqwAksS8u/oyF8vGC1BV6RNXor64VtKCHnvGOotOh2V25WB9+ehFf/Tt5uDPaUs89DAajEOuUWGr2ao2/FUFpzWwEsCzF9EX3alRbeTl/Ewb8NQWgvrTuJoRbohsvZp6E5esylw6KpCEIJWXrGRDAtavXfrfpuRCVDmTKD5qNncd2GfSP2TAJTIeGjqH77lIXX3YJeNv500DRAV7gUCSBBTZFNpzC134A4dCNfH5ozewfUZ6jHBDNhXURXZNCpnmLZR6xYvEhAy0R0FzNrmJPGtvGrmqpnKXgwDxmwnREyAE2U1NfdB2TAthDZ4P8R2WAhssFCZIOFyAYLkQ0WIhssRDZmRojag2tfjClMNyUwDMMwzBj8Ae2qhr9wskfLAAAAAElFTkSuQmCC"
+                      alt="中國國旗，紅底，一顆大星星在左邊，4顆小星星在右邊。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      CHN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      SHI Yu QI
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position6 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">6</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHCSURBVHgB7djPK4NxHAfw98Mj2/x6hHLaOIkyyZm4OXBx5Z/gyJn/QC5udnBS4uCgFEoplinc7Bm11VaG/arNvj7fb+TO96tnT59XrW3PDnvefX581wDGGGPs9yyx5UzT8wAaW9KGZZ3AB5rgExzEaziI13AQr+EgXmNXoyvwA6tYLAoY8FqqIXaWwY1bgBNqRjTSgaXJfphipLVSuQpmN+I4vXvB1LBDIdpVqJHlC/WZCUYqIm94dWEQkd7A17cAnSEbt+47No+ecbQ2ji56r5P2isTO0ghTgNFwOxKpAg6ucljfe8T5fZ6uBxHuC2DnNA3dtAdJ0EzIWXgrVSlEFkFRw1BPC9ysbCmB+YleFVA37UHkkKteokeUqvLdtwlqK3XdyGoxEERup4PrrHod6Qvi8qmC1rZWzFElnDYbsfMMLYBu6KZ34ohsKzkDbq6MSbmxZFVkgYRQbSdbzMQaNrK1XLl+1+NUkYC6aUEtdUhDn8qWsbs8+rPNNDJ2IEry7JCzkS99YIzOkkUK5YS0N4Fi7V9tGwvyn+zjh134Af+M9xoO4jUcxGs4iNf4518U0YQZq24NoIGJukiCMcYY+4NP9m6YxzJJ2MIAAAAASUVORK5CYII="
+                      alt="印度國旗，由上至下背景顏色為黃白綠，白色背景內有來色圓形花紋圖案。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      IND
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      PRANNOY H. S.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position7 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">7</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHSSURBVHgB7ZfNSgJRFMf/OqOmOKZYkqUg9AWtWhptamO0L3yA6AF6gYLW9QQ9QdALuGrrXrAPIgSlTQSlYvmV3TOkIDPOYgTnKue3ucO9l8P933Pu/zAAwzAMw9jH9YC1PTGkMNUoJdUF5R5TTw9uzAhjCYmcxCALtoXEr1KInSexdJ2CO6TAaVSrRU/Cp4/tStOw9lNswJ1TUM994rfahdO4HrHZG7VIt96pdvB+WRkZgLIRSGto5GsUTojqwAksS8u/oyF8vGC1BV6RNXor64VtKCHnvGOotOh2V25WB9+ehFf/Tt5uDPaUs89DAajEOuUWGr2ao2/FUFpzWwEsCzF9EX3alRbeTl/Ewb8NQWgvrTuJoRbohsvZp6E5esylw6KpCEIJWXrGRDAtavXfrfpuRCVDmTKD5qNncd2GfSP2TAJTIeGjqH77lIXX3YJeNv500DRAV7gUCSBBTZFNpzC134A4dCNfH5ozewfUZ6jHBDNhXURXZNCpnmLZR6xYvEhAy0R0FzNrmJPGtvGrmqpnKXgwDxmwnREyAE2U1NfdB2TAthDZ4P8R2WAhssFCZIOFyAYLkQ0WIhssRDZmRojag2tfjClMNyUwDMMwzBj8Ae2qhr9wskfLAAAAAElFTkSuQmCC"
+                      alt="中國國旗，紅底，一顆大星星在左邊，4顆小星星在右邊。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      CHN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      LI Shi Feng
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position8 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">8</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH3SURBVHgB7Zc9LCxRGIbf2RlxbwQb1725FCiETkOjkNApUBNaUVBKJDSroPDXKVYtQmtJdIRCgYbEz1ZLQUQk2EyW3TXjfGczE8yuCMWcle9JJuecOafYZ9/vO5sFGIZhGObraCeobRVDDfIaPWZo0DeR99gwPnPMqK6AVloM+z6O9PkVVCTw0WZRXxf+7y6j4ngdxYO90KsqoSo5EykZHUDp2ADSF5e4bu5G8jDq7pEQpfS0cwBVyCriSBA37f1vyikgSuzPQgh6daUQ7IF1F4cKeETogxb1dcq5uRhxJSiFZ5GOJfrkfiKMQLDElShoqEPqVWJ+4OmRwpZGUTaZXjAXV+VIEv82FlAWDsk1lVQikrnsysLjKF+ekzJ+4kmkoKHenVMCzpiIbLnr16QOz2RKfifiEaErNht3IzNZ38fnl6ACntJKim/YobCl6c0elRiVXq61n3hEqP4dGafp5UFxCVCPBKeG5Zyevyuz7tpv9CGUh96/TEdj8seQml7TMnL2U1KWXeooiuTekVw/X98isbYlz/uNdop6O9vG745WBKeHYYjyeZgMyytXZXKKEJQICf0Sjyaiedzel1Iq8qFIPhHAD0EzTZMTUQkWUQ0WUQ0WUQ0WUQ0WUQ0WUQ0WUQ3Dsqw227ZrkMeIv+ExMAzDMMw3eAGh3qx57sSkBwAAAABJRU5ErkJggg=="
+                      alt="新加坡國旗，上紅下白，紅色背景內，左側是一個月亮，右側是五顆星星。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      SGP
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      LOH Kean Yew
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position9 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">9</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB+SURBVHgB7dqxDYAwDAVRG8EUNHTsvwE1E1DSMEJoiASMcYnubXCVZenn+4sODNEJQ2gMoTGEZry3PZ7zipZNyxx5xOpBJDGExhAaQ2gMoTGExhAaQ2iylOI/QmIIjSE0htAYQmMIjSE0htBkrbX5zUBmRrp8gDGExhAaQ2g+YgAaqdCXUk4AAAAASUVORK5CYII="
+                      alt="印尼國旗，上紅下白。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      INA
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Jonatan CHRISTIE
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position10 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">10</span>
+                </div>
+                <!-- 內容 -->
+                <div class="d-flex align-items-center py-6 flex-grow-1">
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEKSURBVHgB7doxTgJBGMXxN2Z3Sz2AjTYujXAGO09hYiNnUE9ib2Gt9myggnAAChIIBIqtIGQgBALs0g3lkExeyPuV0/2LL9lvZs2+gAtwhQuhEDYKYaMQNtEy62AznMBHUn1AUqs4Z5vhFOtWFyHFd7eIxk8v8HX9UcdN5d45W/cHyF/fEZpmhI1C2CiEjULYKISNQtiY/OvH+xYlLr9+q6lztpsvsPrLEJqx1uo6iIlC2ET2+xe+4lqK5NEd9u2oWHWbYVfdkukh9R7246r7WXfOyn09f35DaJoRNgphoxA2CmGjEDYKYWNso70/56EnPl11Z8Wq+58hpPKhx+jPBzIKYaMQNgphcwAv/UTrtcKsLwAAAABJRU5ErkJggg=="
+                      alt="丹麥國旗，紅色背景白十字。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      DEN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Anders ANTONSEN
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li
+          class="bg-white position-relative border border-helper-primary py-3 px-4 flex-grow-1"
+        >
+          <!-- title -->
+          <div
+            class="position-absolute transform-center d-flex justify-content-center align-items-center py-5 w-px-280 w-lg-px-360 bg-green-fourth up-12 x-center x-lg-220 border border-helper-primary"
+          >
+            <div class="me-8">
+              <img
+                class="d-lg-none"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJfSURBVHgB3VS9ctpAEN69wx4yKcLvjEtlsISggTIlfgKbKi0p09mPkCcgfgKTMhXJE1h5A1JFBBdKl8wwCSVB6DZ7J5hIjBAkpb8ZkO777vY77e4dwKNCu213bdceJDnXda1dTqPZal6zZKXn2gPbtrtJTiQHa8I7gXiX5BSogeaclnO15c7d8x4ADSM8uU7OJZ4nTtLrCyk3En22sdI7ECOgKJj6sw9b7sF/8JxWoy8pmqQMIOoXQATp9Qksi8sFCTFutuz7LRdFUYkEDpNp0ulBkMMoOin95Zwxc2OlwsVeg2ASLCACDwB7lmWZxeHTMOCtlQAhkVtl8Z8VhqxBXCd+XBHByPeDIBlTwg7q9fIPQBzIU3lWqVbKci1dRNT5L1Zq1d/VWrXL+ksEOBMFMdVjRLrkTb0QoG7m858pA4QMNNvOL7Prf0Mw/fL1+S4psmaSglvjTvAGSV0AkReP1YUZm0n4ybwrvImH8C4rVqbBqrh6u1nU8blj+Ds/6/FyueauKQRGA/K0hpI6JpBajY42MMWOd93TPc/9/Uzzp08kv+t8xysbTkMXdgDGLF3cLTJroOGawOIejoAiejXzZyM49gs0NqnRPR2AUnGeuQ15T+bAIQc1Gv/2Bc81MAHjYluIMNFm3K5cC/WNOTaWntbY1MuLIfJF5RkjKS+5qgvOPxdUdNgsIEFDo0V0mxcD4QD4CqA8nXs/N0YBDmCT6//GQQPaub4zMMoTc2sQO8SneI+Yox1pwFfwth13ESCFB9MnD02Yz+eLeq3+EYHKFJfzOyp6jxC+3nd6Hxf+ABV2+D6KusdwAAAAAElFTkSuQmCC"
+                alt="黑色羽球樣貌線條。"
+              />
+              <img
+                class="d-none d-lg-block"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVASURBVHgB7VhfaFtVGP++e2+TrFSY659ls0J0zU0WdPZhDwP/RRjYhw4mU7YXYaLDgY75MJgPPvimRcTBBBEULXSw4R4UJ2zgQwYd7KEPBWebpClELdrSJgSpTZrdnM/v3OTe3tzeNrmRuZf+oNxzzved7/udc75zvq8B2MEOHi7Qa/BA4sCQJtTLLF1YL1fP5fP5ilsnFouNgCIuEuKN7Ez2Uy87sYOx8wD0KhKNpdNzN9zySCQSCu4KfoZAQ6IG57LZbNqto3kZ1kj9hMmNyHYgFJjkz/gmJQW+4fWFkSCpP63/lP2l2bhcJBBdkm1exBB/9rlNBLuDJ1jnLHEbVfiIP69sduMBRLCcGUj4K3jD0lmpqtVFt7C2VlthxyWTIEDey4BCtXnpw+WzmYvXICRBiy9GR4iUxUwmM+WlYh5Pd3AUBU6l0+m8l04ikQgTGS+Wy9VbHCYlL51oIjqsChjkELhpkXVC9ZrE6xV7+vsSiHSsr793pK+3v8D406kysH/gCMfWy4B0ZM+jvUvFYrFpF6PR6DDH6Du8e4NqQCsUlgu/u+X9e3sv8g4N8zH/VSgU73lR8YxBCYWUEqF4T7ZJIRlDx5xyBOzhjylXVVjgz3STXMNnLTnWxB23fezC83z2pxvebsFWPLYSpMPpSV5drk4GRiLDkd1OuQFGzmElsskAQtwWK11N8cVH38OX65TZIVjgMLoJfglCCgxBcKXR0wKVwJtO8fzAfB6smKENMjbIJm2Uy+WcUySEcYI/IXMdCkzANsDthPF4PMLHPAdmKNA9tvaBOUmgJkD0sPFLTGS33AVQ8N1mguYTEwF5kxFPu2Qfgow9aYuUJ7a6ZC0JSugH9R9ZaRQeDCYzs9nnt1NQoDW+hgcEIviqlU7LHZRvYmxJ/4NbYXMCwQXODPXHFegoNXaXH9rPidCKNY5JOlv3gNc5BGQ2krsREkAfN3RKnEb3eaVRJzRoBb4sEMcJZnZBdknBpcxMxgxszrWrPGISpBre5tt4vTFuXygUYtzKw/F4dFSupA76thW5xqJaw1CML+0OwYbzeqqqDyu0124jPW7roJa32gLxbduOUK5AG2iL4PzMPB8dphruk2YhwLiv0IJtCGHQJkXwmNW2npihQ0OD8j1tDE9tlULdaH3Etle+LFy5yGYXqV/ocf0Opzo7VXLAH+Wx9boqJKk+vMrV0Ps8DngfnrH88byWl2PDbbvgy6Iv6cs8YTf8N1TWg3w5pr2LBzfaOmITKbP0anvlW4F3+mq75CTaJ2hah2uO3hSSeIm/3zf6K2ZfiNcsBfn01HWs+JUOlXHwAV8EG4FtVS3DlZAx7XDek07nUkK130J+esTtSsW4y63DjaE8p7UU+IC/HZRO0U7uWqjSdVIBYVXcIV3X+3iHwrZxrmJCocBJSb4+ghPgE74JCk3IYzbqZPGtWg3tOlBVa2FwPDGImOfbfMruE/pOm6pPfSguFf/u7+99gZtP8t9+rmh0gHq5RagcYhpJbg7IRRCIpxr/fMmNmM6kM2PgE+2/gw7wrqw6uscdgudM6Ybt445Zbd9cJ3wf8f+NjnZQRe31tbU1X3O7u7sN6AAdEeT/Ry4HdwWSPuek+PMG+ERHBDmXcjxhxP8c/+goBpHUH8AnakDXoAN0RFBmA76rV9vVl7q52dxd6AAd32INtTNc2fzcWhNT1XLVd+xZ8P1QW1heXq729Dzynaqp/3BRIHNtyKVS4sJ1LJPOnimVSlXoEO3Xg9tA/pAUCAQOo4ox2ef8/Nvs7FwKPH4M2sEOXPgXMUznEzf8Qp4AAAAASUVORK5CYII="
+                alt="黑色羽球樣貌線條。"
+              />
+            </div>
+            <span class="fs-2">Man's single</span>
+          </div>
+          <ul class="overflow-x-scroll">
+            <!-- position1 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">1</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEKSURBVHgB7doxTgJBGMXxN2Z3Sz2AjTYujXAGO09hYiNnUE9ib2Gt9myggnAAChIIBIqtIGQgBALs0g3lkExeyPuV0/2LL9lvZs2+gAtwhQuhEDYKYaMQNtEy62AznMBHUn1AUqs4Z5vhFOtWFyHFd7eIxk8v8HX9UcdN5d45W/cHyF/fEZpmhI1C2CiEjULYKISNQtiY/OvH+xYlLr9+q6lztpsvsPrLEJqx1uo6iIlC2ET2+xe+4lqK5NEd9u2oWHWbYVfdkukh9R7246r7WXfOyn09f35DaJoRNgphoxA2CmGjEDYKYWNso70/56EnPl11Z8Wq+58hpPKhx+jPBzIKYaMQNgphcwAv/UTrtcKsLwAAAABJRU5ErkJggg=="
+                      alt="丹麥國旗，紅色背景白十字。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      DEN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Vikotor AXELSEN
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position2 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">2</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB+SURBVHgB7dqxDYAwDAVRG8EUNHTsvwE1E1DSMEJoiASMcYnubXCVZenn+4sODNEJQ2gMoTGEZry3PZ7zipZNyxx5xOpBJDGExhAaQ2gMoTGExhAaQ2iylOI/QmIIjSE0htAYQmMIjSE0htBkrbX5zUBmRrp8gDGExhAaQ2g+YgAaqdCXUk4AAAAASUVORK5CYII="
+                      alt="印尼國旗，上紅下白。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      INA
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Anthony Sinisuka GINTING
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position3 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">3</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHESURBVHgB7Zq/SwJhGMe/p2chJTlEPxx0y82GWoPaGrI1qNYmt4r+h4jamlqjaM2lraGhpYZsyq0GG2oo7Mj0uHof4RwkQXse8/V4PyAiwsHH7/v8ODzrW4EAEEJAMCK6YUR0w4johu15Hvp9lFiWBbtSqSAImBrRDSOiG8Fpv+gS7mMJX1c36v25/nkgM4XIdBp2MoFuIC7iHOfV61xJ3P76PQkN59YwtJ6FJJbjOCLT0Hsv43Vls6VAM9GlecT3tsUSEhFxn0p4WdxoHKN2sVMJjF+fIjQSAxeRYn/b2e9YgqA6ohQlYItQTXzmL/FX6CjSNbiwRT4OT8CFmgMXlgjVRrXwAC6UCh0zDiyRWqEIKdrtdq1giVTv+Gn49DQRnWCJ2KlJSEETnwNLZHBuFlJEMmlwYCaSUDIz4EISdC0O7BqRWP5iuVVwERBZZqUSzS6I/BgiXWv07ADhZOeFH1abb3x3CxKIiND2OnZxVF/N24VSnFCbL7c2fMTuR3xobyqr/avV1CcBOo7a3lg1Q5O6dl9sTH+/w0kl0EzXRP4bs6LohhHRjcCIWK7r9v0zA/RHj2WefNAMI6IbRkQ3jIhu/ACng5vZgq7e9wAAAABJRU5ErkJggg=="
+                      alt="日本國旗，白底中間紅色圓形。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      JPN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Kodai NARAOKA
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position4 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">4</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACMSURBVHgB7dixDcIwFEXR94kl1kiBxADUkaBiB1ZjGMaAjizh2vEMSfP8dU/j+hbPki0BALBffHW592PW0Ka1hKaPhtd0UhKEuCnn5aYMotbalAAbcUOIm3g834zdCSFuCHFDiBtC3BDihoeVG0Lc5Bn7f3mlGHv8dOXWckKIm9L6R0o/Z41tFQAAB2yhDBVPu4Lx7AAAAABJRU5ErkJggg=="
+                      alt="泰國國旗，紅白藍由外而內"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      THA
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Kunlavut VITIDSARN
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position5 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">5</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHSSURBVHgB7ZfNSgJRFMf/OqOmOKZYkqUg9AWtWhptamO0L3yA6AF6gYLW9QQ9QdALuGrrXrAPIgSlTQSlYvmV3TOkIDPOYgTnKue3ucO9l8P933Pu/zAAwzAMw9jH9YC1PTGkMNUoJdUF5R5TTw9uzAhjCYmcxCALtoXEr1KInSexdJ2CO6TAaVSrRU/Cp4/tStOw9lNswJ1TUM994rfahdO4HrHZG7VIt96pdvB+WRkZgLIRSGto5GsUTojqwAksS8u/oyF8vGC1BV6RNXor64VtKCHnvGOotOh2V25WB9+ehFf/Tt5uDPaUs89DAajEOuUWGr2ao2/FUFpzWwEsCzF9EX3alRbeTl/Ewb8NQWgvrTuJoRbohsvZp6E5esylw6KpCEIJWXrGRDAtavXfrfpuRCVDmTKD5qNncd2GfSP2TAJTIeGjqH77lIXX3YJeNv500DRAV7gUCSBBTZFNpzC134A4dCNfH5ozewfUZ6jHBDNhXURXZNCpnmLZR6xYvEhAy0R0FzNrmJPGtvGrmqpnKXgwDxmwnREyAE2U1NfdB2TAthDZ4P8R2WAhssFCZIOFyAYLkQ0WIhssRDZmRojag2tfjClMNyUwDMMwzBj8Ae2qhr9wskfLAAAAAElFTkSuQmCC"
+                      alt="中國國旗，紅底，一顆大星星在左邊，4顆小星星在右邊。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      CHN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      SHI Yu QI
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position6 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">6</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHCSURBVHgB7djPK4NxHAfw98Mj2/x6hHLaOIkyyZm4OXBx5Z/gyJn/QC5udnBS4uCgFEoplinc7Bm11VaG/arNvj7fb+TO96tnT59XrW3PDnvefX581wDGGGPs9yyx5UzT8wAaW9KGZZ3AB5rgExzEaziI13AQr+EgXmNXoyvwA6tYLAoY8FqqIXaWwY1bgBNqRjTSgaXJfphipLVSuQpmN+I4vXvB1LBDIdpVqJHlC/WZCUYqIm94dWEQkd7A17cAnSEbt+47No+ecbQ2ji56r5P2isTO0ghTgNFwOxKpAg6ucljfe8T5fZ6uBxHuC2DnNA3dtAdJ0EzIWXgrVSlEFkFRw1BPC9ysbCmB+YleFVA37UHkkKteokeUqvLdtwlqK3XdyGoxEERup4PrrHod6Qvi8qmC1rZWzFElnDYbsfMMLYBu6KZ34ohsKzkDbq6MSbmxZFVkgYRQbSdbzMQaNrK1XLl+1+NUkYC6aUEtdUhDn8qWsbs8+rPNNDJ2IEry7JCzkS99YIzOkkUK5YS0N4Fi7V9tGwvyn+zjh134Af+M9xoO4jUcxGs4iNf4518U0YQZq24NoIGJukiCMcYY+4NP9m6YxzJJ2MIAAAAASUVORK5CYII="
+                      alt="印度國旗，由上至下背景顏色為黃白綠，白色背景內有來色圓形花紋圖案。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      IND
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      PRANNOY H. S.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position7 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">7</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHSSURBVHgB7ZfNSgJRFMf/OqOmOKZYkqUg9AWtWhptamO0L3yA6AF6gYLW9QQ9QdALuGrrXrAPIgSlTQSlYvmV3TOkIDPOYgTnKue3ucO9l8P933Pu/zAAwzAMw9jH9YC1PTGkMNUoJdUF5R5TTw9uzAhjCYmcxCALtoXEr1KInSexdJ2CO6TAaVSrRU/Cp4/tStOw9lNswJ1TUM994rfahdO4HrHZG7VIt96pdvB+WRkZgLIRSGto5GsUTojqwAksS8u/oyF8vGC1BV6RNXor64VtKCHnvGOotOh2V25WB9+ehFf/Tt5uDPaUs89DAajEOuUWGr2ao2/FUFpzWwEsCzF9EX3alRbeTl/Ewb8NQWgvrTuJoRbohsvZp6E5esylw6KpCEIJWXrGRDAtavXfrfpuRCVDmTKD5qNncd2GfSP2TAJTIeGjqH77lIXX3YJeNv500DRAV7gUCSBBTZFNpzC134A4dCNfH5ozewfUZ6jHBDNhXURXZNCpnmLZR6xYvEhAy0R0FzNrmJPGtvGrmqpnKXgwDxmwnREyAE2U1NfdB2TAthDZ4P8R2WAhssFCZIOFyAYLkQ0WIhssRDZmRojag2tfjClMNyUwDMMwzBj8Ae2qhr9wskfLAAAAAElFTkSuQmCC"
+                      alt="中國國旗，紅底，一顆大星星在左邊，4顆小星星在右邊。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      CHN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      LI Shi Feng
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position8 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">8</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH3SURBVHgB7Zc9LCxRGIbf2RlxbwQb1725FCiETkOjkNApUBNaUVBKJDSroPDXKVYtQmtJdIRCgYbEz1ZLQUQk2EyW3TXjfGczE8yuCMWcle9JJuecOafYZ9/vO5sFGIZhGObraCeobRVDDfIaPWZo0DeR99gwPnPMqK6AVloM+z6O9PkVVCTw0WZRXxf+7y6j4ngdxYO90KsqoSo5EykZHUDp2ADSF5e4bu5G8jDq7pEQpfS0cwBVyCriSBA37f1vyikgSuzPQgh6daUQ7IF1F4cKeETogxb1dcq5uRhxJSiFZ5GOJfrkfiKMQLDElShoqEPqVWJ+4OmRwpZGUTaZXjAXV+VIEv82FlAWDsk1lVQikrnsysLjKF+ekzJ+4kmkoKHenVMCzpiIbLnr16QOz2RKfifiEaErNht3IzNZ38fnl6ACntJKim/YobCl6c0elRiVXq61n3hEqP4dGafp5UFxCVCPBKeG5Zyevyuz7tpv9CGUh96/TEdj8seQml7TMnL2U1KWXeooiuTekVw/X98isbYlz/uNdop6O9vG745WBKeHYYjyeZgMyytXZXKKEJQICf0Sjyaiedzel1Iq8qFIPhHAD0EzTZMTUQkWUQ0WUQ0WUQ0WUQ0WUQ0WUQ0WUQ3Dsqw227ZrkMeIv+ExMAzDMMw3eAGh3qx57sSkBwAAAABJRU5ErkJggg=="
+                      alt="新加坡國旗，上紅下白，紅色背景內，左側是一個月亮，右側是五顆星星。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      SGP
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      LOH Kean Yew
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position9 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">9</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB+SURBVHgB7dqxDYAwDAVRG8EUNHTsvwE1E1DSMEJoiASMcYnubXCVZenn+4sODNEJQ2gMoTGEZry3PZ7zipZNyxx5xOpBJDGExhAaQ2gMoTGExhAaQ2iylOI/QmIIjSE0htAYQmMIjSE0htBkrbX5zUBmRrp8gDGExhAaQ2g+YgAaqdCXUk4AAAAASUVORK5CYII="
+                      alt="印尼國旗，上紅下白。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      INA
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Jonatan CHRISTIE
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position10 -->
+            <li class="w-100 mw-500">
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">10</span>
+                </div>
+                <!-- 內容 -->
+                <div class="d-flex align-items-center py-6 flex-grow-1">
+                  <!-- img -->
+                  <div class="w-px-50 me-8 me-lg-32">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEKSURBVHgB7doxTgJBGMXxN2Z3Sz2AjTYujXAGO09hYiNnUE9ib2Gt9myggnAAChIIBIqtIGQgBALs0g3lkExeyPuV0/2LL9lvZs2+gAtwhQuhEDYKYaMQNtEy62AznMBHUn1AUqs4Z5vhFOtWFyHFd7eIxk8v8HX9UcdN5d45W/cHyF/fEZpmhI1C2CiEjULYKISNQtiY/OvH+xYlLr9+q6lztpsvsPrLEJqx1uo6iIlC2ET2+xe+4lqK5NEd9u2oWHWbYVfdkukh9R7246r7WXfOyn09f35DaJoRNgphoxA2CmGjEDYKYWNso70/56EnPl11Z8Wq+58hpPKhx+jPBzIKYaMQNgphcwAv/UTrtcKsLwAAAABJRU5ErkJggg=="
+                      alt="丹麥國旗，紅色背景白十字。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3">
+                    <p
+                      class="text-helper-secondary fs-5 fw-light sideBar w-px-50"
+                    >
+                      DEN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Anders ANTONSEN
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
     <!-- <footer class="border-top border-bottom border-helper-primary">
   <div
-    class="container-xl d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center py-4 px-lg-0"
+    class="container-xl d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center py-4"
   >
     <a href="index.html" class="d-flex justify-content-center mb-6 mb-lg-0">
       <img

@@ -1,4 +1,4 @@
-<!--! 使用者頁面 -->
+<!-- ! 建立元件測試頁面 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,12 +18,13 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
 />
-    <title>Edit Profile</title>
+    <title>Component</title>
     <script type="module" crossorigin src="/badminton-life-v2/assets/dropdown-259bb917.js"></script>
     <link rel="stylesheet" href="/badminton-life-v2/assets/dropdown-8cd1a4b5.css">
   </head>
   <body>
-    <div class="header container-xl px-0 px-lg-8">
+    <div class="vh-100 d-flex flex-column justify-content-between">
+      <div class="header container-xl px-0 px-lg-8">
   <div class="row g-0 align-items-lg-center border border-dark">
     <div class="col-12 col-lg-4">
       <h1 class="header-logo">
@@ -107,102 +108,15 @@
     </div>
   </div>
 </div>
-    <!-- banner -->
-    <div class="container-fluid px-0 px-lg-8 px-xl-0">
-  <section
-    class="banner banner--profile position-relative; py-4 px-4 px-md-1 d-flex flex-column justify-content-center"
-  ></section>
-</div>
-    <div class="container px-lg-0">
-      <div
-        class="row justify-content-center align-items-center position-lg-relative up-100"
-      >
-        <div class="col-12 col-lg-4 d-flex justify-content-center mb-5 mb-lg-0">
-          <div class="profile-bigHead position-relative mt-5 mt-lg-0">
-            <img
-              class="w-100 h-100 border rounded-circle"
-              src="/badminton-life-v2/assets/profile-selfie-c78e686d.png"
-              alt="大頭照"
-            />
-            <a
-              class="position-absolute transform-bottom-right bottom-0 end-0 link-helper-secondary"
-              href=""
-            >
-              <span class="material-symbols-outlined"> edit_square </span>
-            </a>
-          </div>
+      <h1 class="fs-xl fw-bold text-center mt-1 mb-4">Data Management</h1>
+      <section class="d-flex justify-content-center">
+        <div class="text-center py-4 pt-md-3 pb-md-1">
+          <a class="btn btn--secondary py-6 px-4 fs-2" href="admin-events.html"
+            >Events</a
+          >
         </div>
-        <div class="col-12 col-lg-6 text-center text-lg-start">
-          <h1 class="fs-3 fs-lg-2 fw-bold">Andy Liu</h1>
-          <p class="fs-3 fs-lg-2 text-helper-fourth">Taiwan</p>
-        </div>
-        <form action="" method="post" class="col-12 col-lg-8 mt-2 mt-lg-1">
-          <!--! profile-about me -->
-          <div
-            class="d-inline-block py-9 px-6 px-lg-5 py-lg-8 border border-helper-foutrh"
-          >
-            <span class="fs-lg-5">about me</span>
-          </div>
-          <div
-            class="row gx-0 align-items-center border border-helper-fourth py-7 px-6 py-lg-6 px-lg-4 mb-6 mb-lg-5"
-          >
-            <div class="col-3">
-              <label for="userName" class="me-6 me-lg-4 fs-5 fs-lg-4"
-                >Username</label
-              >
-            </div>
-            <div class="col-9 text-center text-md-start">
-              <input
-                type="text"
-                id="userName"
-                class="ps-9 border border-helper-fourth rounded fs-lg-5"
-                placeholder="Andy liu"
-              />
-            </div>
-            <div class="col-3">
-              <label for="email" class="me-6 me-lg-4 fs-5 fs-lg-4">Email</label>
-            </div>
-            <div class="col-9 text-center text-md-start">
-              <input
-                type="email"
-                id="email"
-                placeholder="abc@gmail.com"
-                class="ps-9 border border-helper-fourth rounded fs-lg-5"
-              />
-            </div>
-            <div class="col-3">
-              <label for="country" class="me-6 me-lg-5 fs-5 fs-lg-4"
-                >Country</label
-              >
-            </div>
-            <div class="col-9 text-center text-md-start">
-              <input
-                type="text"
-                id="country"
-                class="ps-9 border border-helper-fourth rounded fs-lg-5"
-                placeholder="Taiwan"
-              />
-            </div>
-          </div>
-          <!--! edit button -->
-          <div
-            class="d-flex justify-content-end align-items-center mb-4 mb-lg-0"
-          >
-            <a
-              href="profile.html"
-              class="btn-sm btn--secondary me-9 me-lg-8 py-8 px-6 rounded"
-              >Cancel</a
-            >
-            <input
-              type="submit"
-              value="Done"
-              class="btn-sm btn--secondary py-8 px-6 rounded"
-            />
-          </div>
-        </form>
-      </div>
-    </div>
-    <footer class="border-top border-bottom border-helper-primary">
+      </section>
+      <footer class="border-top border-bottom border-helper-primary">
   <div
     class="container-xl d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center py-4"
   >
@@ -223,6 +137,7 @@
     </p>
   </div>
 </footer>
+    </div>
     
   </body>
 </html>
