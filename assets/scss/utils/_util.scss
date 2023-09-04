@@ -306,9 +306,17 @@ d-inline-block{
     }
   }
   &-border{
-    &--helper-primary{
-      border: 1px solid var(--bs-helper-primary);
+    &--green-primary{
+      &:hover{
+        border: 10px solid var(--bs-green-primary);
+      }
     }
+    &--helper-primary{
+      &:hover{
+        border: 1px solid var(--bs-helper-primary);
+      }
+    }
+    
   }
 }
 
@@ -318,3 +326,4 @@ d-inline-block{
     line-height: 48px;
   }
 }
+
