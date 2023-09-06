@@ -90,46 +90,84 @@
             </a>
             <!-- 單項討論區頁面 -->
             <div class="modal modal-md-center fade" id="addNewForum">
-              <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5 fw-bold">New Forum</h1>
+                    <h1
+                      class="modal-title fs-1 fw-bold ps-8 text-green-primary"
+                    >
+                      New Forum
+                    </h1>
                   </div>
                   <div class="modal-body">
-                    <!-- 表單內容 -->
-                    <form action="" method="post">
+                    <!-- new forum -->
+                    <form
+                      action=""
+                      method="post"
+                      class="fw-bold py-6 px-8 pt-xl-5 pb-xl-6 px-xl-8 text-green-primary"
+                    >
+                      <!-- new forum : title-->
                       <div class="d-flex flex-column">
-                        <label for="forumTitle" class="fs-lg-5 fw-light"
+                        <label for="forumTitle" class="fs-3 mb-xl-9"
                           >Title</label
                         >
                         <input
                           id="forumTitle"
                           type="text"
-                          class="rounded width-60 ps-8 py-9 form-control"
+                          class="rounded border width-60 form-control ps-8 mb-6 mb-xl-5 fw-bold"
                         />
                       </div>
+
+                      <!-- new forum : type options -->
+                      <div class="mb-6 mb-xl-5">
+                        <label
+                          for="forum-type"
+                          class="d-block fs-3 fw-bold mb-xl-9"
+                          >Type</label
+                        >
+                        <select
+                          id="forum-type"
+                          class="p-8 py-8 border rounded text-dark"
+                        >
+                          <option name="forum-type" value="All" selected>
+                            All
+                          </option>
+                          <option name="forum-type" value="Players">
+                            Players
+                          </option>
+                          <option name="forum-type" value="Contests">
+                            Contests
+                          </option>
+                          <option name="forum-type" value="Equipment">
+                            Equipment
+                          </option>
+                          <option name="forum-type" value="Other">Other</option>
+                        </select>
+                      </div>
+
+                      <!-- new forum : content -->
                       <div class="d-flex flex-column">
-                        <label for="forumContent" class="fs-lg-5 fw-light"
+                        <label for="forumContent" class="fs-3 mb-xl-9"
                           >Content</label
                         >
                         <textarea
-                          class="form-control rounded"
+                          class="form-control border rounded ps-8 mb-6 mb-xl-5"
                           placeholder="type something..."
                           id="forumContent"
-                          style="min-height: 100px"
+                          style="min-height: 200px"
                         ></textarea>
                       </div>
                       <div class="d-flex justify-content-end">
                         <a
                           type="button"
-                          class="btn-sm btn--secondary me-8 py-8 px-6 rounded"
+                          class="btn-sm btn--secondary me-9 me-xl-8 py-9 py-xl-8 px-6 rounded"
                           data-bs-dismiss="modal"
                         >
                           Close
                         </a>
                         <input
                           type="submit"
-                          class="btn-sm btn--secondary py-8 px-6 rounded"
+                          class="btn-sm btn--secondary py-9 py-xl-8 px-6 rounded"
                           value="Add"
                         />
                       </div>

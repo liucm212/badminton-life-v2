@@ -2,9 +2,6 @@
 // 取得所有的.forum-forms
 let forumForms = document.querySelectorAll('.forum-form') ; 
 
-
-
-
 document.addEventListener("DOMContentLoaded", function(){
   forumForms.forEach(function(form){
     form.addEventListener('submit', function(e){

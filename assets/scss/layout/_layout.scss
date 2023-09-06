@@ -321,7 +321,7 @@
     align-items: center;
     padding: 8px 12px;
     gap: 8px;
-    border: 1px solid var(--bs-helper-primary);
+    border: 1px solid var(--bs-green-primary);
     border-radius: 6px;
     cursor: pointer;
     &:hover{
@@ -345,22 +345,22 @@
     ul{
       position: absolute;
       top: 8px;
-      border: 1px solid var(--bs-helper-primary);
+      border: 1px solid var(--bs-green-primary);
       max-height: 300px;
       li{
         padding: 12px 20px;
         cursor: pointer;
         background-color: var(--bs-white);
         &:hover{
-          background-color: var(--bs-helper-third);
+          background-color: var(--bs-green-fourth);
         }
       }
       li+li{
-        border-top: 1px solid var(--bs-helper-primary);
+        border-top: 1px solid var(--bs-green-primary);
       }
     }
     .active{
-      background-color: var(--bs-helper-fourth);
+      background-color: var(--bs-green-fourth);
     }
   }
   @include Desktop{
@@ -513,5 +513,14 @@
 a[data-content="heart"]{
   &:hover{
     color: #faa;
+  }
+}
+
+// not found section
+.not-found{
+  margin-top: 120px;
+  margin-bottom: 120px;
+  .item{
+    text-align: center; 
   }
 }

@@ -1,0 +1,153 @@
+<!-- ! Forum 討論區頁面-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/meta'); -%>
+    <title>Badminton life | 討論區</title>
+  </head>
+  <body>
+    <%- include('./layout/header-logIn'); -%> <%- include('./layout/event'); -%>
+    <!-- banner -->
+    <div class="container-fluid px-0 px-lg-8 px-xl-0">
+      <section
+        class="banner banner--big banner--big--forum position-relative py-4 px-4 px-md-1 d-flex flex-column justify-content-center mb-4"
+      >
+        <div class="z-3">
+          <h1
+            class="d-flex align-items-center justify-content-center text-white fs-xxl fw-bolder"
+          >
+            Forum
+          </h1>
+        </div>
+      </section>
+    </div>
+
+    <!-- main content -->
+    <main>
+      <div class="container-xl">
+        <!-- filter buttons + add new forum button -->
+        <section
+          class="d-flex flex-column flex-md-row align-items-center justify-content-md-between mb-4 mb-lg-2"
+        >
+          <div
+            class="d-flex width-100 width-md-auto justify-content-between justify-content-md-start me-9 mb-6 mb-md-0"
+          >
+            <!-- type button -->
+            <section class="dropdown fs-5 me-6 me-md-4 me-lg-3">
+              <div class="dropdown-item py-8 px-6">
+                <span class="dropdown-tag">type</span>
+                <p>type</p>
+                <img
+                  src="../assets/images/icons/arrow-down.png"
+                  width="20"
+                  height="20"
+                  alt="黑色項下箭頭"
+                />
+              </div>
+              <div class="dropdown-content">
+                <ul class="overflow-y-scroll">
+                  <li class="active">Players</li>
+                  <li>Contests</li>
+                  <li>Equipment</li>
+                  <li>Other</li>
+                  <li>All</li>
+                </ul>
+              </div>
+            </section>
+            <!-- per page button -->
+            <section class="dropdown fs-5">
+              <div class="dropdown-item py-8 px-6">
+                <span class="dropdown-tag">per page</span>
+                <p>per page</p>
+                <img
+                  src="../assets/images/icons/arrow-down.png"
+                  width="20"
+                  height="20"
+                  alt="黑色項下箭頭"
+                />
+              </div>
+              <div class="dropdown-content">
+                <ul class="text-center">
+                  <li class="active">8</li>
+                  <li>16</li>
+                  <li>32</li>
+                  <li>72</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+
+          <!-- add new forum button : modal -->
+          <section class="d-flex fs-5 align-self-end">
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#addNewForum"
+              class="btn-sm btn--secondary py-lg-8 px-lg-6 rounded d-flex align-items-center"
+            >
+              <span class="material-symbols-outlined fw-bold"> add </span>
+              <span>New</span>
+            </a>
+            <!-- 單項討論區頁面 -->
+            <div class="modal modal-md-center fade" id="addNewForum">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold">New Forum</h1>
+                  </div>
+                  <div class="modal-body">
+                    <!-- 表單內容 -->
+                    <form action="" method="post">
+                      <div class="d-flex flex-column">
+                        <label for="forumTitle" class="fs-lg-5 fw-light"
+                          >Title</label
+                        >
+                        <input
+                          id="forumTitle"
+                          type="text"
+                          class="rounded width-60 ps-8 py-9 form-control"
+                        />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <label for="forumContent" class="fs-lg-5 fw-light"
+                          >Content</label
+                        >
+                        <textarea
+                          class="form-control rounded"
+                          placeholder="type something..."
+                          id="forumContent"
+                          style="min-height: 100px"
+                        ></textarea>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a
+                          type="button"
+                          class="btn-sm btn--secondary me-8 py-8 px-6 rounded"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </a>
+                        <input
+                          type="submit"
+                          class="btn-sm btn--secondary py-8 px-6 rounded"
+                          value="Add"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- not found -->
+        <section class="not-found">
+          <p class="fs-1 item">Not Found</p>
+        </section>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
