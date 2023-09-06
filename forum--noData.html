@@ -1,4 +1,4 @@
-<!--! 使用者頁面 -->
+<!-- ! Forum 討論區頁面-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,7 +18,7 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
 />
-    <title>Edit Profile</title>
+    <title>Badminton life | 討論區</title>
     <script type="module" crossorigin src="/badminton-life-v2/assets/forum-preventDefault-ef2b6fcb.js"></script>
     <link rel="stylesheet" href="/badminton-life-v2/assets/forum-preventDefault-a482b423.css">
   </head>
@@ -107,109 +107,175 @@
     </div>
   </div>
 </div>
+ <div id="eventInfo" class="container-xl px-0 px-lg-8">
+  <div class="event px-8 d-flex justify-content-between align-items-center">
+    <div class="event-left my-7 d-flex align-items-center">
+      <img
+        class="event-img me-9 d-lg-none"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAOVBMVEUAAABRilBTik5Uh0xUi01Uik9UiU5Uik5TiU1Vh01Uik5QgFBTik1Sh01ViEpQj1BQgEBVik1Uik7y5NZnAAAAEnRSTlMAH99Av5+A75BgzxBgYDAQEK8lw5BvAAAAj0lEQVQ4y+3O2wrDIBCE4d2o0WrSpPP+D9s49MCGxVwX+t8ozAcq/666i1+IVfscEfwZgMpegLz6cwchA6X5M8GWo5qlpCPOTMXM8lm+wAYHTGwAwAZA2QtUB9hCmU4gLWeCo/hmugBVrcgAZrmRQHlJhiQC4cJPzsBq3yAgmfZ+ajFPbJlg0OMKNNUmv9oTkPkN7eOR7SAAAAAASUVORK5CYII="
+        alt="綠色大聲公。"
+      />
+      <img
+        class="event-img me-9 d-none d-lg-block"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAbFBMVEUAAABQh1BTik9Qj09Tik5Uik1Uik5Uik1Uik5Vik1UiU5TikpUi05TiU9ggEBUik9Ui01Uik5Ui05UjE5Ui09SiU1RiUtUi05Uik5Uik5Uik5Tik9Uik1TjExVgFVUik5Ui05ViU9AgEBUik4AuhCEAAAAI3RSTlMAIJ8Q3/fvv9CvgBqnUAh5Y+fFcj41LNvLt5lrSigMs49UBNJHqdkAAAEESURBVEjH7dPbjoMgEIBhFFFbKOCx5+5h3v8dt8iSyW6cFk3aK/4bnWS+eIiyVCr19rRk2OXAIxnfllAGej0CnKLZvcwPn+J+Lq6RLMBvOw3ixONYgH0NrmqMYgjH6bj/imQImQIojY5mCDORS2JddmrjQ4aQcYL1HwKIPCRSgC2C1XNo8pBZBnGlehNURUgtgFTroRErIZOmeAztjbTDuaXhBRrLyHZhc/8favc71j0FbyJs7uq/cPQPojJCbvDeJoqj9q9PbPUstLj5S3GUClzNMAe5wM1AcRxqB+cvecRNpDjaBoh3e0YYaFu0koV0R30HAuGyDmthtxZmuYuzVOpV/QAZNlO7UN4+JAAAAABJRU5ErkJggg=="
+        alt="綠色大聲公。"
+      />
+      <p class="event-content text-truncate overflow-hidden">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed assumenda
+        veniam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
+        assumenda veniam!
+      </p>
+    </div>
+    <div id="eventCloseIcon" class="event-right">
+      <a class="event-img d-lg-none" href="#">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAAG1BMVEUAAAAnKSUmKSUmKCYoKCgoKCAoKCYoKiYnKSaJQHX5AAAACHRSTlMAoI+AICCAf80KimgAAAA+SURBVAjXYyANuIMIVTBTQ4CBgbENzGRsZGCQEACxQDSIBxUGCUKFIYIIJkIBQhu6YRYgK5rATCcQYUqaYwE/TQecX9F+sQAAAABJRU5ErkJggg==" alt="黑色小叉叉" />
+      </a>
+      <a class="event-img d-none d-lg-block" href="#">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAFVBMVEUAAAAnKSYqKionKSYmKSYnKCUnKSZjU+AiAAAABnRSTlMAwwyAY1/e9EWjAAAAb0lEQVQoz2MYUiAIxlBBiDEnKkAYTGIGcEG3NCEIQzEtFUjC2IkKEIVQWQQHIYlQiqYQwkVXCOFDZNCUQhSiKQUrRFcKVoiuFKyQsCBCO6ZFBJ2EcDw+b2IGCGbQ4Q/kMER0pOCPOAYnGEOVYSgBAKD8IK0DxrlNAAAAAElFTkSuQmCC" alt="黑色叉叉" />
+      </a>
+    </div>
+  </div>
+</div>
     <!-- banner -->
     <div class="container-fluid px-0 px-lg-8 px-xl-0">
-  <section
-    class="banner banner--profile position-relative; py-4 px-4 px-md-1 d-flex flex-column justify-content-center"
-  ></section>
-</div>
-    <div class="container px-lg-0">
-      <div
-        class="row justify-content-center align-items-center position-lg-relative up-100"
+      <section
+        class="banner banner--big banner--big--forum position-relative py-4 px-4 px-md-1 d-flex flex-column justify-content-center mb-4"
       >
-        <div class="col-12 col-lg-4 d-flex justify-content-center mb-5 mb-lg-0">
-          <div class="profile-bigHead position-relative mt-5 mt-lg-0">
-            <img
-              class="w-100 h-100 border rounded-circle"
-              src="/badminton-life-v2/assets/profile-selfie-8d0f4cc2.png"
-              alt="大頭照"
-            />
-            <a
-              class="position-absolute transform-bottom-right bottom-0 end-0 link-helper-secondary"
-              href=""
-            >
-              <span class="material-symbols-outlined"> edit_square </span>
-            </a>
-          </div>
+        <div class="z-3">
+          <h1
+            class="d-flex align-items-center justify-content-center text-white fs-xxl fw-bolder"
+          >
+            Forum
+          </h1>
         </div>
-        <div
-          data-aos="fade-up"
-          class="col-12 col-lg-6 text-center text-lg-start"
-        >
-          <h1 class="fs-3 fs-lg-2 fw-bold">Andy Liu</h1>
-          <p class="fs-3 fs-lg-2 text-helper-fourth">Taiwan</p>
-        </div>
-        <form
-          data-aos="fade-up"
-          action=""
-          method="post"
-          class="col-12 col-lg-8 mt-2 mt-lg-1"
-        >
-          <!--! profile-about me -->
-          <div
-            class="d-inline-block py-9 px-6 px-lg-5 py-lg-8 border border-helper-foutrh"
-          >
-            <span class="fs-lg-5">about me</span>
-          </div>
-          <div
-            class="row gx-0 align-items-center border border-helper-fourth py-7 px-6 py-lg-6 px-lg-4 mb-6 mb-lg-5"
-          >
-            <div class="col-3">
-              <label for="userName" class="me-6 me-lg-4 fs-5 fs-lg-4"
-                >Username</label
-              >
-            </div>
-            <div class="col-9 text-center text-md-start">
-              <input
-                type="text"
-                id="userName"
-                class="ps-9 border border-helper-fourth rounded fs-lg-5"
-                placeholder="Andy liu"
-              />
-            </div>
-            <div class="col-3">
-              <label for="email" class="me-6 me-lg-4 fs-5 fs-lg-4">Email</label>
-            </div>
-            <div class="col-9 text-center text-md-start">
-              <input
-                type="email"
-                id="email"
-                placeholder="abc@gmail.com"
-                class="ps-9 border border-helper-fourth rounded fs-lg-5"
-              />
-            </div>
-            <div class="col-3">
-              <label for="country" class="me-6 me-lg-5 fs-5 fs-lg-4"
-                >Country</label
-              >
-            </div>
-            <div class="col-9 text-center text-md-start">
-              <input
-                type="text"
-                id="country"
-                class="ps-9 border border-helper-fourth rounded fs-lg-5"
-                placeholder="Taiwan"
-              />
-            </div>
-          </div>
-          <!--! edit button -->
-          <div
-            class="d-flex justify-content-end align-items-center mb-4 mb-lg-0"
-          >
-            <a
-              href="profile.html"
-              class="btn-sm btn--secondary me-9 me-lg-8 py-8 px-6 rounded"
-              >Cancel</a
-            >
-            <input
-              type="submit"
-              value="Done"
-              class="btn-sm btn--secondary py-8 px-6 rounded"
-            />
-          </div>
-        </form>
-      </div>
+      </section>
     </div>
+
+    <!-- main content -->
+    <main>
+      <div class="container-xl">
+        <!-- filter buttons + add new forum button -->
+        <section
+          class="d-flex flex-column flex-md-row align-items-center justify-content-md-between mb-4 mb-lg-2"
+        >
+          <div
+            class="d-flex width-100 width-md-auto justify-content-between justify-content-md-start me-9 mb-6 mb-md-0"
+          >
+            <!-- type button -->
+            <section class="dropdown fs-5 me-6 me-md-4 me-lg-3">
+              <div class="dropdown-item py-8 px-6">
+                <span class="dropdown-tag">type</span>
+                <p>type</p>
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAALCAYAAAByF90EAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABrSURBVHgBrZJRDYAwDAUfDpAwCZOEBBwwHMzRJCChEsAB9KNNgJCxdbvkfi9NXgcAjl1g52BXSIjY0+h2r3p2N0RIDnkw9YgooSLk8UMsiMwoJGUiARWM+F4ywoB7xRIa0LcgubIJh8zMygUN/lKU4oqjdwAAAABJRU5ErkJggg=="
+                  width="20"
+                  height="20"
+                  alt="黑色項下箭頭"
+                />
+              </div>
+              <div class="dropdown-content">
+                <ul class="overflow-y-scroll">
+                  <li class="active">Players</li>
+                  <li>Contests</li>
+                  <li>Equipment</li>
+                  <li>Other</li>
+                  <li>All</li>
+                </ul>
+              </div>
+            </section>
+            <!-- per page button -->
+            <section class="dropdown fs-5">
+              <div class="dropdown-item py-8 px-6">
+                <span class="dropdown-tag">per page</span>
+                <p>per page</p>
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAALCAYAAAByF90EAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABrSURBVHgBrZJRDYAwDAUfDpAwCZOEBBwwHMzRJCChEsAB9KNNgJCxdbvkfi9NXgcAjl1g52BXSIjY0+h2r3p2N0RIDnkw9YgooSLk8UMsiMwoJGUiARWM+F4ywoB7xRIa0LcgubIJh8zMygUN/lKU4oqjdwAAAABJRU5ErkJggg=="
+                  width="20"
+                  height="20"
+                  alt="黑色項下箭頭"
+                />
+              </div>
+              <div class="dropdown-content">
+                <ul class="text-center">
+                  <li class="active">8</li>
+                  <li>16</li>
+                  <li>32</li>
+                  <li>72</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+
+          <!-- add new forum button : modal -->
+          <section class="d-flex fs-5 align-self-end">
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#addNewForum"
+              class="btn-sm btn--secondary py-lg-8 px-lg-6 rounded d-flex align-items-center"
+            >
+              <span class="material-symbols-outlined fw-bold"> add </span>
+              <span>New</span>
+            </a>
+            <!-- 單項討論區頁面 -->
+            <div class="modal modal-md-center fade" id="addNewForum">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold">New Forum</h1>
+                  </div>
+                  <div class="modal-body">
+                    <!-- 表單內容 -->
+                    <form action="" method="post">
+                      <div class="d-flex flex-column">
+                        <label for="forumTitle" class="fs-lg-5 fw-light"
+                          >Title</label
+                        >
+                        <input
+                          id="forumTitle"
+                          type="text"
+                          class="rounded width-60 ps-8 py-9 form-control"
+                        />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <label for="forumContent" class="fs-lg-5 fw-light"
+                          >Content</label
+                        >
+                        <textarea
+                          class="form-control rounded"
+                          placeholder="type something..."
+                          id="forumContent"
+                          style="min-height: 100px"
+                        ></textarea>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a
+                          type="button"
+                          class="btn-sm btn--secondary me-8 py-8 px-6 rounded"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </a>
+                        <input
+                          type="submit"
+                          class="btn-sm btn--secondary py-8 px-6 rounded"
+                          value="Add"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- not found -->
+        <section class="not-found">
+          <p class="fs-1 item">Not Found</p>
+        </section>
+      </div>
+    </main>
     <footer class="border-top border-bottom border-helper-primary">
   <div
     class="container-xl d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center py-4"
