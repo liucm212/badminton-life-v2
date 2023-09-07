@@ -133,6 +133,9 @@ d-inline-block{
   &-bottom-right{
     transform: translate(0%, 0%);
   }
+  &-top-center{
+    transform: translate(-50%, 0%);
+  }
 }
 
 // up

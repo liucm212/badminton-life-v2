@@ -5,10 +5,12 @@
     <title>Badminton Life</title>
   </head>
   <body>
-    <!-- header -->
-    <%- include('./layout/header-logIn'); -%>
-    <!-- event -->
-    <%- include('./layout/event'); -%>
+    <div class="header-sticky">
+      <!-- event -->
+      <%- include('./layout/event'); -%>
+      <!-- header -->
+      <%- include('./layout/header-logIn'); -%>
+    </div>
     <!-- menu-tryIt -->
     <div class="bg-green-third">
       <div class="container-xl px-0 px-lg-8 bg-green-third">
@@ -34,7 +36,7 @@
             <p class="menu-tryIt-content mb-5 mb-md-3">
               Search anything you want about badminton.
             </p>
-            <a class="btn btn--primary" href="#">TRY IT</a>
+            <a class="btn btn--primary" href="signUp.html">TRY IT</a>
           </h1>
         </div>
       </div>

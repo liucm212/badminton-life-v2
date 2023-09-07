@@ -1,3 +1,9 @@
+.header-sticky{
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  left: 50%;
+}
 .header{
   &-logo{
     padding: 12px;
@@ -12,15 +18,17 @@
       padding: 0px;
       border-bottom: none;
     }
-    &-nav{
-      width: 100%;
-    }
   }
 }
 
 // list
 .header-nav{
+  position: relative;
   .list{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: var(--bs-white);
     text-align: center;
     &-item{
       border-bottom: 1px solid var(--bs-dark);
@@ -77,6 +85,12 @@
         padding-top: 32px;
         padding-bottom: 32px;
       }
+    }
+  }
+  @include Desktop{
+    .list{
+      position: static;
+
     }
   }
 }
