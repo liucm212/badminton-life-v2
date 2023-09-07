@@ -19,14 +19,15 @@
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
 />
     <title>Badminton life | 討論區</title>
-    <script type="module" crossorigin src="/badminton-life-v2/assets/forum-preventDefault-ef2b6fcb.js"></script>
-    <link rel="stylesheet" href="/badminton-life-v2/assets/forum-preventDefault-a482b423.css">
+    <script type="module" crossorigin src="/badminton-life-v2/assets/forum-preventDefault-4f4fa7a4.js"></script>
+    <link rel="stylesheet" href="/badminton-life-v2/assets/forum-preventDefault-08c6dfc7.css">
   </head>
   <body>
-    <div class="header container-xl px-0 px-lg-8">
-  <div class="row g-0 align-items-lg-center border border-dark">
+    <div class="header-sticky"><!-- xl-device-width時開始不是滿版的 -->
+<header class="header container-xl px-0 px-lg-8">
+  <div class="row g-0 align-items-lg-center border border-dark bg-white">
     <div class="col-12 col-lg-4">
-      <h1 class="header-logo">
+      <div class="header-logo">
         <a href="index.html">
           <img
             class="d-lg-none"
@@ -39,102 +40,45 @@
             alt="Badminton Life字樣，左邊有一個毛球圖案"
           />
         </a>
-        <a id="openIcon" class="header-icon-menu d-lg-none" href="#"
-          ><img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoAgMAAADxkFD+AAAADFBMVEUAAAAnKicnKSYnKSZJvWMaAAAAA3RSTlMAT6/L/iltAAAAMElEQVQY02OgAhANBYMQINP+Pxj8wcGkJWBaBQQrwExmmG0IJkIBrQBhzyMCinIAAGmqQKeocyyKAAAAAElFTkSuQmCC"
-            alt="三條左右延伸的黑色橫槓，其中中間的橫槓由右往左延伸，但沒有延伸到底。"
-        /></a>
-        <a id="closeIcon" class="header-icon-close d-none d-lg-none" href="#"
-          ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAFVBMVEUAAAAnKSYqKionKSYmKSYnKCUnKSZjU+AiAAAABnRSTlMAwwyAY1/e9EWjAAAAb0lEQVQoz2MYUiAIxlBBiDEnKkAYTGIGcEG3NCEIQzEtFUjC2IkKEIVQWQQHIYlQiqYQwkVXCOFDZNCUQhSiKQUrRFcKVoiuFKyQsCBCO6ZFBJ2EcDw+b2IGCGbQ4Q/kMER0pOCPOAYnGEOVYSgBAKD8IK0DxrlNAAAAAElFTkSuQmCC" alt="叉叉記號"
-        /></a>
-      </h1>
+        <div>
+          <a id="openIcon" class="header-icon-menu d-lg-none" href="#"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoAgMAAADxkFD+AAAADFBMVEUAAAAnKicnKSYnKSZJvWMaAAAAA3RSTlMAT6/L/iltAAAAMElEQVQY02OgAhANBYMQINP+Pxj8wcGkJWBaBQQrwExmmG0IJkIBrQBhzyMCinIAAGmqQKeocyyKAAAAAElFTkSuQmCC"
+              alt="三條左右延伸的黑色橫槓，其中中間的橫槓由右往左延伸，但沒有延伸到底。"
+          /></a>
+          <a id="closeIcon" class="header-icon-close d-none d-lg-none" href="#"
+            ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAFVBMVEUAAAAnKSYqKionKSYmKSYnKCUnKSZjU+AiAAAABnRSTlMAwwyAY1/e9EWjAAAAb0lEQVQoz2MYUiAIxlBBiDEnKkAYTGIGcEG3NCEIQzEtFUjC2IkKEIVQWQQHIYlQiqYQwkVXCOFDZNCUQhSiKQUrRFcKVoiuFKyQsCBCO6ZFBJ2EcDw+b2IGCGbQ4Q/kMER0pOCPOAYnGEOVYSgBAKD8IK0DxrlNAAAAAElFTkSuQmCC" alt="叉叉記號"
+          /></a>
+        </div>
+      </div>
     </div>
-    <!--! navbar  -->
-    <div class="header-menu col-12 col-lg-8">
+    <!-- mobile navbar -->
+    <div class="col-12 col-lg-8">
       <nav class="header-nav d-lg-flex justify-content-end">
         <ul id="mobileNavbar" class="list d-none d-lg-flex">
-          <li class="col-12 col-lg-2">
+          <li class="col-12 col-lg">
             <a class="list-item" href="ranking.html">Ranking</a>
           </li>
-          <li class="col-12 col-lg-2">
-            <a class="list-item" href="players.html">Player</a>
+          <li class="col-12 col-lg">
+            <a class="list-item" href="players.html">Players</a>
           </li>
-          <li class="col-12 col-lg-2">
+          <li class="col-12 col-lg">
             <a class="list-item" href="contest.html">Contest</a>
           </li>
-          <li class="col-12 col-lg-2">
+          <li class="col-12 col-lg">
             <a class="list-item" href="forum.html">Forum</a>
           </li>
-          <li class="col-12 col-lg-2">
+          <li class="col-12 col-lg">
             <a class="list-item" href="analysis.html">Analysis</a>
           </li>
-          <li class="col-12 col-lg-2 align-self-stretch">
-            <div
-              class="list-item list-item--signIn d-none d-lg-block position-relative d-flex align-items-center justify-content-center"
-            >
-              <span
-                class="material-symbols-outlined vertical-align-center fs-3"
-              >
-                account_circle
-              </span>
-              <span class="material-symbols-outlined fs-4"> expand_more </span>
-              <div class="position-absolute top-100 end-0">
-                <ul>
-                  <li>
-                    <a class="item-content bg-helper-fourth" href="profile.html"
-                      >Profile</a
-                    >
-                  </li>
-                  <li>
-                    <a class="item-content bg-helper-fourth" href="index.html"
-                      >Log out</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="col-12 d-lg-none">
-            <a class="list-item bg-helper-fourth" href="profile.html"
-              >Profile</a
-            >
-          </li>
-          <li class="col-12 d-lg-none">
-            <a class="list-item bg-helper-fourth" href="index.html">Sign out</a>
+          <li class="col-12 col-lg">
+            <a class="list-item list-item--signIn" href="logIn.html">Log In</a>
           </li>
         </ul>
       </nav>
     </div>
   </div>
-</div>
- <div id="eventInfo" class="container-xl px-0 px-lg-8">
-  <div class="event px-8 d-flex justify-content-between align-items-center">
-    <div class="event-left my-7 d-flex align-items-center">
-      <img
-        class="event-img me-9 d-lg-none"
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAOVBMVEUAAABRilBTik5Uh0xUi01Uik9UiU5Uik5TiU1Vh01Uik5QgFBTik1Sh01ViEpQj1BQgEBVik1Uik7y5NZnAAAAEnRSTlMAH99Av5+A75BgzxBgYDAQEK8lw5BvAAAAj0lEQVQ4y+3O2wrDIBCE4d2o0WrSpPP+D9s49MCGxVwX+t8ozAcq/666i1+IVfscEfwZgMpegLz6cwchA6X5M8GWo5qlpCPOTMXM8lm+wAYHTGwAwAZA2QtUB9hCmU4gLWeCo/hmugBVrcgAZrmRQHlJhiQC4cJPzsBq3yAgmfZ+ajFPbJlg0OMKNNUmv9oTkPkN7eOR7SAAAAAASUVORK5CYII="
-        alt="綠色大聲公。"
-      />
-      <img
-        class="event-img me-9 d-none d-lg-block"
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAbFBMVEUAAABQh1BTik9Qj09Tik5Uik1Uik5Uik1Uik5Vik1UiU5TikpUi05TiU9ggEBUik9Ui01Uik5Ui05UjE5Ui09SiU1RiUtUi05Uik5Uik5Uik5Tik9Uik1TjExVgFVUik5Ui05ViU9AgEBUik4AuhCEAAAAI3RSTlMAIJ8Q3/fvv9CvgBqnUAh5Y+fFcj41LNvLt5lrSigMs49UBNJHqdkAAAEESURBVEjH7dPbjoMgEIBhFFFbKOCx5+5h3v8dt8iSyW6cFk3aK/4bnWS+eIiyVCr19rRk2OXAIxnfllAGej0CnKLZvcwPn+J+Lq6RLMBvOw3ixONYgH0NrmqMYgjH6bj/imQImQIojY5mCDORS2JddmrjQ4aQcYL1HwKIPCRSgC2C1XNo8pBZBnGlehNURUgtgFTroRErIZOmeAztjbTDuaXhBRrLyHZhc/8favc71j0FbyJs7uq/cPQPojJCbvDeJoqj9q9PbPUstLj5S3GUClzNMAe5wM1AcRxqB+cvecRNpDjaBoh3e0YYaFu0koV0R30HAuGyDmthtxZmuYuzVOpV/QAZNlO7UN4+JAAAAABJRU5ErkJggg=="
-        alt="綠色大聲公。"
-      />
-      <p class="event-content text-truncate overflow-hidden">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed assumenda
-        veniam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
-        assumenda veniam!
-      </p>
-    </div>
-    <div id="eventCloseIcon" class="event-right">
-      <a class="event-img d-lg-none" href="#">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAAG1BMVEUAAAAnKSUmKSUmKCYoKCgoKCAoKCYoKiYnKSaJQHX5AAAACHRSTlMAoI+AICCAf80KimgAAAA+SURBVAjXYyANuIMIVTBTQ4CBgbENzGRsZGCQEACxQDSIBxUGCUKFIYIIJkIBQhu6YRYgK5rATCcQYUqaYwE/TQecX9F+sQAAAABJRU5ErkJggg==" alt="黑色小叉叉" />
-      </a>
-      <a class="event-img d-none d-lg-block" href="#">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAFVBMVEUAAAAnKSYqKionKSYmKSYnKCUnKSZjU+AiAAAABnRSTlMAwwyAY1/e9EWjAAAAb0lEQVQoz2MYUiAIxlBBiDEnKkAYTGIGcEG3NCEIQzEtFUjC2IkKEIVQWQQHIYlQiqYQwkVXCOFDZNCUQhSiKQUrRFcKVoiuFKyQsCBCO6ZFBJ2EcDw+b2IGCGbQ4Q/kMER0pOCPOAYnGEOVYSgBAKD8IK0DxrlNAAAAAElFTkSuQmCC" alt="黑色叉叉" />
-      </a>
-    </div>
-  </div>
+</header>
 </div>
     <!-- banner -->
     <div class="container-fluid px-0 px-lg-8 px-xl-0">
