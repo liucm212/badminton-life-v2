@@ -1,0 +1,617 @@
+<!-- ! Ranking -- Mixed single -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta data -->
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- font family : Noto Sans -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Noto+Sans:wght@400;700;900&display=swap"
+  rel="stylesheet"
+/>
+<!-- google icons -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+/>
+    <title>Ranking</title>
+    <script type="module" crossorigin src="/badminton-life-v2/assets/icon-heart-2644107d.js"></script>
+    <link rel="stylesheet" href="/badminton-life-v2/assets/icon-heart-827cfaec.css">
+  </head>
+  <body>
+    <div class="header-sticky"><!-- xl-device-width時開始不是滿版的 -->
+<header class="header container-xl px-0 px-lg-8">
+  <div class="row g-0 align-items-lg-center border border-dark bg-white">
+    <div class="col-12 col-lg-4">
+      <div class="header-logo">
+        <a href="index.html">
+          <img
+            class="d-lg-none"
+            src="data:image/png;base64,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"
+            alt="Badminton Life字樣，左邊有一個毛球圖案"
+          />
+          <img
+            class="d-none d-lg-block"
+            src="data:image/png;base64,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"
+            alt="Badminton Life字樣，左邊有一個毛球圖案"
+          />
+        </a>
+        <div>
+          <a id="openIcon" class="header-icon-menu d-lg-none" href="#"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoAgMAAADxkFD+AAAADFBMVEUAAAAnKicnKSYnKSZJvWMaAAAAA3RSTlMAT6/L/iltAAAAMElEQVQY02OgAhANBYMQINP+Pxj8wcGkJWBaBQQrwExmmG0IJkIBrQBhzyMCinIAAGmqQKeocyyKAAAAAElFTkSuQmCC"
+              alt="三條左右延伸的黑色橫槓，其中中間的橫槓由右往左延伸，但沒有延伸到底。"
+          /></a>
+          <a id="closeIcon" class="header-icon-close d-none d-lg-none" href="#"
+            ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAFVBMVEUAAAAnKSYqKionKSYmKSYnKCUnKSZjU+AiAAAABnRSTlMAwwyAY1/e9EWjAAAAb0lEQVQoz2MYUiAIxlBBiDEnKkAYTGIGcEG3NCEIQzEtFUjC2IkKEIVQWQQHIYlQiqYQwkVXCOFDZNCUQhSiKQUrRFcKVoiuFKyQsCBCO6ZFBJ2EcDw+b2IGCGbQ4Q/kMER0pOCPOAYnGEOVYSgBAKD8IK0DxrlNAAAAAElFTkSuQmCC" alt="叉叉記號"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <!-- navbar -->
+    <div class="col-12 col-lg-8">
+      <nav class="header-nav d-lg-flex justify-content-end">
+        <ul id="mobileNavbar" class="list d-none d-lg-flex">
+          <li class="col-12 col-lg">
+            <a class="list-item" href="ranking--MS.html">Ranking</a>
+          </li>
+          <li class="col-12 col-lg">
+            <a class="list-item" href="players.html">Players</a>
+          </li>
+          <li class="col-12 col-lg">
+            <a class="list-item" href="contest.html">Contest</a>
+          </li>
+          <li class="col-12 col-lg">
+            <a class="list-item" href="forum.html">Forum</a>
+          </li>
+          <li class="col-12 col-lg">
+            <a class="list-item" href="analysis.html">Analysis</a>
+          </li>
+          <li class="col-12 col-lg">
+            <a class="list-item list-item--signIn" href="logIn.html">Log In</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+</div>
+    <!-- banner -->
+    <div class="container-fluid px-0 px-lg-8 px-xl-0">
+      <section
+        class="banner banner--big banner--big--ranking position-relative py-4 px-4 px-md-1 d-flex flex-column justify-content-center mb-4"
+      >
+        <div class="z-3">
+          <h1
+            class="d-flex align-items-center justify-content-center text-white fs-xxl fw-bolder"
+          >
+            Ranking
+          </h1>
+        </div>
+      </section>
+    </div>
+
+    <div class="container-xl px-4 px-lg-8">
+      <!-- ranking-option -->
+      <div class="mb-4">
+        <ul
+          class="ranking-option row justify-content-between align-items-center d-none d-lg-flex"
+        >
+          <li class="col-lg-2 align-self-stretch">
+            <a
+              class="h-100 w-100 d-flex align-items-center justify-content-center list-item text-center py-6 border border-dark fs-5 py-6 px-8 transition-3 hover-white hover-bg--helper-third"
+              href="ranking--MS.html"
+              >Man's single</a
+            >
+          </li>
+          <li class="col-lg-2 align-self-stretch d-flex align-items-center">
+            <a
+              class="h-100 w-100 d-flex align-items-center justify-content-center list-item text-center py-6 border border-dark fs-5 py-6 px-8 transition-3 hover-white hover-bg--helper-third"
+              href="ranking--WS.html"
+              >Woman's single</a
+            >
+          </li>
+          <li class="col-lg-2 align-self-stretch d-flex align-items-center">
+            <a
+              class="h-100 w-100 d-flex align-items-center justify-content-center list-item text-center py-6 border border-dark fs-5 py-6 px-8 transition-3 hover-white hover-bg--helper-third"
+              href="ranking--MD.html"
+              >Man's double</a
+            >
+          </li>
+          <li class="col-lg-2 align-self-stretch d-flex align-items-center">
+            <a
+              class="h-100 w-100 d-flex align-items-center justify-content-center list-item text-center py-6 border border-dark fs-5 py-6 px-8 transition-3 hover-white hover-bg--helper-third"
+              href="ranking--WD.html"
+              >Woman's double</a
+            >
+          </li>
+          <li class="col-lg-2 align-self-stretch d-flex align-items-center">
+            <a
+              class="h-100 w-100 d-flex align-items-center justify-content-center list-item text-center py-6 border border-dark fs-5 py-6 px-8 transition-3 hover-white hover-bg--helper-third active"
+              href="ranking--MixD.html"
+              >Mixed double</a
+            >
+          </li>
+        </ul>
+        <div class="ranking-option-sm d-lg-none">
+          <a
+            class="ranking-option--dropdown width-60 hover-bg--helper-third hover-border--helper-primary mx-auto d-lg-none d-flex justify-content-center align-items-center py-8 px-6 border rounded border-helper-secondary"
+            href="#"
+          >
+            <p class="fs-4 me-9">Man's single</p>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAALCAYAAAByF90EAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABrSURBVHgBrZJRDYAwDAUfDpAwCZOEBBwwHMzRJCChEsAB9KNNgJCxdbvkfi9NXgcAjl1g52BXSIjY0+h2r3p2N0RIDnkw9YgooSLk8UMsiMwoJGUiARWM+F4ywoB7xRIa0LcgubIJh8zMygUN/lKU4oqjdwAAAABJRU5ErkJggg=="
+              alt="黑色項下箭頭"
+            />
+          </a>
+          <ul class="ranking-option--dropdown-content width-50 text-center">
+            <li>
+              <a class="list-item py-8 px-6 border border-dark active" href="#"
+                >Man's single</a
+              >
+            </li>
+            <li>
+              <a class="list-item py-8 px-6 border border-dark" href="#"
+                >Woman's single</a
+              >
+            </li>
+            <li>
+              <a class="list-item py-8 px-6 border border-dark" href="#"
+                >Man's double</a
+              >
+            </li>
+            <li>
+              <a class="list-item py-8 px-6 border border-dark" href="#"
+                >Woman's double</a
+              >
+            </li>
+            <li>
+              <a class="list-item py-8 px-6 border border-dark" href="#"
+                >Mixed double</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ranking section-->
+      <div class="d-lg-flex mb-4">
+        <!-- text information -->
+        <div
+          class="bg-white position-relative border border-helper-primary p-8 p-md-4 width-100 width-lg-auto flex-lg-grow-1 mx-auto"
+        >
+          <ul class="overflow-x-scroll text-center">
+            <!-- position1 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">1</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyBAMAAADsEZWCAAAAKlBMVEXYACf////19fXqmajwn67uuMHmeo78/Pz1v8n26ev2zdTvyM733OLx19uILWpyAAAATUlEQVQ4y2MQxAWGqEyLCxh4lZcfcUEGHgxQwKakFMCAAkZlyJQxhgBrJaXJxiiAQQkXoLIMwgWXUV0wCEJnuMkgctYU1Jw1CHI9VWUAALBRt2e78NsAAAAASUVORK5CYII="
+                      alt="丹麥國旗，紅色背景白十字。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      DEN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Vikotor AXELSEN
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position2 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">2</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyBAMAAADsEZWCAAAAElBMVEX////19fXYACf8/Pzwn671v8mgvQhnAAAAJUlEQVQ4y2MYbiDEBTtwZVDCBUZlBoWMIC4wKjMoZIxxAYZhBgCQOlthIaCQUwAAAABJRU5ErkJggg=="
+                      alt="印尼國旗，上紅下白。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      INA
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Anthony Sinisuka GINTING
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position3 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">3</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyBAMAAADsEZWCAAAAMFBMVEX19fX////YACf8/Pzx1tvqmajmeo7fPVrx19vsqbXqmafhTGfeLk3cHkDz5ujz5ejesZo9AAAAkUlEQVQ4y2MQxAWGqIwxLsAwRIBX2gzsEuFKSkpHsUk8VwKBHZgSHJfAMroPMGS4lSCgAEMmCCqjiiFzCCqjjmGNEgw4oMlwwmUC0GTY4DIJRMtwwWUmoMmw4HQBQxFUQgfDP4tw+pQdKrMBQ4YPGqIOmIHtDZapxxZBa4ASpdgj1TMthGGIAJw5axDkeqrKAACeFkUi4gXKxAAAAABJRU5ErkJggg=="
+                      alt="日本國旗，白底中間紅色圓形。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      JPN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Kodai NARAOKA
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position4 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">4</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyBAMAAADsEZWCAAAAFVBMVEUAAADXACbXACdBR5v19fXYACffPVqMjwJqAAAAA3RSTlMAYEDpV+7pAAAAM0lEQVQ4y2MYbkBREDsQYgjFBagsk4YLMLjgAnSTMcYFRmXwyQyCmMOZquiVrvHkrGEGAHgg1/WABTPxAAAAAElFTkSuQmCC"
+                      alt="泰國國旗，紅白藍由外而內"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      THA
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Kunlavut VITIDSARN
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position5 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">5</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAASFBMVEUAAADXACjXACXXACfYACf/4VrdHC3aDirxjEfgKjD6xVT1qU3901fpYz3kRjf3t1Dzm0rtfkPiODT4t1H1qE3rcEDnVDriODM+xrHhAAAABHRSTlMAYGBA6GWHjQAAAJNJREFUSMftkssOAjEIRasVaKHTefj6/z91It0awbiYBWfRsODklkAKjkk+O8np4uYPyuRWChSyKogasnRzSllHQZ3IpnAbRRXA7wqJzAAionm3akipDDusrWibBXej0fiZTdmgAWxqLKValDIj8l0D+WpKeb6b9elIru2vjP6DmbwKPX44/lBCCeWzkk9OcgoOyQvylhtzvl23hAAAAABJRU5ErkJggg=="
+                      alt="中國國旗，紅底，一顆大星星在左邊，4顆小星星在右邊。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      CHN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      SHI Yu QI
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position6 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">6</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAVFBMVEUAAABtpUX/lxBspUT/lxBtpUT/mBH19fWxzZz6xoO4zOWZuNw9e8WZuN1rmdFej8yKrtnm6/FMhcktcMAeZrzH1+nX4e3W4e2JrdhzmM3G1umZt90H7y5PAAAABXRSTlMAYGBAQDc/NAcAAACGSURBVEjH7dFJDsIwEERRQwKBnj1kgvvfMxdwJPcuivz2f1MVumsan05jeLv15D7J1y1MVdFUeKqrJ0tOjFQWR1IYAGbMsTlB+pmQQdqaE0GgXQVQmxP9g+xKnsQSGMk2EzcnMeMMAFwci62FkFNeT5I6FrV4cuXHLbzcenKfZHg4DaG7pAOn5ynbOgY2mwAAAABJRU5ErkJggg=="
+                      alt="印度國旗，由上至下背景顏色為黃白綠，白色背景內有來色圓形花紋圖案。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      IND
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      PRANNOY H. S.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position7 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">7</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAASFBMVEUAAADXACjXACXXACfYACf/4VrdHC3aDirxjEfgKjD6xVT1qU3901fpYz3kRjf3t1Dzm0rtfkPiODT4t1H1qE3rcEDnVDriODM+xrHhAAAABHRSTlMAYGBA6GWHjQAAAJNJREFUSMftkssOAjEIRasVaKHTefj6/z91It0awbiYBWfRsODklkAKjkk+O8np4uYPyuRWChSyKogasnRzSllHQZ3IpnAbRRXA7wqJzAAionm3akipDDusrWibBXej0fiZTdmgAWxqLKValDIj8l0D+WpKeb6b9elIru2vjP6DmbwKPX44/lBCCeWzkk9OcgoOyQvylhtzvl23hAAAAABJRU5ErkJggg=="
+                      alt="中國國旗，紅底，一顆大星星在左邊，4顆小星星在右邊。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      CHN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      LI Shi Feng
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position8 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">8</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAASFBMVEUAAADy8vLXACXz8/PXACb19fXYACfcHkDfPVrx19vneo7aDzTwx8/hTGfla4HeLk3qmajjXHTuuMHtt8HoipvuuMLqmafaEDQf0rqEAAAABXRSTlMAYGBAQDc/NAcAAACZSURBVEjH7dLLCsIwEIXhaDsn91tb9f3f1BGELJ1ZCIXmh5DVx4QkZnbO1ruy1UDdILZaHemJmlORQL5+JjkpYUGWt7j5l5BETw1g5DJQRSQTOVj/BNd8/UXGuY4CrhyiKYWJ8l0cUf/eFy8RQaINiHuKMaUoIzwmALnzkk5B9hS0f8yW/RHEZPQ/QuommeS6ZLkpW8zslL0BhmsklR+fCGcAAAAASUVORK5CYII="
+                      alt="新加坡國旗，上紅下白，紅色背景內，左側是一個月亮，右側是五顆星星。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      SGP
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      LOH Kean Yew
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position9 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">9</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyBAMAAADsEZWCAAAAElBMVEX////19fXYACf8/Pzwn671v8mgvQhnAAAAJUlEQVQ4y2MYbiDEBTtwZVDCBUZlBoWMIC4wKjMoZIxxAYZhBgCQOlthIaCQUwAAAABJRU5ErkJggg=="
+                      alt="印尼國旗，上紅下白。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      INA
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Jonatan CHRISTIE
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position10 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">10</span>
+                </div>
+                <!-- 內容 -->
+                <div class="d-flex align-items-center py-6 flex-grow-1">
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyBAMAAADsEZWCAAAAKlBMVEXYACf////19fXqmajwn67uuMHmeo78/Pz1v8n26ev2zdTvyM733OLx19uILWpyAAAATUlEQVQ4y2MQxAWGqEyLCxh4lZcfcUEGHgxQwKakFMCAAkZlyJQxhgBrJaXJxiiAQQkXoLIMwgWXUV0wCEJnuMkgctYU1Jw1CHI9VWUAALBRt2e78NsAAAAASUVORK5CYII="
+                      alt="丹麥國旗，紅色背景白十字。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      DEN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Anders ANTONSEN
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="d-none d-lg-block align-self-stretch d-flex align-items-center width-50 ranking-playerPic"
+        ></div>
+      </div>
+
+      <!-- pagination -->
+      <section class="mt-6 mb-3 mb-lg-2">
+        <ul class="pagination">
+          <li>
+            <a class="pagination-item pagination-item--controller" href="#"
+              >pre</a
+            >
+          </li>
+          <li>
+            <a class="pagination-item pagination-item--active" href="#">1</a>
+          </li>
+          <li><a class="pagination-item" href="#">2</a></li>
+          <li><a class="pagination-item" href="#">3</a></li>
+          <li>
+            <a class="pagination-item pagination-item--controller" href="#"
+              >next</a
+            >
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <footer class="border-top border-bottom border-helper-primary">
+  <div
+    class="container-xl d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center py-4"
+  >
+    <a href="index.html" class="d-flex justify-content-center mb-6 mb-lg-0">
+      <img
+        class="d-lg-none"
+        src="data:image/png;base64,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"
+        alt="Badminton Life字樣，左邊有一個毛球圖案"
+      />
+      <img
+        class="d-none d-lg-block"
+        src="data:image/png;base64,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"
+        alt="Badminton Life字樣，左邊有一個毛球圖案"
+      />
+    </a>
+    <p class="footer-copyright text-center">
+      Copyright &copy; 2023 安迪劉. All rights reserved.
+    </p>
+  </div>
+</footer>
+    
+  </body>
+</html>
