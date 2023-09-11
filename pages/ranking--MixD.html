@@ -1,0 +1,524 @@
+<!-- ! Ranking -- Mixed single -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/meta'); -%>
+    <title>Ranking</title>
+  </head>
+  <body>
+    <div class="header-sticky"><%- include('./layout/header'); -%></div>
+    <!-- banner -->
+    <div class="container-fluid px-0 px-lg-8 px-xl-0">
+      <section
+        class="banner banner--big banner--big--ranking position-relative py-4 px-4 px-md-1 d-flex flex-column justify-content-center mb-4"
+      >
+        <div class="z-3">
+          <h1
+            class="d-flex align-items-center justify-content-center text-white fs-xxl fw-bolder"
+          >
+            Ranking
+          </h1>
+        </div>
+      </section>
+    </div>
+
+    <div class="container-xl px-4 px-lg-8">
+      <!-- ranking-option -->
+      <div class="mb-4">
+        <ul
+          class="ranking-option row justify-content-between align-items-center d-none d-lg-flex"
+        >
+          <li class="col-lg-2 align-self-stretch">
+            <a
+              class="h-100 w-100 d-flex align-items-center justify-content-center list-item text-center py-6 border border-dark fs-5 py-6 px-8 transition-3 hover-white hover-bg--helper-third"
+              href="ranking--MS.html"
+              >Man's single</a
+            >
+          </li>
+          <li class="col-lg-2 align-self-stretch d-flex align-items-center">
+            <a
+              class="h-100 w-100 d-flex align-items-center justify-content-center list-item text-center py-6 border border-dark fs-5 py-6 px-8 transition-3 hover-white hover-bg--helper-third"
+              href="ranking--WS.html"
+              >Woman's single</a
+            >
+          </li>
+          <li class="col-lg-2 align-self-stretch d-flex align-items-center">
+            <a
+              class="h-100 w-100 d-flex align-items-center justify-content-center list-item text-center py-6 border border-dark fs-5 py-6 px-8 transition-3 hover-white hover-bg--helper-third"
+              href="ranking--MD.html"
+              >Man's double</a
+            >
+          </li>
+          <li class="col-lg-2 align-self-stretch d-flex align-items-center">
+            <a
+              class="h-100 w-100 d-flex align-items-center justify-content-center list-item text-center py-6 border border-dark fs-5 py-6 px-8 transition-3 hover-white hover-bg--helper-third"
+              href="ranking--WD.html"
+              >Woman's double</a
+            >
+          </li>
+          <li class="col-lg-2 align-self-stretch d-flex align-items-center">
+            <a
+              class="h-100 w-100 d-flex align-items-center justify-content-center list-item text-center py-6 border border-dark fs-5 py-6 px-8 transition-3 hover-white hover-bg--helper-third active"
+              href="ranking--MixD.html"
+              >Mixed double</a
+            >
+          </li>
+        </ul>
+        <div class="ranking-option-sm d-lg-none">
+          <a
+            class="ranking-option--dropdown width-60 hover-bg--helper-third hover-border--helper-primary mx-auto d-lg-none d-flex justify-content-center align-items-center py-8 px-6 border rounded border-helper-secondary"
+            href="#"
+          >
+            <p class="fs-4 me-9">Man's single</p>
+            <img
+              src="../assets/images/icons/arrow-down.png"
+              alt="黑色項下箭頭"
+            />
+          </a>
+          <ul class="ranking-option--dropdown-content width-50 text-center">
+            <li>
+              <a class="list-item py-8 px-6 border border-dark active" href="#"
+                >Man's single</a
+              >
+            </li>
+            <li>
+              <a class="list-item py-8 px-6 border border-dark" href="#"
+                >Woman's single</a
+              >
+            </li>
+            <li>
+              <a class="list-item py-8 px-6 border border-dark" href="#"
+                >Man's double</a
+              >
+            </li>
+            <li>
+              <a class="list-item py-8 px-6 border border-dark" href="#"
+                >Woman's double</a
+              >
+            </li>
+            <li>
+              <a class="list-item py-8 px-6 border border-dark" href="#"
+                >Mixed double</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ranking section-->
+      <div class="d-lg-flex mb-4">
+        <!-- text information -->
+        <div
+          class="bg-white position-relative border border-helper-primary p-8 p-md-4 width-100 width-lg-auto flex-lg-grow-1 mx-auto"
+        >
+          <ul class="overflow-x-scroll text-center">
+            <!-- position1 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">1</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="../assets/images/countries/DEN.png"
+                      alt="丹麥國旗，紅色背景白十字。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      DEN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Vikotor AXELSEN
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position2 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">2</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="../assets/images/countries/INA.png"
+                      alt="印尼國旗，上紅下白。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      INA
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Anthony Sinisuka GINTING
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position3 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">3</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="../assets/images/countries/JPN.png"
+                      alt="日本國旗，白底中間紅色圓形。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      JPN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Kodai NARAOKA
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position4 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">4</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="../assets/images/countries/THA.png"
+                      alt="泰國國旗，紅白藍由外而內"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      THA
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Kunlavut VITIDSARN
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position5 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">5</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="../assets/images/countries/CHN.png"
+                      alt="中國國旗，紅底，一顆大星星在左邊，4顆小星星在右邊。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      CHN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      SHI Yu QI
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position6 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">6</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="../assets/images/countries/IND.png"
+                      alt="印度國旗，由上至下背景顏色為黃白綠，白色背景內有來色圓形花紋圖案。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      IND
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      PRANNOY H. S.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position7 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">7</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="../assets/images/countries/CHN.png"
+                      alt="中國國旗，紅底，一顆大星星在左邊，4顆小星星在右邊。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      CHN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      LI Shi Feng
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position8 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">8</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="../assets/images/countries/SGP.png"
+                      alt="新加坡國旗，上紅下白，紅色背景內，左側是一個月亮，右側是五顆星星。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      SGP
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      LOH Kean Yew
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position9 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">9</span>
+                </div>
+                <!-- 內容 -->
+                <div
+                  class="d-flex align-items-center py-6 border-bottom flex-grow-1"
+                >
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="../assets/images/countries/INA.png"
+                      alt="印尼國旗，上紅下白。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      INA
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Jonatan CHRISTIE
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <!-- position10 -->
+            <li data-aos="fade-right" data-aos-once="true" class="w-100 mw-500">
+              <a
+                href="player-info.html"
+                class="d-flex justify-content-center align-items-center hover-bg--helper-fourth"
+              >
+                <!-- 排名 -->
+                <div
+                  class="card-square bg-green-primary text-center me-6 me-lg-36"
+                >
+                  <span class="text-white fs-4 lh-48">10</span>
+                </div>
+                <!-- 內容 -->
+                <div class="d-flex align-items-center py-6 flex-grow-1">
+                  <!-- img -->
+                  <div class="w-px-50 me-8 sideBar">
+                    <img
+                      src="../assets/images/countries/DEN.png"
+                      alt="丹麥國旗，紅色背景白十字。"
+                    />
+                  </div>
+                  <div class="me-4 me-lg-3 d-none d-md-block">
+                    <p class="text-helper-secondary fs-5 fw-light w-px-50">
+                      DEN
+                    </p>
+                  </div>
+                  <!-- name -->
+                  <div class="flex-grow-1">
+                    <p class="fs-5 fw-light text-helper-secondary text-nowrap">
+                      Anders ANTONSEN
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="d-none d-lg-block align-self-stretch d-flex align-items-center width-50 ranking-playerPic"
+        ></div>
+      </div>
+
+      <!-- pagination -->
+      <section class="mt-6 mb-3 mb-lg-2">
+        <ul class="pagination">
+          <li>
+            <a class="pagination-item pagination-item--controller" href="#"
+              >pre</a
+            >
+          </li>
+          <li>
+            <a class="pagination-item pagination-item--active" href="#">1</a>
+          </li>
+          <li><a class="pagination-item" href="#">2</a></li>
+          <li><a class="pagination-item" href="#">3</a></li>
+          <li>
+            <a class="pagination-item pagination-item--controller" href="#"
+              >next</a
+            >
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

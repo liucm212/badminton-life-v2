@@ -142,7 +142,11 @@
     background-color: var(--bs-helper-third);
     right: -24px;
     top: 50%;
+    @media (min-width:768px) {
+      right: -84px;
+    }
   }
+  
 }
 
 
@@ -523,4 +527,23 @@ a[data-content="heart"]{
   .item{
     text-align: center; 
   }
+}
+
+
+// heart icon
+.icon-heart{
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: 0.1s;
+  &:active{
+    background-image: url('../images/icons/icon-heart-half.png'); 
+  }
+  &-normal{
+    background-image: url('../images/icons/icon-heart-outline.png');
+  }
+  &-active{
+    background-image: url('../images/icons/icon-heart-filled.png'); 
+  }
+  
 }
