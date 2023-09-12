@@ -136,6 +136,9 @@ d-inline-block{
   &-top-center{
     transform: translate(-50%, 0%);
   }
+  &-bottom-left{
+    transform: translate(0%, -100%);
+  }
 }
 
 // up
@@ -145,6 +148,9 @@ d-inline-block{
   }
   &-20{
     top: -20px;
+  }
+  &-24{
+    top: -24px;
   }
   &-30{
     top: -30px;
@@ -281,12 +287,22 @@ d-inline-block{
       color: var(--bs-white);
     }
   }
+  &-green-third{
+    &:hover{
+      color: var(--bs-green-third);
+    }
+  }
   &-green-primary{
     &:hover{
       color: var(--bs-green-primary);
     }
   }
   &-bg{
+    &--green-primary{
+      &:hover{
+        background-color: var(--bs-green-primary);
+      }
+    }
     &--green-fourth{
       &:hover{
         background-color: var(--bs-green-fourth);
