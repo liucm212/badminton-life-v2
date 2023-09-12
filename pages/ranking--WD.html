@@ -124,7 +124,7 @@
               <!-- table body -->
               <tbody class="bg-light">
                 <!-- position-01 -->
-                <tr class="table-row">
+                <tr class="table-row" data-aos="fade-left">
                   <th scope="row">
                     <div
                       class="card-square bg-green-primary text-center mx-auto"
@@ -158,7 +158,7 @@
                   </td>
                 </tr>
                 <!-- position-02 -->
-                <tr class="table-row">
+                <tr class="table-row" data-aos="fade-left">
                   <th scope="row">
                     <div
                       class="card-square bg-green-primary text-center mx-auto"
@@ -192,7 +192,7 @@
                   </td>
                 </tr>
                 <!-- position-03 -->
-                <tr class="table-row">
+                <tr class="table-row" data-aos="fade-left">
                   <th scope="row">
                     <div
                       class="card-square bg-green-primary text-center mx-auto"
@@ -226,7 +226,7 @@
                   </td>
                 </tr>
                 <!-- position-04 -->
-                <tr class="table-row">
+                <tr class="table-row" data-aos="fade-left">
                   <th scope="row">
                     <div
                       class="card-square bg-green-primary text-center mx-auto"
@@ -260,7 +260,7 @@
                   </td>
                 </tr>
                 <!-- position-05 -->
-                <tr class="table-row">
+                <tr class="table-row" data-aos="fade-left">
                   <th scope="row">
                     <div
                       class="card-square bg-green-primary text-center mx-auto"
@@ -292,7 +292,7 @@
                   </td>
                 </tr>
                 <!-- position-06 -->
-                <tr class="table-row">
+                <tr class="table-row" data-aos="fade-left">
                   <th scope="row">
                     <div
                       class="card-square bg-green-primary text-center mx-auto"
@@ -326,7 +326,7 @@
                   </td>
                 </tr>
                 <!-- position-07 -->
-                <tr class="table-row">
+                <tr class="table-row" data-aos="fade-left">
                   <th scope="row">
                     <div
                       class="card-square bg-green-primary text-center mx-auto"
@@ -360,7 +360,7 @@
                   </td>
                 </tr>
                 <!-- position-08 -->
-                <tr class="table-row">
+                <tr class="table-row" data-aos="fade-left">
                   <th scope="row">
                     <div
                       class="card-square bg-green-primary text-center mx-auto"
@@ -394,7 +394,7 @@
                   </td>
                 </tr>
                 <!-- position-09 -->
-                <tr class="table-row">
+                <tr class="table-row" data-aos="fade-left">
                   <th scope="row">
                     <div
                       class="card-square bg-green-primary text-center mx-auto"
@@ -428,7 +428,7 @@
                   </td>
                 </tr>
                 <!-- position-10 -->
-                <tr class="table-row">
+                <tr class="table-row" data-aos="fade-left">
                   <th scope="row">
                     <div
                       class="card-square bg-green-primary text-center mx-auto"
@@ -475,25 +475,7 @@
       </div>
 
       <!-- pagination -->
-      <section class="mt-6 mb-3 mb-lg-2">
-        <ul class="pagination">
-          <li>
-            <a class="pagination-item pagination-item--controller" href="#"
-              >pre</a
-            >
-          </li>
-          <li>
-            <a class="pagination-item pagination-item--active" href="#">1</a>
-          </li>
-          <li><a class="pagination-item" href="#">2</a></li>
-          <li><a class="pagination-item" href="#">3</a></li>
-          <li>
-            <a class="pagination-item pagination-item--controller" href="#"
-              >next</a
-            >
-          </li>
-        </ul>
-      </section>
+      <%- include('./layout/pagination'); -%>
     </div>
 
     <%- include('./layout/footer'); -%>

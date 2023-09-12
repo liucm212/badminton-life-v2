@@ -67,22 +67,34 @@
     padding: 6px 12px;
     background-color: var(--bs-helper-fifth);
     transition: background-color, 0.1s;
-    &--controller{
-      background-color: var(--bs-helper-fourth);
-    }
-    &--active{
-      background-color: var(--bs-green-third);
-    }
+    
     &:hover{
       color: var(--bs-white);
-      background-color: var(--bs-helper-secondary);
+      background-color: var(--bs-green-secondary);
     }
+  }
+  &-controller{
+    border-radius: 4px;
+    padding: 6px 12px;
+    background-color: var(--bs-helper-fifth);
+    transition: background-color, 0.1s;
+    &:hover{
+      background-color: var(--bs-helper-fourth);
+    }
+    &:active{
+      background-color: var(--bs-helper);
+    }
+  }
+  
+  .active{
+    color: var(--bs-light);
+    background-color: var(--bs-green-secondary);
   }
   li:not(:last-child){
     margin-right: 8px;
   }
   @include Tablet{
-    &-item{
+    li > a{
       padding: 12px 20px;
     }
   }
