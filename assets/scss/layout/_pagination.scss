@@ -1,0 +1,42 @@
+// pagination
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-item{
+    border-radius: 4px;
+    padding: 6px 12px;
+    background-color: var(--bs-helper-fifth);
+    transition: background-color, 0.1s;
+    
+    &:hover{
+      color: var(--bs-white);
+      background-color: var(--bs-green-secondary);
+    }
+  }
+  &-controller{
+    border-radius: 4px;
+    padding: 6px 12px;
+    background-color: var(--bs-helper-fifth);
+    transition: background-color, 0.1s;
+    &:hover{
+      background-color: var(--bs-helper-fourth);
+    }
+    &:active{
+      background-color: var(--bs-helper);
+    }
+  }
+  
+  .active{
+    color: var(--bs-light);
+    background-color: var(--bs-green-secondary);
+  }
+  li:not(:last-child){
+    margin-right: 8px;
+  }
+  @include Tablet{
+    li > a{
+      padding: 12px 20px;
+    }
+  }
+}

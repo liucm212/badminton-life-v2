@@ -1,0 +1,39 @@
+// button
+.btn{
+  display: inline-block;
+  &--primary{
+    padding: 20px 24px;
+    background-color: var(--bs-green-primary);
+    color: var(--bs-white);
+    transition: 0.3s;
+    @include Desktop{
+      padding: 24px 48px;
+    }
+    &:hover{
+      background-color: var(--bs-helper-primary);
+    }
+  }
+  &--secondary{
+    border: 1px solid var(--bs-green-primary);
+    padding: 12px 24px;
+    background-color: var(--bs-white);
+    color: var(--bs-green-primary);
+    transition: 0.3s;
+    @include Desktop{
+      padding: 24px 48px;
+    }
+    &:hover{
+      color: var(--bs-dark);
+      border: 1px solid var(--bs-helper-primary);
+    }
+  }
+  // 通用hover
+  &:hover{
+    color: var(--bs-white);
+    background-color: var(--bs-helper-primary);
+  }
+  @include Desktop{
+    font-size: 24px;
+    font-weight: 700;
+  }
+}

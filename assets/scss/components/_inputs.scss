@@ -1,0 +1,21 @@
+// input--players
+.input--players{
+  padding: 8px 12px;
+  border-radius: 6px;
+  width: 150px;  
+  min-width: 100px;
+  @include Tablet{
+    width: 200px;
+  }
+  @include Desktop{
+    padding: 12px 20px;
+  }
+}
+.input-tag{
+  position: absolute;
+  transform: translate(0 , -100%);
+  top: -2px;
+  left: 0;
+  font-size: 12px;
+  color: var(--bs-helper-third);
+}

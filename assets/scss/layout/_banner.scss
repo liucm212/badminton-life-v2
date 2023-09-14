@@ -1,3 +1,4 @@
+// banner
 .banner{
   height: 300px;
   &--profile{
@@ -7,19 +8,16 @@
 .banner--big{
   height: 500px;
   background: url('../images/banner-shuttle.jpeg') no-repeat center center / cover;
-  // 各區域的圖片，目前先統一替換成同一張圖，之後有需要改再調整。
-  // &--ranking{
-  //   background: url('../images/players/player-chou-tien-chen.jpeg') no-repeat right top / cover;
-  // }
-  // &--players{
-  //   background: url('../images/players/player-chou-tien-chen.jpeg') no-repeat right top / cover;
-  // }
-  // &--contest{
-  //   background: url('../images/players/player-chou-tien-chen.jpeg') no-repeat right top / cover;
-  // }
-  // &--analysis{
-  //   background: url('../images/players/player-chou-tien-chen.jpeg') no-repeat right top / cover;
-  // }
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(000,000,000,0.3);
+  }
   &--player-info{
     background: url('../images/players/player-middle-chou-tien-chen.png') no-repeat center top / cover;
   }

@@ -1,0 +1,72 @@
+// dropdown
+.dropdown{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1rem;
+  background-color: var(--bs-white);
+  &-item{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 8px;
+    border: 1px solid var(--bs-green-primary);
+    border-radius: 6px;
+    cursor: pointer;
+    &:hover{
+      background-color: var(--bs-helper-fourth);
+    }
+    &:active{
+      background-color: var(--bs-helper-third);
+    }
+    .dropdown-tag{
+      position: absolute;
+      transform: translate(0, -100%);
+      top: -4px;
+      left: 0;
+      font-size: 12px;
+      color: var(--bs-helper-third);
+    }
+  }
+  &-content{
+    display: none;
+    position: relative;
+    ul{
+      position: absolute;
+      top: 20px;
+      border: 1px solid var(--bs-green-primary);
+      max-height: 300px;
+      li{
+        padding: 12px 20px;
+        cursor: pointer;
+        background-color: var(--bs-white);
+        &:hover{
+          background-color: var(--bs-green-fourth);
+        }
+      }
+      li+li{
+        border-top: 1px solid var(--bs-green-primary);
+      }
+    }
+    .active{
+      background-color: var(--bs-green-fourth);
+    }
+  }
+  @include Desktop{
+    &-item{
+      padding: 12px 20px;
+    }
+  }
+}
+
+
+// datePicker
+.datePicker{
+  cursor: pointer;
+  color: var(--bs-helper-third);
+  &:hover{
+    color: var(--bs-helper-secondary);
+  }
+}

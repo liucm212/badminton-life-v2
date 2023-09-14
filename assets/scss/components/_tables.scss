@@ -1,0 +1,47 @@
+// ranking card table
+.table-ranking{
+  width: 100%;
+  
+  & > :not(caption) > * > *{
+    padding: 1rem 12px;
+    @media (min-width:576px) {
+      padding: 2rem 4px;
+    }
+  }
+
+  // 每列的調整
+  .table-row{
+    border-bottom: 1px solid var(--bs-dark);
+  }
+  .table{
+    &-name{
+      font-size: 12px;
+      font-weight: 400;
+      white-space: nowrap;
+      color: var(--bs-helper-secondary);
+      &:hover{
+        color: var(--bs-green-secondary);
+      }
+      
+      @include Tablet{
+        font-size: 20px;
+      }
+    }
+  }
+  .table-sideBar{
+    position: relative;
+    &--double{
+      @include Desktop{
+        top: 9px;
+      }
+    }
+    &::after{
+      position: absolute;
+      right: 0;
+      content: '';
+      height: 50px;
+      width: 2px;
+      background-color: var(--bs-helper-fourth);
+    }
+  }
+}
